@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PastryWorld</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav__header">
+                <div class="nav__logo">
+                    <a href="#">
+                        <img src="assets/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="nav__menu__btn" id="menu-btn">
+                    <i class="ri-menu-3-line"></i>
+                </div>
+            </div>
+            <ul class="nav__links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About Us</a></li>
+            </ul>
+        </nav>
+
+        <div class="section__container header__container" id="home">
+            <h1>Good Pastry & Coffee For a Good Day</h1>
+            <p>
+                Start your day on a delightful note with our freshly baked pastries and premium coffee. At PastryWorld,
+                we believe in crafting moments of joy with every bite and sip.
+            </p>
+            <p style="font-style: italic; font-size: 12px;">*Commencez votre journée en beauté avec nos viennoiseries
+                fraîchement préparées et notre café d'exception. Chez PastryWorld, nous avons à cœur de créer des
+                moments de pur bonheur à chaque bouchée et à chaque gorgée.</p>
+            <div class="header__btns">
+                <button class="btn">Let's Eat</button>
+                <button class="btn">Book a Table</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="menu" id="menu">
+        <div class="section__container menu__container">
+            <h2 class="section__header">Popular Menu</h2>
+            <a href="#">
+                View All
+                <i class="ri-arrow-right-long-line"></i>
+            </a>
+            <div class="menu__grid">
+
+                <div class="menu__card">
+                    <img src="assets/menu-1.jpg" alt="menu">
+                    <div class="menu__card__content">
+                        <h4>Caramel Pecan Cinnamon Roll</h4>
+                        <h3>$14.00</h3>
+                    </div>
+                </div>
+                <div class="menu__card">
+                    <img src="assets/menu-2.jpg" alt="menu">
+                    <div class="menu__card__content">
+                        <h4>Chocolate Croissant (Pain au Chocolat)</h4>
+                        <h3>$24.00</h3>
+                    </div>
+                </div>
+                <div class="menu__card">
+                    <img src="assets/menu-3.jpg" alt="menu">
+                    <div class="menu__card__content">
+                        <h4>Chocolate Fudge Delight</h4>
+                        <h3>$20.00</h3>
+                    </div>
+                </div>
+                <div class="menu__card">
+                    <img src="assets/menu-4.jpg" alt="menu">
+                    <div class="menu__card__content">
+                        <h4>Triple Layer Chocolate Mousse</h4>
+                        <h3>$29.00</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="book">
+        <div class="section__container book__container">
+            <form action="/">
+                <div class="input__row">
+                    <div class="input__group">
+                        <label for="firstName">FIRST NAME</label>
+                        <input type="text" />
+                    </div>
+                    <div class="input__group">
+                        <label for="lastName">LAST NAME</label>
+                        <input type="text" />
+                    </div>
+                </div>
+
+                <div class="input__row">
+                    <div class="input__group">
+                        <label for="date">DATE</label>
+                        <input type="date" />
+                    </div>
+                    <div class="input__group">
+                        <label for="lastName">PERSON</label>
+                        <input type="text" />
+                    </div>
+                </div>
+
+                <div class="input__row">
+                    <button class="btn" type="submit">BOOK A TABLE</button>
+                </div>
+
+            </form>
+        </div>
+    </section>
+
+    <section class="section__container about__container" id="about">
+        <div class="about__image">
+            <img src="assets/about.png" alt="about /">
+        </div>
+        <div class="about__content">
+            <h2 class="section__header">About Our Pastry World</h2>
+            <div>
+                <p>
+                    Welcome to PastryWorld, where every pastry tells a story of passion,
+                    flavor, and quality. Our journey began with a simple mission&nbsp;: to
+                    create a haven for pastry and coffee lovers. Using only the finest
+                    ingredients, our skilled bakers craft delightful pastries that
+                    satisfy your sweet cravings and bring a smile to your day.
+                </p>
+                <p>
+                    At PastryWorld, we believe in making every moment special, whether
+                    it's a morning coffee break or a cozy gathering with friends.
+                </p>
+                <p style="font-style: italic; font-size: 12px;">*Bienvenue chez PastryWorld, où chaque pâtisserie
+                    raconte une histoire de passion, de saveurs et de qualité. Notre aventure a commencé avec une
+                    mission simple : créer un havre de paix pour les amateurs de pâtisseries et de café. Nos pâtissiers
+                    talentueux, utilisant uniquement les meilleurs ingrédients, confectionnent de délicieuses
+                    pâtisseries qui combleront vos envies sucrées et illumineront votre journée. <br>Chez PastryWorld,
+                    nous croyons qu'il faut rendre chaque instant spécial, qu'il s'agisse d'une pause-café matinale ou
+                    d'une réunion chaleureuse entre amis.</p>
+
+                <div class="about__btn">
+                    <button class="btn">READ MORE</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="section__container footer__container">
+            <div class="footer__col">
+                <a href="#" class="footer__logo">
+                    <img src="assets/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="footer__col">
+                <h4>Blogs</h4>
+                <ul class="footer__links">
+                    <li>
+                        <a href="#">
+                            The Art of Perfect Pastry : Secrets Behind Our Creations
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            5 Coffee and Pastry Pairings to Brighten Your Day
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Behind the Scenes : A Day in the Life of Our Pastry Chefs
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4>New Items</h4>
+                <ul class="footer__links">
+                    <li><a href="#">Menu Highlights</a></li>
+                    <li><a href="#">Daily Specials</a></li>
+                    <li><a href="#">Customer Testimonials</a></li>
+                    <li><a href="#">Baking Workshops</a></li>
+                    <li><a href="#">Blog & Recipe</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4>Social Media</h4>
+                <ul class="footer__links">
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Youtube</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bar">
+            Copyright © 2025 Web Design Mastery. All rights reserved.
+        </div>
+
+    </footer>
+
+    <!-- Footer de remerciements à Web Design Mastery -->
+    <div id="thank-you-footer">
+        <span class="plume">🪶</span>
+        Thanks to Web Design Mastery, the creator of this tutorial, which you can find on YouTube
+        <a href="https://www.youtube.com/watch?v=e2VnRMcHT9U&list=PLz_5rPRIvGECVDOGY8fMs3-8uZVlyJ-gr&index=10"
+            target="_blank">here</a>. — Chris Blues —
+    </div>
+
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

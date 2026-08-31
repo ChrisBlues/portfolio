@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oxanium", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bg-clr: #000;
+    --text-clr: #fff;
+    --design-clr: #ccf305;
+    --card-bg: #0e1712;
+}
+
+body {
+    background: var(--bg-clr);
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    max-width: 85%;
+    margin: auto;
+}
+
+h1 {
+    font-size: 5.2vw;
+    line-height: 5.7vw;
+}
+
+h2 {
+    font-size: 3.7vw;
+}
+
+h3 {
+    font-size: 1.7vw;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--text-clr);
+    text-transform: uppercase;
+}
+
+p {
+    text-wrap: balance;
+    opacity: 0.8;
+    margin-block: 1rem;
+    line-height: 1.8rem;
+    color: var(--text-clr);
+    font-family: "Poppins", sans-serif;
+
+    text-align: justify;
+    hyphens: auto;
+    overflow-wrap: break-word;
+}
+
+.navbar {
+    height: 13vh;
+    justify-content: space-between;
+}
+
+.navlist,
+.footerlist {
+    gap: 2.5rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: var(--design-clr);
+    z-index: 4;
+}
+
+
+.border-btn,
+.fill-btn {
+    padding: 0.7rem 1rem;
+    border: .1rem solid var(--design-clr);
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .5s ease-in-out;
+}
+
+.border-btn {
+    color: var(--design-clr);
+}
+
+.fill-btn {
+    background: var(--design-clr);
+    color: var(--bg-clr);
+    position: relative;
+    transition: .5s ease-in-out;
+}
+
+.fill-btn:hover {
+    background: var(--bg-clr);
+    color: var(--design-clr);
+}
+
+.border-btn:hover {
+    background: var(--design-clr);
+    color: var(--bg-clr);
+}
+
+.fill-btn::before {
+    content: '';
+    position: absolute;
+    background: var(--design-clr);
+    inset: 0;
+    filter: blur(15px);
+    z-index: -1;
+}
+
+.link {
+    color: var(--text-clr);
+    font-family: "Poppins", sans-serif;
+}
+
+.hamburger {
+    display: none;
+}
+
+.navbar .navlist li .border-btn {
+    display: none;
+}
+
+.hero {
+    min-height: calc(70vh - 13vh);
+    justify-content: space-between;
+}
+
+.btn-container {
+    gap: 2rem;
+    margin-top: 2.3rem;
+}
+
+.content,
+.product-container {
+    flex: 1;
+}
+
+.image-container {
+    flex: 1;
+    position: relative;
+}
+
+.image-container::before {
+    content: '';
+    position: absolute;
+    inset: 6rem;
+    background: var(--design-clr);
+    border-radius: 50%;
+    z-index: -1;
+    filter: blur(130px);
+
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.other-section {
+    padding-block: 4rem;
+}
+
+.slide {
+    padding-left: 7rem;
+}
+
+.card-container {
+    margin-top: 3rem;
+    gap: 2rem;
+    overflow-x: auto;
+}
+
+.card-container::-webkit-scrollbar {
+    overflow-x: auto;
+}
+
+.card {
+    background: var(--card-bg);
+    padding: 1rem;
+    max-width: 800px;
+}
+
+.card-image {
+    width: 900px;
+    height: 300px;
+    margin-right: 2rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card:nth-child(1) .card-image {
+    background-image: url("Images/game1.jpg");
+}
+
+.card:nth-child(2) .card-image {
+    background-image: url("Images/game2.jpg");
+}
+
+.card:nth-child(3) .card-image {
+    background-image: url("Images/game3.jpg");
+}
+
+.arrows-see-more {
+    font-style: italic;
+    color: var(--text-clr);
+    font-size: .8rem;
+}
+
+.gallery {
+    text-align: center;
+}
+
+.gallery .intro {
+    max-width: 70%;
+    margin: auto;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.grid-container {
+    margin-block: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: .5rem;
+}
+
+.explore {
+    color: var(--design-clr);
+    font-size: 1.1rem;
+}
+
+.fa-play {
+    border: .1rem solid var(--design-clr);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    margin-right: 0.4rem;
+}
+
+form {
+    padding: 5rem;
+    background: var(--design-clr);
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+}
+
+form h2 {
+    font-size: 2.5rem;
+}
+
+form * {
+    color: var(--bg-clr);
+}
+
+.input-container {
+    width: 100%;
+    background: var(--card-bg);
+    padding: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+input[type="email"] {
+    flex: 1;
+    background: transparent;
+    font-size: 1rem;
+    padding-left: 1rem;
+    border: none;
+    color: var(--text-clr);
+}
+
+input:focus {
+    outline: none;
+}
+
+footer {
+    background: var(--card-bg);
+    margin-bottom: 3rem;
+}
+
+.icons {
+    gap: 2rem;
+}
+
+.fa-brands {
+    font-size: 1.3rem;
+    color: var(--text-clr);
+    transition: .3s ease-in-out;
+}
+
+.fa-brands:hover {
+    transform: translateY(-40%);
+}
+
+
+
+/* Remerciements au concepteur et à Copilote */
+#thank-you-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f8f8f8;
+  color: #333;
+  text-align: center;
+  padding: 15px;
+  font-size: 1rem;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 1s ease, transform 1s ease;
+  z-index: 1000;
+}
+
+#thank-you-footer.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#thank-you-footer a{
+    text-decoration: underline;
+}
+
+
+
+
+@media screen and (max-width: 700px) {
+
+    .navbar .border-btn,
+    .footerlist {
+        display: none;
+    }
+
+    .navlist {
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        background: var(--card-bg);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 20rem;
+        z-index: 3;
+        transform: translateX(-100%);
+        transition: .5s ease-in-out;
+    }
+
+    .list-active {
+        transform: translateX(0);
+    }
+
+    .hamburger,
+    .navbar .navlist li .border-btn {
+        display: block;
+    }
+
+    .column {
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    .hero {
+        padding-block: 2.5rem;
+    }
+
+    h1 {
+        font-size: 9vw;
+        line-height: 12vw;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    h2 {
+        font-size: 6.5vw;
+    }
+
+    .slide {
+        padding-left: 2rem;
+    }
+
+    .card-image {
+        height: 230px;
+    }
+
+    h3 {
+        font-size: 4vw;
+    }
+
+    form {
+        padding: 2rem;
+    }
+
+    form h2 {
+        font-size: 6vw;
+    }
+
+    input[type="email"] {
+        padding-left: 0.5rem;
+    }
+
+}

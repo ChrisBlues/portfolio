@@ -1,0 +1,596 @@
+        body {
+            background: #000;
+            font-family: "Georgia", serif;
+            margin: 0;
+            padding: 40px;
+            transition: background-color 1s ease;
+            /* fondu du fond */
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 3rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #4da3ff;
+        }
+
+        h1:hover {
+            color: #087eec;
+        }
+
+        .welcome {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 1.6rem;
+            font-weight: 500;
+            line-height: 1.4;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.9;
+
+            background: linear-gradient(135deg, #4da3ff, #0f5fbf);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 8px rgba(77, 163, 255, 0.25);
+        }
+
+        #toggleTheme {
+            display: block;
+            margin: 0 auto 40px auto;
+            padding: 10px 20px;
+            font-size: 1.4rem;
+            /* un peu plus grand pour l’icône */
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            background: #444;
+            color: #fff;
+            transition: transform 0.4s ease, background-color 0.3s;
+        }
+
+        #toggleTheme:hover {
+            background: #666;
+        }
+
+        /* Animation subtile */
+        .animate {
+            transform: scale(1.3) rotate(20deg);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s, opacity 0.3s, background-color 1s ease;
+            /* fondu des couleurs */
+            cursor: pointer;
+            font-weight: bold;
+
+            /* Ombre légère */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            opacity: 0.95;
+
+            /* Ombre un peu plus marquée au survol */
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+        }
+
+        .card a {
+            text-decoration: none;
+            font-size: 1.1rem;
+            /* display: flex;
+            align-items: center;
+            justify-content: center; */
+            gap: 8px;
+        }
+
+        .symbol {
+            font-size: 1.4rem;
+        }
+
+        h1,
+        .card a,
+        .symbol {
+            transition: color 1s ease, opacity 1s ease;
+        }
+
+        .slogan {
+            font-style: italic;
+            font-size: 12px;
+            font-weight: normal;
+            line-height: 35px;
+            margin-bottom: -10px;
+        }
+
+
+        /* ================================================================================ */
+
+        /* 🌈 Palette vive */
+        body.theme-vif {
+            background: #000;
+            color: #fff;
+        }
+
+        .theme-vif .beauty {
+            background: linear-gradient(135deg, #f16d95 0%, #f3c9d4 50%, #f31852 100%);
+        }
+
+        .theme-vif .ecolobot {
+            background: linear-gradient(135deg, #0f5f4c 0%, #1fa37c 50%, #8fe3c0 100%);
+        }
+
+        .theme-vif .realestate {
+            background: linear-gradient(135deg, #d9c7b8 0%, #b89f8a 50%, #8c7563 100%);
+        }
+
+        .theme-vif .securityhome {
+            background: linear-gradient(135deg, #0a1a2f 0%, #123a63 50%, #1f6fb2 100%);
+        }
+
+        .theme-vif .starbucks {
+            background: linear-gradient(135deg, #0c3b2e 0%, #1e6f55 50%, #4bbf8a 100%);
+        }
+
+        .theme-vif .closmarsault {
+            background: linear-gradient(135deg, #f7d9a1 0%, #e9b86a 50%, #c98a3a 100%)
+        }
+
+        .theme-vif .portraits {
+            background: linear-gradient(135deg, #ffcf4d 0%, #ff9f3f 50%, #ff6f4d 100%);
+        }
+
+        .theme-vif .headboost {
+            background: linear-gradient(135deg, #1a1a2e 0%, #3a3a6a 50%, #6a6ad9 100%);
+        }
+
+        .theme-vif .morpho {
+            background: linear-gradient(135deg, #2b2b2b 0%, #444444 50%, #d32f2f 100%);
+        }
+
+        .theme-vif .nexawebstudio {
+            background: linear-gradient(135deg, #2e4a7b 0%, #4f6fb3 50%, #8fb3e8 100%);
+        }
+
+        .theme-vif .travel {
+            background: linear-gradient(135deg, #4dbbe6 0%, #2a89c9 50%, #1a5fa3 100%);
+        }
+
+        .theme-vif .mushroom {
+            background: linear-gradient(135deg, #b57cff 0%, #8a4de6 50%, #5a2bb3 100%);
+        }
+
+        .theme-vif .jardindessaveurs {
+            background: linear-gradient(135deg, #9bdc6b 0%, #6bbf4f 50%, #3f8f2e 100%);
+        }
+
+        .theme-vif .helium {
+            background: linear-gradient(135deg, #1f1f2e 0%, #3b3b6a 50%, #7a7ad9 100%);
+        }
+
+        .theme-vif .burgerking {
+            background: linear-gradient(135deg, #ffb347 0%, #ff7f50 50%, #ff3b3b 100%);
+        }
+
+
+        .theme-vif .luxecars {
+            background: linear-gradient(135deg, #1a1a1a 0%, #3c3c3c 50%, #b8b8b8 100%);
+        }
+
+        .theme-vif .shopmax {
+            background: linear-gradient(135deg, #ff7f9f 0%, #ff4f7a 50%, #d92f5e 100%);
+        }
+
+        .theme-vif .gaming {
+            background: linear-gradient(135deg, #0f0f2e 0%, #2b2b6a 50%, #6a6af5 100%);
+        }
+
+        .theme-vif .shopifty {
+            background: linear-gradient(135deg, #f7c8e0 0%, #e89ac7 50%, #c96aa8 100%);
+        }
+
+        .theme-vif .e-shop {
+            background: linear-gradient(135deg, #1e3a5f 0%, #2f5f9a 50%, #6aa8e6 100%);
+        }
+
+        .theme-vif .naturemoi {
+            background: linear-gradient(135deg, #7BCB8A, #2E8B57);
+        }
+
+        .theme-vif .bproostore {
+            background: linear-gradient(135deg, #FF6B00, #1A1A1A);
+        }
+
+        .theme-vif .royalhotels {
+            background: linear-gradient(135deg, #C5A46D, #3B2F2F);
+        }
+
+        .theme-vif .pelemele {
+            background: linear-gradient(135deg, #8E44AD, #3498DB);
+        }
+
+        .theme-vif .flower {
+            background: linear-gradient(135deg, #FFB7D5, #FF5E9A);
+        }
+
+        .theme-vif .design {
+            background: linear-gradient(135deg, #3a2e5f 0%, #6a4fa3 50%, #b07ce8 100%);
+        }
+
+        .theme-vif .freefire {
+            background: linear-gradient(135deg, #ff3b2f 0%, #ff7a00 50%, #ffd000 100%);
+        }
+
+        .theme-vif .hosale {
+            background: linear-gradient(135deg, #8fd3c8 0%, #5bb8a5 50%, #2e7f6f 100%);
+        }
+
+        .theme-vif .creditcard {
+            background: linear-gradient(135deg, #1f1f1f 0%, #3c3c3c 50%, #8e8e8e 100%);
+        }
+
+        .theme-vif .fruits {
+            background: linear-gradient(135deg, #ff7f7f 0%, #ffa64d 50%, #ffe66d 100%);
+        }
+
+        .theme-vif .femmes {
+            background: linear-gradient(135deg, #b84e7c 0%, #d66fa3 50%, #f2a9d3 100%);
+        }
+
+        .theme-vif .maximes {
+            background: linear-gradient(135deg, #f2e9c4 0%, #e3d79a 50%, #c9b86a 100%);
+        }
+
+        .theme-vif .ados {
+            background: linear-gradient(135deg, #4da6ff 0%, #6f7cff 50%, #a36fff 100%);
+        }
+
+        .theme-vif .animaux {
+            background: linear-gradient(135deg, #5fa86b 0%, #3f7f4d 50%, #2e5c38 100%);
+        }
+
+        .theme-vif .movies {
+            background: linear-gradient(135deg, #1c1c1c 0%, #3a3a3a 50%, #6e6e6e 100%);
+        }
+
+        .theme-vif .underwaterlife {
+            background: linear-gradient(135deg, #003f5c, #2f4b7c, #665191);
+        }
+
+        .theme-vif .nature {
+            background: linear-gradient(135deg, #4caf50, #8bc34a, #cddc39);
+        }
+
+        .theme-vif .newbuild {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+        }
+
+        .theme-vif .urbanbites {
+            background: linear-gradient(135deg, #ff6f00, #ff8f00, #ffa000);
+        }
+
+        .theme-vif .cube {
+            background: linear-gradient(135deg, #212121, #424242, #616161);
+        }
+
+        .theme-vif .dragons {
+            background: linear-gradient(135deg, #b71c1c, #d32f2f, #f44336);
+        }
+
+        .theme-vif .exploretheworld {
+            background: linear-gradient(135deg, #2e7d32, #66bb6a, #a5d6a7);
+        }
+
+        .theme-vif .fashionlove {
+            background: linear-gradient(135deg, #212121, #424242, #616161);
+        }
+
+        .theme-vif .tourasia {
+            background: linear-gradient(135deg, #e53935, #fb8c00, #fdd835);
+        }
+
+        .theme-vif .beaches {
+            background: linear-gradient(135deg, #01383f, #4dd0e1, #b2ebf2);
+        }
+
+        .theme-vif .tazza {
+            background: linear-gradient(135deg, #ff7f50, #ffb347);
+        }
+
+        .theme-vif .agv {
+            background: linear-gradient(135deg, #4b6cb7, #182848);
+        }
+
+        .theme-vif .coffee {
+            background: linear-gradient(135deg, #6f4e37, #3c2f2f);
+        }
+
+        .theme-vif .elsewhere {
+            background: linear-gradient(135deg, #00c6ff, #0072ff);
+        }
+
+        .theme-vif .grilli {
+            background: linear-gradient(135deg, #8e2de2, #4a00e0);
+        }
+
+        .theme-vif .headout {
+            background: linear-gradient(135deg, #56ab2f, #a8e063);
+        }
+
+        .theme-vif .fruits {
+            background: linear-gradient(135deg, #ff9966, #ff5e62);
+        }
+
+        .theme-vif .cakeshop {
+            background: linear-gradient(135deg, #ff9a9e, #fecfef);
+        }
+
+        .theme-vif .earth {
+            background: linear-gradient(135deg, #11998e, #38ef7d);
+        }
+
+        .theme-vif .agency {
+            background: linear-gradient(135deg, #ff9a00, #ff2d55);
+        }
+
+        .theme-vif .worthwhile {
+            background: linear-gradient(90deg, #007BFF, #00FFD1);
+        }
+
+        .theme-vif .delicious {
+            background: linear-gradient(90deg, #FF7A5A, #FFD27F);
+        }
+
+        .theme-vif .panto {
+            background: linear-gradient(90deg, #B76A20, #F2C48D);
+        }
+
+        .theme-vif .food {
+            background: linear-gradient(90deg, #FF8A00, #FFDD55);
+        }
+
+        .theme-vif .panda {
+            background: linear-gradient(90deg, #4CAF50, #A8E063);
+            ;
+        }
+
+        .theme-vif .istudio {
+            background: linear-gradient(135deg, #C46B36, #E8C39E);
+        }
+
+        .theme-vif .healthcare {
+            background: linear-gradient(135deg, #00c6ff, #0072ff);
+        }
+
+        .theme-vif .fitclub {
+            background: linear-gradient(135deg, #ff6b6b, #feca57);
+        }
+
+        .theme-vif .restofromscratch {
+            background: linear-gradient(135deg, #b85c38, #e0ac69);
+        }
+
+        .theme-vif .pixelpulse {
+            background: linear-gradient(135deg, #ff6b6b, #feca57);
+        }
+
+        .theme-vif .technoweb {
+            background: linear-gradient(135deg, #ff8a00, #e52e71);
+        }
+
+        .theme-vif .voyage {
+            background: linear-gradient(135deg, #ff6b3d, #ffca1f);
+        }
+
+        .theme-vif .grocery {
+            background: linear-gradient(135deg, #718116, #feca57);
+        }
+
+        .theme-vif .noirscent {
+            background: linear-gradient(90deg, rgba(67, 65, 105, 1) 0%, rgba(186, 83, 8, 1) 100%);
+        }
+
+        .theme-vif .travelvideos {
+            background: linear-gradient(135deg, #8acdf7, #102557);
+        }
+
+        .theme-vif .eightyeight {
+            background: linear-gradient(135deg, #111111, #971717);
+        }
+
+        .theme-vif .steed {
+            background: linear-gradient(135deg, #f5a499, #111111);
+        }
+
+        .theme-vif .pastryworld {
+            background: linear-gradient(135deg, #ff8a5c, #ff3d7f);
+        }
+
+        .theme-vif .seo {
+            background: linear-gradient(135deg, #3da9f7, #0b2f66);
+        }
+
+        .theme-vif .iceworld {
+            background: linear-gradient(135deg, #3da9f7, #0b2f66);
+        }
+
+        .theme-vif .solarsystem {
+            background: linear-gradient(135deg, #0b1e3d, #1a3c6e, #4a7bbf);
+        }
+
+        .theme-vif .halloween {
+            background: linear-gradient(135deg, #0b0f1a, #3a1f47, #ff6f47);
+        }
+
+        .theme-vif .halloween2 {
+            background: linear-gradient(135deg, #0d0d0d, #5a2a6a);
+        }
+
+        .theme-vif .jink-yaik-xima {
+            background: linear-gradient(135deg, #0f1b3d, #d28c1c);
+        }
+
+        .theme-vif .barbershop {
+            background: linear-gradient(135deg, #3B2F2F, #7A4E2D, #D9A066);
+        }
+
+        .theme-vif .furnishme {
+            background: linear-gradient(135deg, #0f2a1f 0%, #174a34 40%, #1e5f42 70%, #0f2a1f 100%);
+        }
+
+        .theme-vif .fastshoes {
+            background: linear-gradient(90deg, #ffaa00, #ff8c00, #ff1a1a);
+        }
+
+        .theme-vif .captures {
+            background: linear-gradient(135deg, #0f0f0f 0%, #a4a0a0 40%, #2e2e2e 100%);
+        }
+
+        .theme-vif .petdoctor {
+            background: linear-gradient(135deg, #1E3A3A 0%, #3F7F72 50%, #CFF5E7 100%)
+        }
+
+        .theme-vif .thelights {
+            background: linear-gradient(135deg, #1932c1 0%, #ff3e7f 45%, #e1af18 100%);
+        }
+
+        .theme-vif .drone {
+            background: linear-gradient(135deg, #0A1A2F, #0E4D92, #4FC3F7);
+        }
+
+        .theme-vif .bookstore {
+            background: linear-gradient(135deg, #0F141A 0%, #2C3E50 45%, #D9E6F2 100%);
+        }
+
+        .theme-vif .jawa {
+            background: linear-gradient(135deg, #0D0D0D 0%, #1A1A1A 35%, #3A2F2F 70%, #7A4E2D 100%);
+        }
+
+        .theme-vif .hashtag {
+            background: linear-gradient(135deg, #f4d03f, #27ae60);
+        }
+
+        .theme-vif .simplyhome {
+            background: linear-gradient(135deg, #F4EFE7 0%, #D9C8B4 50%, #B89F8A 100%);
+        }
+
+        .theme-vif .traveltoor {
+            background: linear-gradient(135deg, #FAD7A1 0%, #F3A683 40%, #6E7FF3 100%);
+        }
+
+        .theme-vif .market {
+            background: linear-gradient(135deg, #F64F23 0%, #4C647C 40%, #EDC087 100%);
+        }
+
+        .theme-vif .watch {
+            background: linear-gradient(135deg, #A46C42 0%, #ECA877 40%, #1D221E 100%);
+        }
+
+        .theme-vif .glowing {
+            background: linear-gradient(135deg, #ce7735 0%, #376b0c 70%, #e7eee9 100%);
+        }
+
+        .theme-vif .yoga {
+            background: linear-gradient(135deg, #f7e9d7, #c8e6df, #8fb7a3);
+        }
+
+        .theme-vif .techpilot {
+            background: linear-gradient(135deg, #0f0f0f, #1a3c4a, #00ff88);
+        }
+
+        .theme-vif .expresso {
+            background: linear-gradient(135deg, #FB735A43, #E5CCAE, #6D5749);
+        }
+
+        .theme-vif .stilo {
+            background: linear-gradient(135deg, #1c1f26, #3a3f4b, #8a8f9b);
+        }
+
+        .theme-vif .fragrance {
+            background: linear-gradient(135deg, #f7d7e3, #e8a6c9, #b57fa4);
+        }
+
+        .theme-vif .woodzone {
+            background: linear-gradient(135deg, #4b2e17, #8c5a2b, #e0b07a);
+        }
+
+        .theme-vif .furnix {
+            background: linear-gradient(135deg, #8C6D5B, #FFEB81, #355057);
+        }
+
+        .theme-vif .mystic {
+            background: linear-gradient(135deg, #0d0d0f 0%, #2b1f3a 45%, #6a4c93 100%);
+        }
+
+        .theme-vif .gamefy {
+            background: linear-gradient(135deg, #ff512f, #dd2476);
+        }
+
+        .theme-vif .capitales {
+            background-image: linear-gradient(135deg, #4b79a1 0%, #283e51 40%, #dd4a56 100%);
+        }
+
+        .theme-vif .petit-dejeuner {
+            background: linear-gradient(135deg, #F7D08A, #FCEED3);
+        }
+
+
+        .theme-vif .crafti {
+            background: linear-gradient(135deg, #8C5A3C, #D9B08C);
+        }
+
+        .theme-vif .ryan {
+            background: linear-gradient(135deg, #e8d9c3, #c7a98a, #8b6f5a, #4a3f38);
+        }
+
+        .theme-vif .cozynestt {
+            background: linear-gradient(135deg, #f4c7a1, #e89a63, #c86a3a);
+        }
+
+        .theme-vif .futras {
+            background: linear-gradient(135deg, #0f1b2d, #1e3a5f, #3fa7d6);
+        }
+
+        .theme-vif .covid-19 {
+            background: linear-gradient(135deg, #e4f598, #b0f7d1, #b6e2c4);
+        }
+
+        .theme-vif .planetes {
+            background: linear-gradient(160deg, #1d0033 0%, #4b0f6f 50%, #ffb347 100%);
+        }
+
+        .theme-vif .barber {
+            background: linear-gradient(135deg, #1A1A1D 0%, #3C3C42 40%, #8A4B2A 100%)
+        }
+
+        .theme-vif .steakhouse {
+            background: linear-gradient(135deg, #2b0f0a 0%, #8a1f0f 40%, #d45a2a 100%)
+        }
+
+        .theme-vif .bakery {
+            background: linear-gradient(135deg, #f3d7a2 0%, #e8b974 50%, #c98a3a 100%)
+        }
+
+        .theme-vif .booken {
+            background: linear-gradient(135deg, #2a3d66 0%, #4f6fa3 50%, #8fb4e8 100%)
+        }
+
+        .theme-vif .pixology {
+            background: linear-gradient(135deg, #4A00E0, #8E2DE2, #FF6F61)
+        }
+
+
+        .theme-vif .card a {
+            color: #fff;
+        }

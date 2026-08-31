@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Shoes</title>
+
+    <!-- boostrap css link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- font awsome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+    <!-- custome style link  -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- lets start  -->
+
+    <header class="header">
+        <div class="topbar">
+            <div class="container">
+                <div class="offer-banner">
+                    <p><a href="">Log In</a></p>
+                    <p>/</p>
+                    <p><a href="">Sign Up</a></p>
+                    <p>/</p>
+                    <p><a href="">My Account</a></p>
+                </div>
+                <div class="top-social">
+                    <ul>
+                        <li><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+                        <li><a href=""><i class="fa-solid fa-heart"></i></a></li>
+                        <li><a href=""><i class="fa-solid fa-user"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="meanu-sec py-3">
+            <div class="container">
+                <div class="logo"><img src="imgs/logo.png" alt=""></div>
+                <div class="desk-menu">
+                    <ul class="flex-menus">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Arrivals</a></li>
+                        <li><a href="">Shop</a></li>
+                        <li><a href="">Trends</a></li>
+                        <li><a href="">Blogs</a></li>
+                        <li><a href="">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="toggle-menu">
+                    <a class="btn toggle-icon" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                        aria-controls="offcanvasExample">
+                        <!-- we mistakenly use pro icon  -->
+                        <i class="fa-solid fa-bars-staggered"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Using that off canvas for interactive menus  -->
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menus</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="list-menus">
+                <li><a href="">Home</a></li>
+                <li><a href="">Arrivals</a></li>
+                <li><a href="">Shop</a></li>
+                <li><a href="">Trends</a></li>
+                <li><a href="">Blogs</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- lets done  -->
+
+    <section class="banner-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="banner-text">
+                        <span>The Sale will take place this week</span>
+                        <h3>Up to 50% Off <br> First Order</h3>
+                        <p>Step into bold energy this week with vibrant Fast Shoes — lightweight comfort, striking colors, and exclusive savings on your first order.</p>
+                        <div class="nav-btn mt-4"><a href="">Shop Now</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-sec py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="feature-flex">
+                        <i class="fa-solid fa-shield"></i>
+                        <div class="">
+                            <p>100% Secure Payments</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="feature-flex">
+                        <i class="fa-solid fa-headset"></i>
+                        <div class="">
+                            <p>24/7 Customer Support</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="feature-flex">
+                        <i class="fa-solid fa-rotate-left"></i>
+                        <div class="">
+                            <p>30 days Return</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="feature-flex">
+                        <i class="fa-solid fa-truck-fast"></i>
+                        <div class="">
+                            <p>Free Shipping</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="deal-sec bg-color py-5">
+        <div class="container">
+            <div class="d-flex justify-content-center">
+                <div class="pe-5 text-center">
+                    <h3 class="title">Best Deals of this Week&nbsp;!</h3>
+                    <p>Discover this week’s top sneaker deals, blending style, comfort and performance.</p>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-lg-3">
+                    <div class="product-box">
+                        <div class="pr-img">
+                            <div class="img">
+                                <img src="imgs/1.jpg" alt="shoes">
+                            </div>
+                            <div class="tags">
+                                <div class="nav-btn"><a href="">Add to Cart</a></div>
+                                <ul class="share-pr">
+                                    <li><a href=""><i class="fa-solid fa-heart"></i></a></li>
+                                    <li><a href=""><i class="fa-solid fa-bag-shopping"></i></a></li>
+                                    <li><a href=""><i class="fa-solid fa-eye"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pr-txt">
+                            <div class="price">$99.00</div>
+                            <h6>Sports Delight Sneakers</h6>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="product-box">
+                        <div class="pr-img">
+                            <div class="img">
+                                <img src="imgs/2.jpg" alt="shoes">
+                            </div>
+                            <div class="tags">
+                                <div class="nav-btn"><a href="">Add to Cart</a></div>
+                                <ul class="share-pr">
+                                    <li><a href=""><i class="fa-solid fa-heart"></i></a></li>
+                                    <li><a href=""><i class="fa-solid fa-bag-shopping"></i></a></li>
+                                    <li><a href=""><i class="fa-solid fa-eye"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pr-txt">
+                            <div class="price">$89.00</div>
+                            <h6>Urban Pulse Runners</h6>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="product-box">
+                        <div class="pr-img">
+                            <div class="img">
+                                <img src="imgs/3.jpg" alt="shoes">
+                            </div>
+                            <div class="tags">
+                                <div class="nav-btn"><a href="">Add to Cart</a></div>
+                                <ul class="share-pr">
+                                    <li><a href=""><i class="fa-solid fa-heart"></i></a></li>
+                                    <li><a href=""><i class="fa-solid fa-bag-shopping"></i></a></li>
+                                    <li><a href=""><i class="fa-solid fa-eye"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pr-txt">
+                            <div class="price">$109.00</div>
+                            <h6>Sky Motion Flex </h6>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="product-box">
+                        <div class="pr-img">
+                            <div class="img">
+                                <img src="imgs/4.jpg" alt="shoes">
+                            </div>
+                            <div class="tags">
+                                <div class="nav-btn"><a href="">Add to Cart</a></div>
+                                <ul class="share-pr">
+                                    <li><a href=""><i class="fa-solid fa-heart"></i></a></li>
+                                    <li><a href=""><i class="fa-solid fa-bag-shopping"></i></a></li>
+                                    <li><a href=""><i class="fa-solid fa-eye"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pr-txt">
+                            <div class="price">$95.00</div>
+                            <h6>Thunder Step Velocity</h6>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="product-box">
+                        <div class="pr-img">
+                            <div class="img">
+                                <img src="imgs/5.jpg" alt="shoes">
+                            </div>
+                            <div class="tags">
+                                <div class="nav-btn"><a href="">Add to Cart</a></div>
+                                <ul class="share-pr">
+                                    <li><a href=""><i class="fa-solid fa-heart"></i></a></li>
+                                    <li><a href=""><i class="fa-solid fa-bag-shopping"></i></a></li>
+                                    <li><a href=""><i class="fa-solid fa-eye"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pr-txt">
+                            <div class="price">$120.00</div>
+                            <h6>Aero Lite Horizon</h6>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="product-box">
+                        <div class="pr-img">
+                            <div class="img">
+                                <img src="imgs/6.jpg" alt="shoes">
+                            </div>
+                            <div class="tags">
+                                <div class="nav-btn"><a href="">Add to Cart</a></div>
+                                <ul class="share-pr">
+                                    <li><a href=""><i class="fa-solid fa-heart"></i></a></li>
+                                    <li><a href=""><i class="fa-solid fa-bag-shopping"></i></a></li>
+                                    <li><a href=""><i class="fa-solid fa-eye"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pr-txt">
+                            <div class="price">$85.00</div>
+                            <h6>Neon Glide React</h6>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="product-box">
+                        <div class="pr-img">
+                            <div class="img">
+                                <img src="imgs/7.jpg" alt="shoes">
+                            </div>
+                            <div class="tags">
+                                <div class="nav-btn"><a href="">Add to Cart</a></div>
+                                <ul class="share-pr">
+                                    <li><a href=""><i class="fa-solid fa-heart"></i></a></li>
+                                    <li><a href=""><i class="fa-solid fa-bag-shopping"></i></a></li>
+                                    <li><a href=""><i class="fa-solid fa-eye"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pr-txt">
+                            <div class="price">$112.00</div>
+                            <h6>Trail Burst Momentum</h6>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="product-box">
+                        <div class="pr-img">
+                            <div class="img">
+                                <img src="imgs/8.jpg" alt="shoes">
+                            </div>
+                            <div class="tags">
+                                <div class="nav-btn"><a href="">Add to Cart</a></div>
+                                <ul class="share-pr">
+                                    <li><a href=""><i class="fa-solid fa-heart"></i></a></li>
+                                    <li><a href=""><i class="fa-solid fa-bag-shopping"></i></a></li>
+                                    <li><a href=""><i class="fa-solid fa-eye"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pr-txt">
+                            <div class="price">$98.00</div>
+                            <h6>Wave Sprint Nova</h6>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="trend-sec py-5">
+        <div class="container-fluid">
+            <h3 class="title text-center">Trending Now</h3>
+
+            <div class="row mt-5">
+                <div class="col-lg-4">
+                    <div class="trend-box">
+                        <img src="imgs/trend-1.jpg" alt="">
+                        <h4>Kid's Shoe</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="trend-box">
+                        <img src="imgs/trend-2.jpg" alt="">
+                        <h4>Women's Shoe</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="trend-box">
+                        <img src="imgs/trend-3.jpg" alt="">
+                        <h4>Men's Shoe</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- we gonna use same section of products with different imgs -->
+
+    <!-- we copy that & paste it here -->
+
+    <section class="deal-sec bg-color py-5">
+        <div class="container">
+            <div class="d-flex justify-content-center">
+                <div class="pe-5 text-center">
+                    <h3 class="title">Top Sales</h3>
+                    <p>Explore our top‑selling sneakers delivering unmatched comfort, style, and performance.</p>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-lg-3">
+                    <div class="product-box">
+                        <div class="pr-img">
+                            <div class="img">
+                                <img src="imgs/pr-1.png" alt="shoes">
+                            </div>
+                            <div class="tags">
+                                <div class="nav-btn"><a href="">Add to Cart</a></div>
+                                <ul class="share-pr">
+                                    <li><a href=""><i class="fa-solid fa-heart"></i></a></li>
+                                    <li><a href=""><i class="fa-solid fa-bag-shopping"></i></a></li>
+                                    <li><a href=""><i class="fa-solid fa-eye"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pr-txt">
+                            <div class="price">$129.00</div>
+                            <h6>Velocity Prime Runner</h6>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="product-box">
+                        <div class="pr-img">
+                            <div class="img">
+                                <img src="imgs/pr-2.png" alt="shoes">
+                            </div>
+                            <div class="tags">
+                                <div class="nav-btn"><a href="">Add to Cart</a></div>
+                                <ul class="share-pr">
+                                    <li><a href=""><i class="fa-solid fa-heart"></i></a></li>
+                                    <li><a href=""><i class="fa-solid fa-bag-shopping"></i></a></li>
+                                    <li><a href=""><i class="fa-solid fa-eye"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pr-txt">
+                            <div class="price">$115.00</div>
+                            <h6>Solar Wave Sprint</h6>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="product-box">
+                        <div class="pr-img">
+                            <div class="img">
+                                <img src="imgs/pr-3.png" alt="shoes">
+                            </div>
+                            <div class="tags">
+                                <div class="nav-btn"><a href="">Add to Cart</a></div>
+                                <ul class="share-pr">
+                                    <li><a href=""><i class="fa-solid fa-heart"></i></a></li>
+                                    <li><a href=""><i class="fa-solid fa-bag-shopping"></i></a></li>
+                                    <li><a href=""><i class="fa-solid fa-eye"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pr-txt">
+                            <div class="price">$139.00</div>
+                            <h6>Hyper Stride Fusion</h6>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="product-box">
+                        <div class="pr-img">
+                            <div class="img">
+                                <img src="imgs/pr-4.png" alt="shoes">
+                            </div>
+                            <div class="tags">
+                                <div class="nav-btn"><a href="">Add to Cart</a></div>
+                                <ul class="share-pr">
+                                    <li><a href=""><i class="fa-solid fa-heart"></i></a></li>
+                                    <li><a href=""><i class="fa-solid fa-bag-shopping"></i></a></li>
+                                    <li><a href=""><i class="fa-solid fa-eye"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pr-txt">
+                            <div class="price">$122.00</div>
+                            <h6>Pulse Shift Aero</h6>
+                            <div class="rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 showcat-sec bg-color">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="show-product">
+                        <img src="imgs/show-1.png" alt="">
+                        <div class="show-txt">
+                            <h6>Walk with Assurance</h6>
+                            <p>Experience steady comfort and confident steps with sneakers crafted for reliability.</p>
+                            <div class="nav-btn mt-4"><a href="">Shop Now</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="show-product">
+                        <img src="imgs/show-2.png" alt="">
+                        <div class="show-txt">
+                            <h6>Fashionably Stepping Ahead !</h6>
+                            <p>Move boldly in trend‑forward sneakers designed to elevate every modern stride.</p>
+                            <div class="nav-btn mt-4"><a href="">Shop Now</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lets'make testimonial -->
+
+    <section class="py-5 testimonial-sec">
+        <div class="container">
+            <h3 class="title text-center">What Our Client Say</h3>
+            <div id="carouselExample" class="carousel slide mt-5">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="testimonial-box">
+                            <p>I’m genuinely impressed with my new Fast Shoes. They’re incredibly light, supportive, and stylish enough for everyday wear. The delivery was fast, the fit perfect, and I finally feel comfortable walking long distances without any discomfort.</p>
+                            <div class="test-info">
+                                <img src="imgs/test-1.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial-box">
+                            <p>Fast Shoes exceeded my expectations. The cushioning feels amazing, the design looks sharp, and the quality is outstanding for the price. I wear them daily, and they’ve completely transformed my comfort during work, errands, and weekend activities.</p>
+                            <div class="test-info">
+                                <img src="imgs/test-2.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"><i class="fa-solid fa-circle-arrow-left"></i></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"><i class="fa-solid fa-circle-arrow-right"></i></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Let's make blog -->
+    <section class="py-5 blog-sec">
+        <div class="container">
+            <h3 class="title text-center">From the Blog</h3>
+            <div class="row mt-5">
+                <div class="col-lg-4">
+                    <div class="blog-box">
+                        <div class="blog-img">
+                            <img src="imgs/blog-1.jpg" alt="">
+                        </div>
+                        <div class="blog-txt">
+                            <div class="date mb-2">19 feb 2025</div>
+                            <h4>Trendsetters on the Move</h4>
+                            <p>“Fresh insights revealing how modern sneakers redefine comfort, confidence, and style daily.”</p>
+                            <a href="" class="blog-ar"> Read More <i class="fa-solid fa-angles-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="blog-box">
+                        <div class="blog-img">
+                            <img src="imgs/blog-2.jpg" alt="">
+                        </div>
+                        <div class="blog-txt">
+                            <div class="date mb-2">19 feb 2025</div>
+                            <h4>Colors That Inspire</h4>
+                            <p>“Explore bold sneaker palettes shaping vibrant looks and energizing everyday fashion.”</p>
+                            <a href="" class="blog-ar"> Read More <i class="fa-solid fa-angles-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="blog-box">
+                        <div class="blog-img">
+                            <img src="imgs/blog-3.jpg" alt="">
+                        </div>
+                        <div class="blog-txt">
+                            <div class="date mb-2">19 feb 2025</div>
+                            <h4>Steps Toward Innovation</h4>
+                            <p>“Discover new technologies enhancing performance, durability, and comfort in every stride.”</p>
+                            <a href="" class="blog-ar"> Read More <i class="fa-solid fa-angles-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Make footer -->
+
+    <footer class="footer bg-color">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="footer-box">
+                        <div class="footer-img mb-3"><img src="imgs/logo.png" alt=""></div>
+                    </div>
+                    <p>Find essential links, helpful services, and direct contact for seamless sup&shy;port.</p>
+                    <div class="pay-img"><img src="imgs/pay.png" alt=""></div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="f-title">
+                        <h5>Useful Links</h5>
+                    </div>
+                    <div class="footer-links">
+                        <ul>
+                            <li><a href="">Secure Shopping</a></li>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Products</a></li>
+                            <li><a href="">Delivery</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="f-title">
+                        <h5>Customer Services</h5>
+                    </div>
+                    <div class="footer-links">
+                        <ul>
+                            <li><a href="">Order Tracking</a></li>
+                            <li><a href="">Returns & Exchanges</a></li>
+                            <li><a href="">FAQ's</a></li>
+                            <li><a href="">Help Canter</a></li>
+                            <li><a href="">Email Support</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="f-title">
+                        <h5>Company Details</h5>
+                    </div>
+                    <div class="footer-content">
+                        <i class="fa-solid fa-phone"></i>
+                        <div class="">
+                            <a href="tel:">12345 67890</a>
+                        </div>
+                    </div>
+                    <div class="footer-content">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div class="">
+                            <a href="mailto:">info@codingwing.com</a>
+                        </div>
+                    </div>
+                    <div class="footer-content">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div class="">
+                            <a href="#">1250 Sunset Ridge Avenue, <br>Los Angeles CA 90028.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <section class="copyright">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <p>copyright @ 2025 coding wing. All rights reserved.</p>
+                <ul class="social-icons">
+                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer de remerciements au concepteur et Copilote pour ses commentaires en anglais -->
+    <div id="thank-you-footer">
+        <span class="plume">🪶</span>
+        Remerciements à Coding Wing, le concepteur de ce tutoriel à consulter sur YouTube
+        <a href="https://www.youtube.com/watch?v=N9U_mc4UmI8" target="_blank">ici</a>. <br> Remerciements à Copilote pour tous les commentaires rédigés en anglais. — Chris Blues —
+    </div>
+
+
+    <!-- we have to use js too -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

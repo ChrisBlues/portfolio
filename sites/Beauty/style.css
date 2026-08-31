@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background: url(./modele.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+section {
+    position: absolute;
+    top: 50px;
+    right: 6%;
+}
+
+.menu {
+    background-color: #ffa1a1;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    z-index: 3;
+    position: relative;
+}
+
+.menu::before {
+    position: absolute;
+    left: 10px;
+    content: "";
+    height: 4px;
+    width: 20px;
+    background-color: #000;
+    border-radius: 6px;
+    transform: translateY(-5px);
+}
+
+.menu::after {
+    position: absolute;
+    left: 10px;
+    content: "";
+    height: 4px;
+    width: 40px;
+    background-color: #000;
+    border-radius: 6px;
+    transform: translateY(5px);
+}
+
+.content {
+    width: 88%;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.logo {
+    padding-top: 50px;
+}
+
+.logo h2 {
+    font-family: "Dela Gothic One", cursive;
+    font-size: 40px;
+    color: #ffa1a1;
+    font-weight: 100;
+    letter-spacing: 3px;
+}
+
+.content hr {
+    border: 0;
+    height: 6px;
+    max-width: 280px;
+    margin-top: 8px;
+    background-color: #ffa1a1;
+    border-radius: 6px;
+}
+
+.content h1 {
+    font-size: 120px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: capitalize;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    letter-spacing: 3px;
+    line-height: 120px;
+}
+
+.content p {
+    max-width: 300px;
+    color: rgb(216, 216, 216);
+    letter-spacing: 1px;
+    line-height: 20px;
+    font-size: 12px;
+}
+
+.content .btn {
+    text-decoration: 0;
+    border: 1px solid #fff;
+    color: #fff;
+    letter-spacing: 1px;
+    padding: 15px 14px;
+    display: inline-block;
+    margin-top: 50px;
+    border-radius: 30px;
+    text-transform: capitalize;
+}
+
+.content .btn:hover {
+    background-color: #ffa1a1;
+    color: #000;
+    border: ipx solid #ffa1a1;
+    transition: 0.5s;
+}
+
+.view_more_btn {
+    float: right;
+}
+
+.sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 29%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    backdrop-filter: blur(6px);
+}
+
+/* Responsive */
+@media (max-width:687px) {
+
+    .sidebar {
+        width: 100%;
+        backdrop-filter: blur(3px);
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .content .logo h2 {
+        font-size: 20px;
+    }
+
+    .content hr {
+        height: 4px;
+        max-width: 150px;
+    }
+
+    .content h1 {
+        font-size: 90px;
+        margin: 70px 0
+    }
+}

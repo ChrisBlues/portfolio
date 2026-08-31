@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Pulse</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ========================= Section nav ========================= -->
+    <nav>
+        <div class="nav__logo"><a href="#">PixelPulse</a></div>
+        <ul class="nav__links" id="nav-links">
+            <li class="link"><a href="#home">Accueil</a></li>
+            <li class="link"><a href="#about">À propos</a></li>
+            <li class="link"><a href="#portfolio">Portfolio</a></li>
+            <li class="link"><a href="#client">Clients</a></li>
+            <li class="link"><a href="#news">News</a></li>
+            <li class="link"><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav__menu__btn" id="menu-btn">
+            <span><i class="ri-menu-3-line"></i></span>
+        </div>
+    </nav>
+
+    <!-- Section nav ended -->
+
+    <!-- ====================== Section header ====================== -->
+
+    <header class="section__container header__container" id="home">
+        <div class="header__content">
+            <h1>Nous sommes une agence de création numérique</h1>
+            <div class="header__content__details">
+                <p>Chez PixelPulse, nous sommes passionnés par la création d'expériences numériques captivantes,
+                    inspirantes et porteuses de résultats. En tant qu'agence digitale, nous sommes spécialisés dans la
+                    traduction de la vision de votre marque en histoires en ligne captivantes.</p>
+                <button class="btn">Explore</button>
+            </div>
+        </div>
+        <div class="header__image">
+            <img src="./assets/header-1.jpg" alt="Agence de création numérique">
+            <img src="./assets/header-2.jpg" alt="Carnets, stylos, clavier d'ordinateur">
+        </div>
+    </header>
+
+    <!-- Section header ended -->
+
+    <!-- ====================== Section About ====================== -->
+    <section class="section__container about__container" id="about">
+        <div class="about__header">
+            <div class="about__image">
+                <img src="./assets/about.jpg" alt="Secrétaire">
+            </div>
+            <div class="about__content">
+                <p class="section__subheader">À propos de nous</p>
+                <h2 class="section__header">Concevoir & développer de meilleures solutions</h2>
+                <p class="paragraph">Notre équipe d'esprits créatifs, de développeurs férus de technologie et de
+                    stratèges numériques s'associe pour vous proposer des solutions complètes couvrant la conception
+                    web, le développement d'applications mobiles, le marketing numérique et bien plus encore. Nous nous
+                    efforçons de repousser les limites de la créativité et de la technologie pour vous aider à vous
+                    démarquer dans le paysage numérique.</p>
+                <button class="btn">En savoir plus</button>
+            </div>
+        </div>
+        <div class="about__grid">
+            <div class="about__card">
+                <span><i class="ri-pen-nib-line"></i></span>
+                <div>
+                    <h4>Conception</h4>
+                    <p>Nos concepteurs et créateurs de contenu s'engagent à fournir un contenu numérique visuellement
+                        époustouflant et attrayant.</p>
+                </div>
+            </div>
+
+            <div class="about__card">
+                <span><i class="ri-layout-masonry-line"></i></span>
+                <div>
+                    <h4>Développement</h4>
+                    <p>Nous restons à la pointe des avancées technologiques, garantissant que votre présence numérique
+                        soit belle et performante.</p>
+                </div>
+            </div>
+
+            <div class="about__card">
+                <span><i class="ri-checkbox-line"></i></span>
+                <div>
+                    <h4>Tests et assurance qualité</h4>
+                    <p>Nous comprenons que votre présence numérique ne doit pas seulement être esthétique ; elle doit
+                        également générer du trafic, de l’engagement et des conversions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  Section About ended  -->
+
+    <!-- ====================== Section portfolio  ====================== -->
+
+    <section class="section__container portfolio__container" id="portfolio">
+        <div class="portfolio__header">
+            <div>
+                <p class="section__subheader">Portfolio</p>
+                <h2 class="section__header">Nos études de cas</h2>
+            </div>
+        </div>
+        <p class="paragraph">Chaque étude de cas offre un aperçu de notre processus créatif, des défis que nous avons
+            surmontés et des résultats tangibles que nous avons obtenus pour nos clients.</p>
+        <a href="#" class="btn__link">Tout voir <span><i class="ri-arrow-right-line"></i></span></a>
+        <div class="portfolio__grid">
+            <div class="portfolio__card">
+                <img src="./assets/portfolio-1.jpg" alt="Portfolio">
+            </div>
+
+            <div class="portfolio__card">
+                <img src="./assets/portfolio-2.jpg" alt="Portfolio">
+            </div>
+
+            <div class="portfolio__card">
+                <img src="./assets/portfolio-3.jpg" alt="Portfolio">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Section portfolio ended -->
+
+    <!-- ====================== Section client ====================== -->
+    <section class="section__container client__container" id="client">
+        <div class="client__header">
+            <div>
+                <p class="section__subheader">Témoignages</p>
+                <h2 class="section__header">Ce que les clients disent de nous</h2>
+            </div>
+            <div>
+                <a href="#" class="btn__link">Voir tout <span><i class="ri-arrow-right-line"></i></span></a>
+            </div>
+        </div>
+
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                    <div class="client__card">
+                        <img src="assets/profile-pic-1.jpg" alt="Client">
+                        <div>
+                            <h4>Andress Mount</h4>
+                            <div class="client__ratings">
+                                <span><i class="ri-star-fill"></i></span>
+                                <span><i class="ri-star-fill"></i></span>
+                                <span><i class="ri-star-fill"></i></span>
+                                <span><i class="ri-star-fill"></i></span>
+                                <span><i class="ri-star-line"></i></span>
+                            </div>
+                            <p>J'hésitais quant à l'intérêt du marketing numérique pour mon entreprise locale, mais
+                                PixelPulse m'a prouvé le contraire. Ils ont amélioré notre visibilité dans les
+                                recherches locales et nous attirons désormais plus de clients que jamais.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                    <div class="client__card">
+                        <img src="assets/profile-pic-2.jpg" alt="Client">
+                        <div>
+                            <h4>Sarah Anderson</h4>
+                            <div class="client__ratings">
+                                <span><i class="ri-star-fill"></i></span>
+                                <span><i class="ri-star-fill"></i></span>
+                                <span><i class="ri-star-fill"></i></span>
+                                <span><i class="ri-star-fill"></i></span>
+                                <span><i class="ri-star-line"></i></span>
+                            </div>
+                            <p>Travailler avec PixelPulse a révolutionné notre entreprise. Leur équipe a conçu un site
+                                web exceptionnel et élaboré un plan de marketing numérique stratégique qui a
+                                considérablement renforcé notre présence en ligne.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="swiper-slide">
+                    <div class="client__card">
+                        <img src="assets/profile-pic-3.jpg" alt="client" />
+                        <div>
+                            <h4>John Roberts</h4>
+                            <div class="client__ratings">
+                                <span><i class="ri-star-fill"></i></span>
+                                <span><i class="ri-star-fill"></i></span>
+                                <span><i class="ri-star-fill"></i></span>
+                                <span><i class="ri-star-fill"></i></span>
+                                <span><i class="ri-star-fill"></i></span>
+                            </div>
+                            <p>
+                                En tant que fondateur de startup, j'avais besoin d'un partenaire numérique de confiance
+                                pour donner vie à ma vision. PixelPulse a répondu à cet appel. Ils ont créé une
+                                application conviviale, parfaitement adaptée à notre marque. </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="swiper-slide">
+                    <div class="client__card">
+                        <img src="assets/profile-pic-4.jpg" alt="client" />
+                        <div>
+                            <h4>David Ramirez</h4>
+                            <div class="client__ratings">
+                                <span><i class="ri-star-fill"></i></span>
+                                <span><i class="ri-star-fill"></i></span>
+                                <span><i class="ri-star-fill"></i></span>
+                                <span><i class="ri-star-fill"></i></span>
+                                <span><i class="ri-star-half-fill"></i></span>
+                            </div>
+                            <p>
+                                PixelPulse a fait de son mieux pour aider notre association à établir une forte présence
+                                en ligne. Ils ont conçu un magnifique site web et nous ont aidés à mettre en place des
+                                campagnes de financement en ligne efficaces. </p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+        </div>
+    </section>
+
+    <!-- Section client ended -->
+
+
+    <!-- ====================== Section news ====================== -->
+
+    <section class="section__container news__container" id="news">
+        <p class="section__subheader">News</p>
+        <h2 class="section__header">Nos actualités</h2>
+        <div class="news__grid">
+
+            <div class="news__card">
+                <img src="./assets/news-1.jpg" alt="News" />
+                <div>
+                    <h4>L'art de la conception Web centrée sur l'utilisateur</h4>
+                    <p>Découvrez les principes et techniques de création de conceptions Web centrées sur l’utilisateur
+                        qui donnent la priorité aux besoins et aux préférences de votre public cible.</p>
+                    <a href="#" class="btn__link">Tout voir <span><i class="ri-arrow-right-line"></i></span></a>
+                </div>
+            </div>
+
+            <div class="news__card">
+                <img src="./assets/news-2.jpg" alt="News" />
+                <div>
+                    <h4>Maîtrise de l'approche mobile en premier lieu</h4>
+                    <p>Découvrez pourquoi l'optimisa&shy;tion mobile est cruciale, explorez les meilleures pratiques et
+                        com&shy;prenez comment créer des con&shy;ceptions réactives.</p>
+                    <a href="#" class="btn__link">Tout voir <span><i class="ri-arrow-right-line"></i></span></a>
+                </div>
+            </div>
+
+            <div class="news__card">
+                <img src="./assets/news-3.jpg" alt="News" />
+                <div>
+                    <h4>Le marketing numérique démystifié</h4>
+                    <p>Découvrez les secrets des stra&shy;tégies de marketing numérique efficaces qui peuvent améliorer
+                        votre
+                        présence en ligne.</p>
+                    <a href="#" class="btn__link">Tout voir <span><i class="ri-arrow-right-line"></i></span></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Section news ended -->
+
+    <!-- ====================== Section contact ====================== -->
+    <section class="contact" id="contact">
+        <div class="section__container contact__container">
+            <h2 class="section__header">Souhaitez-vous commencer votre projet avec nous ?</h2>
+            <div class="contact__btn">
+                <button class="btn">Contactez-nous</button>
+            </div>
+        </div>
+    </section>
+    <!-- Section contact ended -->
+
+    <!-- ====================== Footer ====================== -->
+    <footer class="section__container footer__container">
+        <div class="footer__col">
+            <h5><a href="#">PixelPulse</a></h5>
+        </div>
+        <div class="footer__col">
+            <h4>Contact</h4>
+            <p>402, St. Street, NY City</p>
+            <p>+91 9876543210</p>
+            <p>pixelpulse@gmail.com</p>
+        </div>
+        <div class="footer__col">
+            <h4>À propos de nous</h4>
+            <p>Que vous soyez une startup cherchant à se démarquer ou une marque établie en quête d'un lifting
+                numérique, PixelPulse est votre partenaire dédié pour naviguer dans l'univers numérique.</p>
+        </div>
+
+        <div class="footer__col">
+            <h4>Souscrire</h4>
+            <form action="/">
+                <input type="text" placeholder="Votre e-mail">
+                <button><i class="ri-send-plane-2-fill"></i></button>
+            </form>
+
+            <div class="footer__socials">
+                <h4>Nous suivre</h4>
+                <div>
+                    <a href="#"><i class="ri-facebook-box-fill"></i></a>
+                    <a href="#"><i class="ri-linkedin-box-fill"></i></a>
+                    <a href="#"><i class="ri-instagram-line"></i></a>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+
+    <div class="footer__bar">
+        Copyright © 2023 Web Design Mastery. All rights reserved.
+    </div>
+
+    <!-- Footer de remerciements à Web Design Mastery -->
+    <div id="thank-you-footer">
+        <span class="plume">🪶</span>
+        Remerciements à Web Design Mastery, le concepteur de ce tutoriel à consulter sur YouTube
+        <a href="https://www.youtube.com/watch?v=jmgaAv-v-QQ" target="_blank">ici</a>. — Chris Blues —
+    </div>
+
+
+
+    <!-- Footer ended -->
+
+    <script src="swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="main.js"></script>
+
+
+
+</body>
+
+</html>

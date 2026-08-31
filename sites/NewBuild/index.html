@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewBuild</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">New<span class="text-warning">Build</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li>
+                        <div class="info-button">
+                            <button type="button" class="btn btn-outline-secondary btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#infoModal">
+                                Avertissement
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </div>
+
+
+    <!-- <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel"> --> <!-- => Défilement automatique -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-interval="false">         <!-- => Arrêt du défilement autmatique -->
+
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="Images/home-1.jpg" class="d-block w-100" id="home" alt="...">
+                <div class="carousel-caption">
+                    <h5>La maison de vos rêves</h5>
+                    <p>Conçue sur mesure, pensée pour vous, elle incarne confort, élégance et aspirations personnelles
+                        durables.</p>
+                    <p><a href="#" class="btn btn-warning mt-3">En savoir plus</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Images/home-2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                    <h5>Engagés pour l'excellence</h5>
+                    <p>Chaque projet reflète notre rigueur, notre passion et notre exigence pour une qualité sans
+                        compromis.</p>
+                    <p><a href="#" class="btn btn-warning mt-3">En savoir plus</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="Images/home-3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                    <h5>L'art de construire juste</h5>
+                    <p>Nous bâtissons avec précision, respect et sens, pour des lieux équilibrés et profondément
+                        humains.</p>
+                    <p><a href="#" class="btn btn-warning mt-3">En savoir plus</a></p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- about section -->
+
+    <section id="about" class="about section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-12">
+                    <div class="about-img">
+                        <img src="Images/about.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+                    <div class="about-text">
+                        <h2>Offrir des services de la <br>meilleure qualité possible</h2>
+                        <p>Notre entreprise s’engage à offrir des services architecturaux d’une qualité irréprochable,
+                            alliant expertise, écoute et exigence. Chaque projet est pensé avec soin, dans le respect
+                            des normes, des délais et des attentes du client. L’excellence guide notre démarche, pour
+                            bâtir des espaces durables, fonctionnels et inspirants.
+                        </p>
+                        <a href="#" class="btn btn-warning">En savoir plus</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="services" class="services section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center pb-5">
+                        <h2>Nos services</h2>
+                        <p>Qualité, durabilité et intégrité guident <br> chaque projet que nous réalisons.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-white text-center bg-dark pb-2">
+                        <div class="card-body">
+                            <i class="bi bi-subtract"></i>
+                            <h3 class="card-title">Qualité</h3>
+                            <p class="lead">Chaque réalisation est pensée avec exigence, précision et soin. Matériaux
+                                nobles, finitions maîtrisées et respect des attentes du client garantissent une
+                                architecture fiable,
+                                élégante et durable, dans nos intentions.</p>
+                            <button class="btn btn-warning text-dark">Informez-vous</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-white text-center bg-dark pb-2">
+                        <div class="card-body">
+                            <i class="bi bi-slack"></i>
+                            <h3 class="card-title">Durabilité</h3>
+                            <p class="lead">Nous concevons des bâtiments respectueux de l’environnement, économes en
+                                énergie et pensés pour durer. L’architecture devient responsable, tournée vers l’avenir
+                                et les générations futures.</p>
+                            <button class="btn btn-warning text-dark">Informez-vous</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-white text-center bg-dark pb-2">
+                        <div class="card-body">
+                            <i class="bi bi-playstation"></i>
+                            <h3 class="card-title">Intégrité</h3>
+                            <p class="lead">Transparence, respect des engagements et éthique guident notre pratique.
+                                Nous bâtissons avec honnêteté, loyauté et rigueur, pour une confiance durable entre
+                                architectes et clients.</p>
+                            <button class="btn btn-warning text-dark">Informez-vous</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="portfolio" class="portfolio section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center pb-5">
+                        <h2>Nos projets</h2>
+                        <p>Nous concevons des projets durables, esthétiques et fonctionnels,<br> adaptés aux besoins
+                            humains et contextes urbains.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-light text-center bg-white pb-2">
+                        <div class="card-body text-dark">
+                            <div class="img-area mb-4">
+                                <img src="Images/project-1.jpg" alt="" class="img-fluid">
+                            </div>
+                            <h3 class="card-title">Innovation durable</h3>
+                            <p class="lead">Nous intégrons des solutions écologiques et responsables pour bâtir des
+                                immeubles respectueux de l’environnement et des usages futurs.</p>
+                            <button class="btn bg-warning text-dark">En savoir plus</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-light text-center bg-white pb-2">
+                        <div class="card-body text-dark">
+                            <div class="img-area mb-4">
+                                <img src="Images/project-2.jpg" alt="" class="img-fluid">
+                            </div>
+                            <h3 class="card-title">Qualité urbaine</h3>
+                            <p class="lead">Chaque projet valorise le tissu urbain, favorise le bien-être collectif et
+                                s’inscrit harmonieusement dans son contexte architectural et social.</p>
+                            <button class="btn bg-warning text-dark">En savoir plus</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-light text-center bg-white pb-2">
+                        <div class="card-body text-dark">
+                            <div class="img-area mb-4">
+                                <img src="Images/project-3.jpg" alt="" class="img-fluid">
+                            </div>
+                            <h3 class="card-title">Fonctionnalité évolutive</h3>
+                            <p class="lead">Nos espaces sont pensés pour s’adapter aux besoins changeants, offrant
+                                flexibilité, confort et pérennité dans l’usage quotidien des bâtiments.</p>
+                            <button class="btn bg-warning text-dark">En savoir plus</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- team section -->
+    <section id="team" class="team section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center pb-5">
+                        <h2>Notre équipe</h2>
+                        <p>Une équipe experte, engagée, équilibrée, guidée par passion et exigence architecturale.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <img src="Images/team-1.jpg" alt="" class="img-fluid rounded-circle">
+                            <h3 class="card-title py-2">Marc Delorme</h3>
+                            <p class="card-text">Architecte expérimenté, il dirige l’entreprise avec vision, rigueur et
+                                passion pour une architecture durable et stratégiquement maîtrisée.</p>
+
+                            <p class="socials">
+                                <i class="bi bi-twitter text-dark mx-1"></i>
+                                <i class="bi bi-facebook text-dark mx-1"></i>
+                                <i class="bi bi-linkedin text-dark mx-1"></i>
+                                <i class="bi bi-instagram text-dark mx-1"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <img src="Images/team-2.jpg" alt="" class="img-fluid rounded-circle">
+                            <h3 class="card-title py-2">Julien Moreau</h3>
+                            <p class="card-text">Spécialiste technique, il intègre innovation, performance énergétique
+                                et technologies avancées dans chaque réalisation architecturale.</p>
+
+                            <p class="socials">
+                                <i class="bi bi-twitter text-dark mx-1"></i>
+                                <i class="bi bi-facebook text-dark mx-1"></i>
+                                <i class="bi bi-linkedin text-dark mx-1"></i>
+                                <i class="bi bi-instagram text-dark mx-1"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <img src="Images/team-3.jpg" alt="" class="img-fluid rounded-circle">
+                            <h3 class="card-title py-2">Claire Vautrin</h3>
+                            <p class="card-text">Créative, engagée, motivée, elle conçoit des projets harmonieux,
+                                sensibles au
+                                contexte urbain et aux enjeux sociaux contemporains.</p>
+
+                            <p class="socials">
+                                <i class="bi bi-twitter text-dark mx-1"></i>
+                                <i class="bi bi-facebook text-dark mx-1"></i>
+                                <i class="bi bi-linkedin text-dark mx-1"></i>
+                                <i class="bi bi-instagram text-dark mx-1"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <img src="Images/team-4.jpg" alt="" class="img-fluid rounded-circle">
+                            <h3 class="card-title py-2">Sophie Lemoine</h3>
+                            <p class="card-text">Experte en développement, elle cultive des relations solides, valorise
+                                l’écoute client et défend une architecture éthique et responsable.</p>
+
+                            <p class="socials">
+                                <i class="bi bi-twitter text-dark mx-1"></i>
+                                <i class="bi bi-facebook text-dark mx-1"></i>
+                                <i class="bi bi-linkedin text-dark mx-1"></i>
+                                <i class="bi bi-instagram text-dark mx-1"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- contact section -->
+    <section id="contact" class="contact section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header text-center pb-5">
+                        <h2>Contactez-nous</h2>
+                        <p>Complétez notre formulaire pour découvrir nos solutions <br> architecturales personnalisées
+                            et inspirantes.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row m-0">
+                <div class="col-md-12 p-0 pt-4 p-4 m-auto">
+                    <form action="#" class="bg-light p-4 m-auto">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" required placeholder="Votre nom">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" required placeholder="Votre e-mail">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="mb-3">
+                                    <textarea rows="3" required class="form-control"
+                                        placeholder="Votre message (facultatif)"></textarea>
+                                </div>
+                            </div>
+
+                            <button class="btn btn-warning btn-lg btn-block mt-3" id="send_now">Envoyer</button>
+
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="footer">
+        Remerciements à Divinector, concepteur de ce tutoriel (à consulter sur YouTube
+        <a href="https://www.youtube.com/watch?v=DFUT5s5SasA" target="_blank">ici</a>). <br> Remerciements à Copilote
+        pour son aide à émettre des avis circonstanciés (mais fictifs) dans ce site.
+    </div>
+
+    <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="infoModalLabel">À propos de ce projet</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                </div>
+                <div class="modal-body">
+                    Ce site est une exploration visuelle, réalisée pour le plaisir de créer et de structurer.
+                    <br><br>
+                    Aucun contenu n’est authentique, aucune information n’est réelle. Il s’agit d’un exercice
+                    esthétique, guidé par le respect du travail initial du développeur et le goût de l’agencement
+                    graphique.
+                    <br><br>
+                    Merci de le découvrir avec curiosité, sans chercher à y voir plus qu’un jeu de formes et d’idées.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

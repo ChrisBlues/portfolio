@@ -1,0 +1,1239 @@
+/*=============== GOOGLE FONTS - Insert link for typography ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+    --header-height: 3.5rem;
+
+    /*========== Colors ==========*/
+    /*Color mode HSL(hue, saturation, lightness)*/
+    --first-color: hsl(30, 32%, 56%);
+    --first-color-alt: hsl(30, 32%, 46%);
+    --white-color: hsl(0, 0%, 98%);
+    --dark-color: hsl(0, 0%, 10%);
+    --text-color: hsl(0, 0%, 20%);
+    --body-color: hsl(0, 0%, 8%);
+    --container-color: hsl(0, 0%, 100%);
+
+    /*========== Font and typography ==========*/
+    /*.5rem = 8px | 1rem = 16px ...*/
+    --body-font: "Lora", serif;
+    --second-font: "Dancing Script", cursive;
+    --biggest-font-size: 2.5rem;
+    --bigger-font-size: 1.75rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+
+    /*========== Font weight ==========*/
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+
+    /*========== z index ==========*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+}
+
+/*========== Responsive typography ==========*/
+@media (width >=1150px) {
+    :root {
+        --biggest-font-size: 4rem;
+        --bigger-font-size: 2.5rem;
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+        --smaller-font-size: .813rem;
+    }
+}
+
+/*=============== BASE ===============*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body,
+input,
+button {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+}
+
+body {
+    background-color: var(--body-color);
+    color: var(--white-color);
+}
+
+input,
+button {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: var(--font-bold);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    hyphens: auto;
+    overflow-wrap: break-word;
+    text-align: justify;
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+    max-width: 1120px;
+    margin-inline: 1rem;
+}
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.section {
+    padding-block: 5rem 1rem;
+}
+
+.section__title {
+    text-align: center;
+    font-size: var(--bigger-font-size);
+    margin-bottom: 1rem;
+}
+
+.section__subtitle {
+    display: block;
+    text-align: center;
+    font: var(--font-bold) var(--bigger-font-size) var(--second-font);
+    color: var(--first-color);
+}
+
+.main {
+    overflow: hidden;
+}
+
+/*=============== HEADER & NAV ===============*/
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--body-color);
+    z-index: var(--z-fixed);
+    transition: box-shadow 0.4s;
+}
+
+.nav {
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo {
+    color: var(--first-color);
+    font: var(--font-bold) var(--h2-font-size) var(--second-font);
+}
+
+.nav__toggle {
+    color: var(--white-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Navigation for mobile devices <> */
+@media (width <=1150px) {
+    .nav__menu {
+        position: fixed;
+        top: 0;
+        right: -120%;
+        background-color: var(--body-color);
+        width: 80%;
+        height: 100%;
+        box-shadow: -2px 0 16px hsla(0, 0%, 0%, 0.3);
+        padding: 7rem 0 2rem 3rem;
+        z-index: var(--z-fixed);
+        transition: right 0.4s;
+    }
+}
+
+.nav__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5rem;
+}
+
+.nav__link {
+    color: var(--white-color);
+    font-weight: var(--font-semi-bold);
+    transition: color 0.4s;
+}
+
+.nav__link:hover {
+    color: var(--first-color);
+}
+
+.nav__close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: var(--white-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Show menu */
+.show-menu {
+    right: 0;
+}
+
+/* Change header styles */
+.scroll-header {
+    box-shadow: 0 2px 16px hsla(0, 0%, 0%, 0.3);
+}
+
+/* Active link */
+.active-link {
+    color: var(--first-color);
+}
+
+
+/*=============== HOME SECTION ===============*/
+.home__container {
+    row-gap: 5rem;
+    padding-top: 4.5rem;
+}
+
+.home__data {
+    text-align: center;
+}
+
+.home__title {
+    font-size: var(--biggest-font-size);
+    margin-bottom: 2rem;
+}
+
+.home__images {
+    position: relative;
+    justify-self: center;
+}
+
+.home__images img {
+    position: absolute;
+}
+
+.home__images .home__fryingpan {
+    position: relative;
+    width: 280px;
+    z-index: 10;
+}
+
+.home__rosemary-2 {
+    width: 100px;
+    right: -1rem;
+    bottom: 4rem;
+}
+
+.home__spoon {
+    width: 80px;
+    top: 1rem;
+    right: -1.5rem;
+}
+
+.home__onion {
+    width: 60px;
+    top: -1rem;
+    left: 0;
+}
+
+.home__rosemary-1 {
+    width: 60px;
+    left: -2rem;
+    bottom: 3rem;
+}
+
+.home__tomato {
+    width: 60px;
+    left: 0.5rem;
+    bottom: 1.5rem;
+}
+
+.home__pepper {
+    width: 100px;
+    right: 6rem;
+    bottom: 1rem;
+}
+
+.home__salt-1 {
+    width: 150px;
+    top: -1.5rem;
+    right: 1rem;
+}
+
+.home__salt-2 {
+    width: 150px;
+    top: -3rem;
+    right: 3.5rem;
+}
+
+/*=============== BUTTON 13:54 ===============*/
+.button {
+    display: inline-flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    background-color: transparent;
+    color: var(--white-color);
+    border: 2px solid var(--white-color);
+    padding: 1rem 2rem;
+    font-weight: var(--font-semi-bold);
+    transition: background-color 0.4s, border-color 0.4s, color 0.4s;
+}
+
+.button i {
+    font-size: 1.5rem;
+    font-weight: initial;
+}
+
+.button:hover {
+    border-color: var(--first-color);
+    background-color: var(--first-color);
+    color: var(--dark-color);
+}
+
+.button__link {
+    display: inline-flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    color: var(--first-color);
+    font-weight: var(--font-semi-bold);
+    transition: color 0.4s;
+}
+
+.button__link i {
+    font-size: 1.5rem;
+    font-weight: initial;
+    transition: transform 0.4s;
+}
+
+.button__link:hover {
+    color: var(--first-color);
+}
+
+.button__link:hover i {
+    transform: translateX(0.5rem);
+}
+
+/*=============== ABOUT SECTION ===============*/
+.about__container {
+    position: relative;
+    row-gap: 0;
+    padding-bottom: 2rem;
+}
+
+.about__flour {
+    width: 200px;
+    position: absolute;
+    top: 0;
+    left: -3rem;
+}
+
+.about__img {
+    position: relative;
+}
+
+.about__data {
+    position: relative;
+    background-color: var(--white-color);
+    color: var(--dark-color);
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.about__description {
+    margin-bottom: 3rem;
+    /* text-align: justify; */
+}
+
+.about__rosemary {
+    width: 150px;
+    position: absolute;
+    right: -3.5rem;
+    bottom: -2.5rem;
+}
+
+/*=============== MENU SECTION 26:25 ===============*/
+.menu__container {
+    row-gap: 4rem;
+}
+
+.menu__content {
+    display: grid;
+    row-gap: 2rem;
+}
+
+.menu__card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu__name {
+    font: var(--font-bold) var(--h2-font-size) var(--second-font);
+    color: var(--first-color);
+    margin-bottom: 0.5rem;
+}
+
+.menu__summary {
+    font-size: var(--small-font-size);
+}
+
+.menu__images {
+    position: relative;
+}
+
+.menu__card:nth-child(even) .menu__info {
+    order: -1;
+}
+
+.menu__card:nth-child(odd) .menu__images {
+    justify-self: flex-start;
+}
+
+.menu__card:nth-child(even) .menu__images {
+    justify-self: flex-end;
+}
+
+.menu__dish-1 {
+    width: 100px;
+    position: relative;
+    z-index: 5;
+}
+
+.menu__rosemary {
+    position: absolute;
+    width: 80px;
+    left: -1rem;
+    bottom: -1rem;
+}
+
+.menu__flour-1 {
+    width: 100px;
+    position: absolute;
+    top: -2rem;
+    right: -1.5rem;
+}
+
+.menu__dish-2 {
+    width: 140px;
+    position: relative;
+    z-index: 5;
+}
+
+.menu__flour-2 {
+    width: 150px;
+    position: absolute;
+    top: -2rem;
+    left: -3rem;
+}
+
+.menu__pepper {
+    width: 100px;
+    position: absolute;
+    right: 0.5rem;
+    bottom: -2rem;
+}
+
+.menu__dish-3 {
+    width: 120px;
+    position: relative;
+    z-index: 5;
+}
+
+.menu__flour-3 {
+    max-width: initial;
+    width: 150px;
+    position: absolute;
+    top: -3rem;
+    right: -3rem;
+}
+
+.menu__tomato {
+    width: 50px;
+    position: absolute;
+    left: 0.5rem;
+    bottom: -1rem;
+}
+
+.menu__dish-4 {
+    width: 125px;
+    position: relative;
+    z-index: 5;
+}
+
+.menu__flour-4 {
+    max-width: initial;
+    width: 150px;
+    position: absolute;
+    top: -1.5rem;
+    left: -2rem;
+}
+    
+/*=============== EVENTS SECTION 31:20 ===============*/
+.events__container {
+    position: relative;
+    row-gap: 0;
+    padding-bottom: 2rem;
+}
+
+.events__flour {
+    width: 200px;
+    position: absolute;
+    top: 0;
+    left: -3rem;
+}
+
+.events__img {
+    position: relative;
+}
+
+.events__data {
+    position: relative;
+    background-color: var(--white-color);
+    color: var(--dark-color);
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.events__description {
+    margin-bottom: 2rem;
+    color: var(--text-color);
+    text-align: justify;
+}
+
+.events__info {
+    margin-bottom: 3rem;
+}
+
+.events__name {
+    font-size: var(--normal-font-size);
+    margin-bottom: 0.5rem;
+}
+
+.events__details {
+    color: var(--text-color);
+}
+
+.events__spoon {
+    width: 150px;
+    position: absolute;
+    right: -1.5rem;
+    bottom: -1rem;
+}
+
+/*=============== INGREDIENTS SECTION 36:55 ===============*/
+.ingredients__container {
+    row-gap: 5.5rem;
+}
+
+.ingredients__description {
+    text-align: justify;
+}
+
+.ingredients__images {
+    position: relative;
+    justify-self: center;
+}
+
+.ingredients__images img {
+    position: absolute;
+}
+
+.ingredients__images .ingredients__img-1 {
+    position: relative;
+    width: 110px;
+}
+
+.ingredients__img-2 {
+    width: 45px;
+    left: -3.5rem;
+    bottom: 0;
+}
+
+.ingredients__img-3 {
+    width: 38px;
+    right: -3rem;
+    bottom: 0;
+}
+
+.ingredients__img-4 {
+    width: 32px;
+    left: -6rem;
+    top: 2.5rem;
+}
+
+.ingredients__img-5 {
+    width: 55px;
+    left: -6.5rem;
+    bottom: 0;
+}
+
+.ingredients__img-6 {
+    width: 45px;
+    right: -3.5rem;
+    top: 0.5rem;
+}
+
+.ingredients__img-7 {
+    width: 45px;
+    right: -6.5rem;
+    top: 3.5rem;
+}
+
+.ingredients__img-8 {
+    width: 60px;
+    right: -7.5rem;
+    bottom: 0rem;
+}
+
+/*=============== CONTACT SECTION 43:09 ===============*/
+.contact__container {
+    row-gap: 4rem;
+}
+
+.contact__map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.contact__map {
+    height: 300px;
+    justify-self: center;
+}
+
+.contact__content {
+    display: grid;
+    row-gap: 1.5rem;
+}
+
+.contact__info {
+    text-align: center;
+}
+
+.contact__icon {
+    display: inline-block;
+    font-size: 2rem;
+    color: var(--first-color);
+    margin-bottom: 0.5rem;
+}
+
+.contact__title {
+    font-size: var(--h2-font-size);
+    color: var(--first-color);
+    margin-bottom: 1rem;
+}
+
+.contact__social {
+    display: flex;
+    justify-content: center;
+    column-gap: 1rem;
+}
+
+.contact__link {
+    display: block;
+    color: var(--white-color);
+    font-size: 1.5rem;
+    transition: scale 0.4s;
+}
+
+.contact__link:hover {
+    scale: 1.1;
+}
+
+.contact__address a {
+    display: block;
+    color: var(--white-color);
+    font-style: normal;
+}
+
+/*=============== RESERVATION SECTION 46:50 ===============*/
+.reservation__container {
+    position: relative;
+    height: 420px;
+    place-items: center;
+}
+
+.reservation__bg,
+.reservation__shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.reservation__bg {
+    object-fit: cover;
+    object-position: center;
+}
+
+.reservation__shadow {
+    background-color: hsla(0, 0%, 0%, 0.4);
+    z-index: 5;
+}
+
+.reservation__content {
+    position: relative;
+    z-index: 10;
+}
+
+.reservation__data {
+    margin-bottom: 3rem;
+}
+
+.reservation__data {
+    margin-bottom: 3rem;
+}
+
+.reservation__data .section__subtitle {
+    color: var(--white-color);
+}
+
+/*=============== FOOTER 50:54 ===============*/
+.footer {
+    padding-block: 5rem 2rem;
+}
+
+.footer__container {
+    row-gap: 3rem;
+}
+
+.footer__title {
+    font-size: var(--normal-font-size);
+    color: var(--first-color);
+    margin-bottom: 0.5rem;
+}
+
+.footer__links {
+    display: flex;
+    column-gap: 1rem;
+}
+
+.footer__link {
+    color: var(--white-color);
+    transition: color .4s;
+}
+
+.footer__link:hover {
+    color: var(--first-color);
+}
+
+.footer__address {
+    font-style: normal;
+}
+
+.footer__address span {
+    display: block;
+}
+
+.footer__logo {
+    display: inline-block;
+    color: var(--first-color);
+    font: var(--font-bold) var(--h1-font-size) var(--second-font);
+    margin-bottom: 0.5rem;
+}
+
+.footer__email {
+    display: block;
+}
+
+.footer__copy {
+    display: block;
+    text-align: center;
+    margin: 3rem 0rem;
+    font-size: var(--smaller-font-size);
+}
+
+/*=============== SCROLL BAR 53:02 ===============*/
+::-webkit-scrollbar {
+    width: 0.6rem;
+    background-color: hsl(0, 0%, 15%);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: hsl(0, 0%, 25%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: hsl(0, 0%, 35%);
+}
+
+/*=============== SCROLL UP ===============*/
+.scrollup {
+    position: fixed;
+    right: 1rem;
+    bottom: -50%;
+    background-color: var(--body-color);
+    box-shadow: 0 4px 16px hsla(0, 0%, 0%, 0.3);
+    color: var(--white-color);
+    display: inline-flex;
+    padding: 6px ;
+    font-size: 1.25rem;
+    z-index: var(--z-tooltip);
+    transition: bottom 0.4s, transform 0.4s;
+}
+
+.scrollup:hover {
+    transform: translateY(-0.5rem);
+}
+
+/* Show Scroll Up */
+.show-scroll {
+    bottom: 4.5rem;
+}
+
+/* Remerciements au concepteur */
+#thank-you-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f8f8f8;
+  color: #333;
+  text-align: center;
+  padding: 15px;
+  font-size: 1rem;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 1s ease, transform 1s ease;
+  z-index: 1000;
+}
+
+#thank-you-footer.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#thank-you-footer a{
+    text-decoration: underline;
+}
+
+/*=============== BREAKPOINTS 56:44 ===============*/
+/* For medium devices <> */
+@media (width >= 540px) {
+    .about__container,
+    .events__container {
+        width: 350px;
+        margin-inline: auto;
+    }
+
+    .menu__container,
+    .ingredients__container,
+    .contact__container {
+        grid-template-columns: 400px;
+        justify-content: center;
+    }
+}
+
+@media (width >= 768px) {
+    .contact__content,
+    .footer__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* For large devices <> */
+@media (width >= 1150px) {
+    .container {
+        margin-inline: auto;
+    }
+
+    .section {
+        padding-block: 7rem 2rem;
+    }
+
+    .section__title {
+        margin-bottom: 1.5rem;
+    }
+
+    .nav {
+        height: calc(var(--header-height) + 2rem);
+    }
+
+    .nav__toggle,
+    .nav__close {
+        display: none;
+    }
+
+    .nav__list {
+        flex-direction: row;
+        column-gap: 3rem;
+    }
+
+    .home__container {
+        grid-template-columns: 460px 560px;
+        column-gap: 4rem;
+        align-items: center;
+        justify-content: center;
+        padding-block: 7rem 4rem;
+    }
+
+    .home__data {
+        text-align: initial;
+    }
+
+    .home__title {
+        margin-bottom: 3rem;
+    }
+
+    .home__images .home__fryingpan {
+        width: 560px;
+    }
+
+    .home__rosemary-2 {
+        width: 200px;
+        right: -3rem;
+        bottom: 8rem;
+    }
+
+    .home__spoon {
+        width: 160px;
+        top: 2rem;
+        right: -4rem;
+    }
+
+    .home__onion {
+        width: 120px;
+        top: 0;
+        left: -2rem;
+    }
+
+    .home__rosemary-1 {
+        width: 120px;
+        left: -4rem;
+        bottom: 5rem;
+    }
+
+    .home__tomato {
+        width: 120px;
+        left: 1rem;
+        bottom: 2rem;
+    }
+
+    .home__pepper {
+        width: 200px;
+        right: 12rem;
+        bottom: 2rem;
+    }
+
+    .home__salt-1 {
+        width: 300px;
+        top: -3rem;
+        right: 2rem;
+    }
+
+    .home__salt-2 {
+        width: 300px;
+        left: -6rem;
+        bottom: 7rem;
+    }
+
+    .about__container {
+        width: initial;
+        grid-template-columns: 450px 670px;
+        column-gap: 0;
+        margin-block: 5rem 4rem;
+    }
+
+    .about__flour {
+        width: 450px;
+        left: 5.5rem;
+        top: -7rem;
+    }
+
+    .about__data {
+        padding: 0 6rem;
+        text-align: initial;
+        align-content: center;
+    }
+
+    .about__data :is(.section__subtitle, .section__title) {
+        text-align: initial;
+    }
+
+    .about__rosemary {
+        width: 220px;
+        right: -4rem;
+        bottom: -4rem;
+    }
+
+    .menu__container {
+        row-gap: 6.5rem;
+        grid-template-columns: 850px;
+    }
+    
+    .menu__header {
+        display: grid;
+        grid-template-columns: max-content 500px;
+        column-gap: 9rem;
+        align-items: center;
+    }
+
+    .menu__header .section__subtitle {
+        text-align: right;
+    }
+
+    .menu__description {
+        text-align: justify;
+    }
+
+    .menu__dish-1 {
+        width: 250px;
+    }
+
+    .menu__rosemary {
+        width: 200px;
+        left: -3rem;
+        bottom: -3rem;
+    }
+
+    .menu__flour-1 {
+        width: 250px;
+        top: -5.5rem;
+        right: -4.5rem;
+    }
+
+    .menu__dish-2 {
+        width: 380px;
+    }
+
+    .menu__flour-2 {
+        width: 380px;
+        top: -5.5rem;
+        left: -8rem;
+    }
+
+    .menu__pepper {
+        width: 270px;
+        right: 1.5rem;
+        bottom: -6rem;
+    }
+
+    .menu__dish-3 {
+        width: 300px;
+    }
+
+    .menu__flour-3 {
+        width: 380px;
+        top: -8rem;
+        right: -8rem;
+    }
+
+    .menu__tomato {
+        width: 130px;
+        bottom: -3.5rem;
+    }
+
+    .menu__dish-4 {
+        width: 310px;
+    }
+
+    .menu__flour-4 {
+        width: 370px;
+        top: -3rem;
+        left: -8rem;
+    }
+
+    .menu__info {
+        width: 300px;
+    }
+
+    .menu__card:nth-child(odd) .menu__info {
+        justify-self: flex-end;
+    }
+
+    .menu__card:nth-child(even) .menu__info {
+        justify-self: flex-start;
+    }
+
+    .menu__summary {
+        font-size: var(--normal-font-size);
+    }
+
+    .events__container {
+        width: initial;
+        grid-template-columns: 450px 670px;
+        column-gap: 0;
+        margin-block: 5rem 4rem;
+    }
+
+    .events__flour {
+        width: 450px;
+        left: 5.5rem;
+        top: -7rem;
+    }
+
+    .events__data {
+        padding: 0 6rem;
+        text-align: initial;
+        align-content: center;
+    }
+
+    .events__data :is(.section__subtitle, .section__title) {
+        text-align: initial;
+    }
+
+    .events__info {
+        text-align: center;
+    }
+
+    .events__spoon {
+        width: 250px;
+        right: -2rem;
+        bottom: -2rem;
+    }
+
+    .ingredients__container {
+        grid-template-columns: 650px;
+        row-gap: 6rem;
+    }
+
+    .ingredients__images .ingredients__img-1{
+        width: 280px;
+    }
+
+    .ingredients__img-2 {
+        width: 115px;
+        left: -9rem;
+    }
+
+    .ingredients__img-3 {
+        width: 95px;
+        right: -8rem;
+    }
+
+    .ingredients__img-4 {
+        width: 80px;
+        left: -18rem;
+        top: 6.5rem;
+    }
+
+    .ingredients__img-5 {
+        width: 140px;
+        left: -19rem;
+    }
+
+    .ingredients__img-6 {
+        width: 110px;
+        right: -9rem;
+        top: 1rem;
+    }
+
+    .ingredients__img-7 {
+        width: 110px;
+        right: -17rem;
+        top: 9rem;
+    }
+
+    .ingredients__img-8 {
+        width: 150px;
+        right: -20rem;
+    }
+
+    .contact .section__title {
+        margin-bottom: 4rem;
+    }
+
+    .contact__container {
+        grid-template-columns: 350px 450px;
+        align-items: center;
+        column-gap: 12rem;
+    }
+
+    .contact__map {
+        width: 450px;
+        height: 400px;
+        order: 1;
+    }
+
+    .contact__content {
+        gap: 5rem;
+    }
+
+    .reservation__container {
+        height: 480px;
+    }
+
+    .reservation__content {
+        text-align: center;
+    }
+
+    .reservation__data {
+        margin-bottom: 4rem;
+    }
+
+    .reservation__data .section__subtitle {
+        font-size: 3rem;
+    }
+
+    .reservation__data .section__title {
+        font-size: 3.5rem;
+    }
+
+    .footer {
+        padding-top: 6rem;
+    }
+
+    .footer__container {
+        grid-template-columns: repeat(4, max-content);
+        justify-content: space-between;
+    }
+
+    .footer__title,
+    .footer__logo {
+        margin-bottom: 1rem;
+    }
+
+    .scrollup {
+        right: 3rem;
+    }
+}
+
+
+/* For 2K resolutions <> */
+@media (width >= 2048px) {
+    body {
+        zoom: 120%;
+    }
+}
