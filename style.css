@@ -590,6 +590,10 @@
             background: linear-gradient(135deg, #4A00E0, #8E2DE2, #FF6F61)
         }
 
+        .theme-vif .drew {
+            background: linear-gradient(135deg, #0a0a0a 0%, #1f1f1f 40%, #4b4b4b 100%)
+        }
+
 
         .theme-vif .card a {
             color: #fff;
