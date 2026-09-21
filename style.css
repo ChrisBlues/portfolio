@@ -594,6 +594,9 @@
             background: linear-gradient(135deg, #0a0a0a 0%, #1f1f1f 40%, #4b4b4b 100%)
         }
 
+        .theme-vif .drone-neo {
+            background: linear-gradient(135deg, #0B0F1E, #1A3A6E, #3FA9F5);
+        }
 
         .theme-vif .card a {
             color: #fff;
