@@ -598,6 +598,11 @@
             background: linear-gradient(135deg, #0B0F1E, #1A3A6E, #3FA9F5);
         }
 
+        .theme-vif .kitter {
+            background: linear-gradient(135deg, #F7E9D7, #b19070, #f0963c);
+        }
+
+
         .theme-vif .card a {
             color: #fff;
         }
