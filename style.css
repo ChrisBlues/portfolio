@@ -602,6 +602,11 @@
             background: linear-gradient(135deg, #F7E9D7, #b19070, #f0963c);
         }
 
+        .theme-vif .crispy {
+            background: linear-gradient(135deg, #ff3d2e, #ffb347);
+        }
+        
+
 
         .theme-vif .card a {
             color: #fff;
