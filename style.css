@@ -605,6 +605,13 @@
         .theme-vif .crispy {
             background: linear-gradient(135deg, #ff3d2e, #ffb347);
         }
+
+        .theme-vif .beinterior {
+            background: linear-gradient(135deg, #2E2E2E, #6D6D6D, #C9C9C9);
+        }
+
+
+        
         
 
 
