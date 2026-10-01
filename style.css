@@ -610,10 +610,9 @@
             background: linear-gradient(135deg, #2E2E2E, #6D6D6D, #C9C9C9);
         }
 
-
-        
-        
-
+        .theme-vif .coffeeclub {
+            background: linear-gradient(135deg, #4A2C2A, #8B5E3C, #D7C4A3);
+        }
 
         .theme-vif .card a {
             color: #fff;
