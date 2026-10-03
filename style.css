@@ -614,6 +614,10 @@
             background: linear-gradient(135deg, #4A2C2A, #8B5E3C, #D7C4A3);
         }
 
+        .theme-vif .tradeweb {
+            background: linear-gradient(135deg, #0A1A2F 0%, #12395A 40%, #1E6A8C 100%)
+        }
+
         .theme-vif .card a {
             color: #fff;
         }
