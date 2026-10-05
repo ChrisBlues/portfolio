@@ -618,6 +618,10 @@
             background: linear-gradient(135deg, #0A1A2F 0%, #12395A 40%, #1E6A8C 100%)
         }
 
+        .theme-vif .fm-assurances {
+            background: linear-gradient(135deg, #003366, #0077b6);
+        }
+
         .theme-vif .card a {
             color: #fff;
         }
