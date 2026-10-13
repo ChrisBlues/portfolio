@@ -630,6 +630,14 @@
             background: linear-gradient(135deg, #FF6F61, #FFD54F);
         }
 
+        .theme-vif .zengarden {
+            background: linear-gradient(135deg, #A8D5BA, #6FBF8F, #3F8F6B);
+        }
+
+
+        
+
+
 
         .theme-vif .card a {
             color: #fff;
