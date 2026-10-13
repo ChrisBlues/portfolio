@@ -626,6 +626,10 @@
             background: linear-gradient(135deg, #004E92, #FFA500);
         }
 
+        .theme-vif .creativeart {
+            background: linear-gradient(135deg, #FF6F61, #FFD54F);
+        }
+
 
         .theme-vif .card a {
             color: #fff;
