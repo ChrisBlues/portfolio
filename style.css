@@ -634,9 +634,9 @@
             background: linear-gradient(135deg, #A8D5BA, #6FBF8F, #3F8F6B);
         }
 
-
-        
-
+        .theme-vif .wildvine {
+            background: linear-gradient(135deg, #1a2e1f 0%, #3c5f3d 50%, #8fbf8f 100%);
+        }
 
 
         .theme-vif .card a {
