@@ -638,6 +638,9 @@
             background: linear-gradient(135deg, #1a2e1f 0%, #3c5f3d 50%, #8fbf8f 100%);
         }
 
+        .theme-vif .tourly {
+            background: linear-gradient(135deg, #0ea5e9, #06b6d4, #14b8a6);
+        }
 
         .theme-vif .card a {
             color: #fff;
