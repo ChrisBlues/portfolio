@@ -642,6 +642,10 @@
             background: linear-gradient(135deg, #0ea5e9, #06b6d4, #14b8a6);
         }
 
+        .theme-vif .starcoffee {
+            background: linear-gradient(135deg, #0F5132, #20C997)
+        }
+
         .theme-vif .card a {
             color: #fff;
         }
