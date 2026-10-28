@@ -646,6 +646,13 @@
             background: linear-gradient(135deg, #0F5132, #20C997)
         }
 
+        .theme-vif .interrior {
+            background: linear-gradient(135deg, #f9ad4a, #ffe8c2);
+        }
+
+
+        
+
         .theme-vif .card a {
             color: #fff;
         }
