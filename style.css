@@ -126,8 +126,19 @@
         .theme-vif .driving {
             background: linear-gradient(135deg, #00B4DB, #0083B0, #1d3f4e);
         }
-        
 
+        .theme-vif .run {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #6dd5fa 100%);
+        }
+
+        .theme-vif .burgure {
+            background: linear-gradient(135deg, #141414 0%, #3b2f2f 50%, #c89b3c 100%);
+        }
+
+        .theme-vif .generationmode {
+            background: linear-gradient(135deg, #2f3542 0%, #7f8fa6 50%, #ff5c8a 100%);
+        }
+        
         .theme-vif .beauty {
             background: linear-gradient(135deg, #f16d95 0%, #f3c9d4 50%, #f31852 100%);
         }
