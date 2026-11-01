@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Materialize Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>HeadOut</title>
+</head>
+
+
+<body class="container">
+    <!-- Header -->
+    <header>
+        <!-- Navbar -->
+        <nav class="nav-wrapper transparent z-depth-0">
+            <a href="#" class="left brand-logo indigo-text">HeadOut</a>
+            <ul class="right hide-on-small-only">
+                <li>
+                    <a href="#" class="black-text">Home</a>
+                </li>
+                <li>
+                    <a href="#" class="black-text">About</a>
+                </li>
+                <li>
+                    <a href="#" class="black-text">Places</a>
+                </li>
+                <li>
+                    <a href="#" class="black-text">Experiences</a>
+                </li>
+            </ul>
+            <a href="#" class="right hide-on-med-and-up sidenav-trigger black-text" data-target="mobile-nav"
+                role="button">
+                <i class="material-icons"> menu </i>
+            </a>
+            <ul id="mobile-nav" class="sidenav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Places</a></li>
+                <li><a href="#">Experiences</a></li>
+            </ul>
+        </nav>
+        <!-- /Navbar ended -->
+    </header>
+    <!-- /Header ended -->
+
+    <!-- Main -->
+    <main>
+        <!-- Section - Hero -->
+        <section class="section hero">
+            <!-- Row container -->
+            <div class="row valign-wrapper">
+
+                <!-- First column -->
+                <div class="col s12 l3">
+                    <h1>Explorez les horizons</h1>
+                    <p>Ouvrez les yeux, respirez l’inconnu — chaque voyage est une promesse, chaque horizon un murmure
+                        d’émerveillement silencieux.</p>
+                    <a href="#" class="waves-effect waves-light btn-large indigo">En savoir plus</a>
+                </div>
+                <!-- /First column ended-->
+
+                <!-- Second column -->
+                <div class="col s12 l9 header-images">
+                    <img src="images/header-1.jpg" class="hide-on-small-only">
+                    <img src="images/header-2.jpg" class="hide-on-small-only">
+                    <img src="images/header-3.jpg" class="hide-on-small-only">
+                    <img src="images/header-4.jpg" class="hide-on-small-only">
+                </div>
+                <!-- /Second column ended -->
+
+                <div class="col s12 hide-on-med-and-up">
+                    <div class="carousel">
+                        <div class="carousel-item">
+                            <img src="images/header-1.jpg" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/header-2.jpg" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/header-3.jpg" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/header-4.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Row container ended -->
+
+            <!-- Nice Waves -->
+            <div id="waves" class="waves"></div>
+            <!-- /Nice Waves ended -->
+        </section>
+        <!-- /Section - Hero ended -->
+
+        <!-- Section  - About -->
+        <div class="section about">
+            <!-- Row Container -->
+            <div class="row valign-wrapper">
+
+                <!-- First Column -->
+                <div class="col s12 l6">
+                    <h2>Voyagez plus facilement</h2>
+                    <p>Voyager, c’est alléger le monde.
+                        Chaque départ devient simple, chaque détour une caresse.
+                        Laissez les contraintes s’effacer : ici, tout est fluide, pensé pour vous.
+                        Un clic, un souffle, et l’aventure commence sans effort.</p>
+                    <p>Réservez, partez, respirez.
+                        Chaque trajet devient un murmure d’aisance,
+                        chaque étape un instant suspendu.
+                        L’inconnu vous attend, sans complication. Laissez-vous guider sans détour.</p>
+                    <a href="#" class="waves-effect waves-light btn-large indigo">Réservez maintenant</a>
+                </div>
+                <!-- /First Column : fin -->
+
+                <!-- Second Column -->
+                <div class="col s12 l6">
+
+                    <!-- Nested Row Container  -->
+                    <div class="row">
+
+                        <!-- First Nested Column -->
+                        <div class="col m6">
+                            <!-- Card -->
+                            <div class="card center-align indigo lighten-4">
+                                <!-- card content -->
+                                <div class="card-content white-text">
+                                    <i class="material-icons large"> explore </i>
+                                    <span class="card-title">Voyager c'est vivre</span>
+                                    <p>Chaque départ rallume l’âme.
+                                        Les paysages deviennent des battements,
+                                        et l’inconnu, une respiration nouvelle
+                                        dans le cœur du monde.
+                                    </p>
+                                </div>
+                                <!-- /card content : fin -->
+                            </div>
+                            <!-- /Card : fin -->
+                        </div>
+                        <!-- /First Nested Column : fin -->
+
+                        <!-- Second Nested Column -->
+                        <div class="col m6">
+                            <!-- Card -->
+                            <div class="card center-align indigo lighten-4">
+                                <!-- card content -->
+                                <div class="card-content white-text">
+                                    <i class="material-icons large"> hiking </i>
+                                    <span class="card-title">Laissez des empreintes</span>
+                                    <p>Marchez doucement, mais laissez une trace.
+                                        Chaque pas raconte une histoire,
+                                        chaque détour grave un souvenir
+                                        dans la mémoire des lieux.
+                                    </p>
+                                </div>
+                                <!-- /card content : fin -->
+                            </div>
+                            <!-- /Card : fin -->
+                        </div>
+                        <!-- /Second Nested Column : fin -->
+
+                        <!-- Third Nested Column -->
+                        <div class="col m6">
+                            <!-- Card -->
+                            <div class="card center-align indigo lighten-4">
+                                <!-- card content -->
+                                <div class="card-content white-text">
+                                    <i class="material-icons large"> travel_explore </i>
+                                    <span class="card-title">Créez des souvenirs</span>
+                                    <p>Capturez l’instant, cueillez la lumière.
+                                        Les souvenirs ne s’achètent pas —
+                                        ils se tissent, image après image,
+                                        dans le fil du voyage.
+                                    </p>
+                                </div>
+                                <!-- /card content : fin -->
+                            </div>
+                            <!-- /Card : fin -->
+                        </div>
+                        <!-- /Third Nested Column : fin -->
+
+                        <!-- Fourth Nested Column -->
+                        <div class="col m6">
+                            <!-- Card -->
+                            <div class="card center-align indigo lighten-4">
+                                <!-- card content -->
+                                <div class="card-content white-text">
+                                    <i class="material-icons large"> map </i>
+                                    <span class="card-title">Explorez le monde</span>
+                                    <p>Le monde vous attend, vaste et vibrant.
+                                        Chaque horizon murmure une promesse,
+                                        chaque lieu vous révèle
+                                        un fragment oublié de vous-même.
+                                    </p>
+                                </div>
+                                <!-- /card content : fin -->
+                            </div>
+                            <!-- /Card : fin -->
+                        </div>
+                        <!-- /Fourth Nested Column : fin -->
+
+                    </div>
+                    <!-- /Nested Row Container : fin  -->
+                </div>
+                <!-- /second column : fin -->
+
+            </div>
+            <!-- /Row Container : fin -->
+        </div>
+        <!-- /Section  - About : fin -->
+
+        <!-- Section - Top Destinations -->
+        <section class="section">
+            <!-- Section Header -->
+            <div class="center-align">
+                <h2>Destinations célèbres</h2>
+                <p>
+                    Quatre villes, quatre visages du monde — entre histoire, lumière, mystère et nature, chaque
+                    destination murmure une aventure unique à vivre.
+                </p>
+            </div>
+            <!-- /Section Header : fin -->
+
+            <!-- Row Container -->
+            <div class="row">
+
+                <!-- first column -->
+                <div class="col s12 m6 l3">
+                    <!-- Card -->
+                    <div class="card medium hoverable">
+                        <!-- Card Image -->
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img src="images/destinations-1.jpg" alt="" class="activator">
+                        </div>
+                        <!-- /Card Image : fin-->
+                        <!-- Card Content -->
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4"> Berlin <i
+                                    class="material-icons right">
+                                    expand_more</i></span>
+                            <p class="grey-text">Allemagne</p>
+                            <p>Mur effacé, mémoire vive — l’histoire respire encore ici.</p>
+                            <div class="card-action">
+                                <a href="#" class="waves-effect waves-light btn-small indigo lighten-1">Réservez
+                                    maintenant</a>
+                            </div>
+                        </div>
+                        <!-- /Card Content : fin -->
+
+                        <!-- Card Reveal -->
+                        <div class="card-reveal"><span class="card-title grey-text text-darken-4">Berlin <i
+                                    class="material-icons right"> close </i></span>
+                            <p>Flânez entre musées et mémoires.
+                                Du mur aux galeries, chaque rue dévoile une histoire, chaque place invite à contempler
+                                l’Europe en mouvement.
+                            </p>
+                            <ul class="additional-info">
+                                <li class="valign-wrapper">
+                                    <i class="material-icons indigo-text"> rowing </i>12 activities
+                                </li>
+                                <li class="valign-wrapper">
+                                    <i class="material-icons indigo-text"> location_on </i>9 Tourist Spots
+                                </li>
+                                <li class="valign-wrapper">
+                                    <i class="material-icons indigo-text"> nightlight_round </i>4 days, 3 nights
+                                </li>
+                                <div class="price-block">
+                                    <p>$799</p>
+                                    <a href="#"
+                                        class="right waves-effect waves-light btn-small indigo lighten-1">Réservez
+                                        maintenant</a>
+                                </div>
+                            </ul>
+                        </div>
+                        <!-- /Card Reveal : fin -->
+                    </div>
+                    <!-- /Card : fin -->
+                </div>
+                <!-- /first column : fin -->
+
+                <!-- second column -->
+                <div class="col s12 m6 l3">
+                    <!-- Card -->
+                    <div class="card medium hoverable">
+                        <!-- Card Image -->
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img src="images/destinations-2.jpg" alt="" class="activator">
+                        </div>
+                        <!-- /Card Image : fin-->
+                        <!-- Card Content -->
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4"> Tokyo <i
+                                    class="material-icons right">
+                                    expand_more</i></span>
+                            <p class="grey-text">Japon</p>
+                            <p>Lumières dansent, ruelles murmurent — modernité et mystère s’unissent.</p>
+                            <div class="card-action">
+                                <a href="#" class="waves-effect waves-light btn-small indigo lighten-1">Réservez
+                                    maintenant</a>
+                            </div>
+                        </div>
+                        <!-- /Card Content : fin -->
+
+                        <!-- Card Reveal -->
+                        <div class="card-reveal"><span class="card-title grey-text text-darken-4">Tokyo<i
+                                    class="material-icons right"> close </i></span>
+                            <p>Explorez temples, néons et marchés.
+                                Entre traditions millénaires et futur vibrant, Tokyo offre un kaléidoscope d’instants, à
+                                savourer au rythme de ses ruelles.
+                            </p>
+                            <ul class="additional-info">
+                                <li class="valign-wrapper">
+                                    <i class="material-icons indigo-text"> rowing </i>12 activities
+                                </li>
+                                <li class="valign-wrapper">
+                                    <i class="material-icons indigo-text"> location_on </i>9 Tourist Spots
+                                </li>
+                                <li class="valign-wrapper">
+                                    <i class="material-icons indigo-text"> nightlight_round </i>4 days, 3 nights
+                                </li>
+                                <div class="price-block">
+                                    <p>$799</p>
+                                    <a href="#"
+                                        class="right waves-effect waves-light btn-small indigo lighten-1">Réservez
+                                        maintenant</a>
+                                </div>
+                            </ul>
+                        </div>
+                        <!-- /Card Reveal : fin -->
+                    </div>
+                    <!-- /Card : fin -->
+                </div>
+                <!-- /second column : fin -->
+
+                <!-- third column -->
+                <div class="col s12 m6 l3">
+                    <!-- Card -->
+                    <div class="card medium hoverable">
+                        <!-- Card Image -->
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img src="images/destinations-3.jpg" alt="" class="activator">
+                        </div>
+                        <!-- /Card Image : fin-->
+                        <!-- Card Content -->
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4"> Moscou <i
+                                    class="material-icons right">
+                                    expand_more</i></span>
+                            <p class="grey-text">Russie</p>
+                            <p>Coupoles colorées, silence glacé — l’âme russe s’élève doucement..</p>
+                            <div class="card-action">
+                                <a href="#" class="waves-effect waves-light btn-small indigo lighten-1">Réservez
+                                    maintenant</a>
+                            </div>
+                        </div>
+                        <!-- /Card Content : fin -->
+
+                        <!-- Card Reveal -->
+                        <div class="card-reveal"><span class="card-title grey-text text-darken-4">Moscow<i
+                                    class="material-icons right"> close </i></span>
+                            <p>Admirez coupoles, palais et parcs.
+                                Sous la neige ou le soleil, Moscou vous guide entre grandeur impériale et poésie
+                                orthodoxe, au fil de ses avenues
+                            </p>
+                            <ul class="additional-info">
+                                <li class="valign-wrapper">
+                                    <i class="material-icons indigo-text"> rowing </i>12 activities
+                                </li>
+                                <li class="valign-wrapper">
+                                    <i class="material-icons indigo-text"> location_on </i>9 Tourist Spots
+                                </li>
+                                <li class="valign-wrapper">
+                                    <i class="material-icons indigo-text"> nightlight_round </i>4 days, 3 nights
+                                </li>
+                                <div class="price-block">
+                                    <p>$799</p>
+                                    <a href="#"
+                                        class="right waves-effect waves-light btn-small indigo lighten-1">Réservez
+                                        maintenant</a>
+                                </div>
+                            </ul>
+                        </div>
+                        <!-- /Card Reveal : fin -->
+                    </div>
+                    <!-- /Card : fin -->
+                </div>
+                <!-- /third column : fin -->
+
+                <!-- fourth column -->
+                <div class="col s12 m6 l3">
+                    <!-- Card -->
+                    <div class="card medium hoverable">
+                        <!-- Card Image -->
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img src="images/destinations-4.jpg" alt="" class="activator">
+                        </div>
+                        <!-- /Card Image : fin-->
+                        <!-- Card Content -->
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4"> Denver <i
+                                    class="material-icons right">
+                                    expand_more</i></span>
+                            <p class="grey-text">Etats-Unis</p>
+                            <p>Montagnes veillent, ciel immense — la nature embrasse la ville.</p>
+                            <div class="card-action">
+                                <a href="#" class="waves-effect waves-light btn-small indigo lighten-1">Réservez
+                                    maintenant</a>
+                            </div>
+                        </div>
+                        <!-- /Card Content : fin -->
+
+                        <!-- Card Reveal -->
+                        <div class="card-reveal"><span class="card-title grey-text text-darken-4">Denver<i
+                                    class="material-icons right"> close </i></span>
+                            <p>Respirez l’air des Rocheuses.
+                                Randonnées, musées et cafés s’entrelacent dans une ville où la nature encadre l’art de
+                                vivre avec simplicité et lumière.
+                            </p>
+                            <ul class="additional-info">
+                                <li class="valign-wrapper">
+                                    <i class="material-icons indigo-text"> rowing </i>12 activities
+                                </li>
+                                <li class="valign-wrapper">
+                                    <i class="material-icons indigo-text"> location_on </i>9 Tourist Spots
+                                </li>
+                                <li class="valign-wrapper">
+                                    <i class="material-icons indigo-text"> nightlight_round </i>4 days, 3 nights
+                                </li>
+                                <div class="price-block">
+                                    <p>$799</p>
+                                    <a href="#"
+                                        class="right waves-effect waves-light btn-small indigo lighten-1">Réservez
+                                        maintenant</a>
+                                </div>
+                            </ul>
+                        </div>
+                        <!-- /Card Reveal : fin -->
+                    </div>
+                    <!-- /Card : fin -->
+                </div>
+                <!-- /fourth column : fin -->
+            </div>
+            <!-- /Row Container : fin -->
+        </section>
+        <!-- /Section - Top Destinations : fin -->
+
+        <!-- ======================================================================================= -->
+
+        <!-- Section - Featured Images -->
+        <section class="section featured-images">
+
+            <!-- Section Header -->
+            <div class="center-align">
+                <h2>Éclats de silence</h2>
+                <p class="subtitle">Un voyage en huit respirations</p>
+                <p class="intro-text">
+                    Chaque image est un souffle, un lieu, une mémoire. <br>
+                    Ensemble, elles composent un murmure visuel — <br>
+                    Celui d’un monde qui parle sans bruit.
+                </p>
+
+            </div>
+            <!-- /Section Header : fin -->
+
+            <!-- Row Container -->
+            <div class="container">
+
+                <!-- Row 1 : 2 images (2/3 + 1/3) -->
+                <div class="row">
+
+                    <!-- Image 1 : 2/3 de la largeur -->
+                    <div class="col s12 m6 l8">
+                        <img src="images/featured-1.jpg" alt="" class="materialboxed"
+                            data-caption="Colysée de Rome — Le souffle des pierres anciennes" height="500">
+                    </div>
+
+                    <!-- Image 2 : 1/3 de la largeur -->
+                    <div class="col s12 m6 l4">
+                        <img src="images/featured-2.jpg" alt="" class="materialboxed"
+                            data-caption="Cathédrale de Rouen — Lumière verticale" height="500">
+                    </div>
+                </div>
+
+                <!-- Row 2 : 3 images (1/2 + 1/4 + 1/4) -->
+                <div class="row">
+
+                    <!-- Image 3 : 1/2 -->
+                    <div class="col s12 m12 l6">
+                        <img src="images/featured-4.jpg" alt="" class="materialboxed"
+                            data-caption="Moulins — Le vent dans les fleurs" height="500">
+                    </div>
+
+                    <!-- Image 4 : 1/4 -->
+                    <div class="col m6 l3">
+                        <img src="images/featured-3.jpg" alt="" class="materialboxed"
+                            data-caption="Samarcande — Géométrie céleste" height="500">
+                    </div>
+
+                    <!-- Image 5 : 1/4 -->
+                    <div class="col m6 l3">
+                        <img src="images/featured-5.jpg" alt="" class="materialboxed"
+                            data-caption="Étretat — Le vertige du silence" height="500">
+                    </div>
+
+                </div>
+
+                <!-- Row 3 : 3 images (1/4 + 1/4 + 1/2) -->
+                <div class="row">
+
+                    <!-- Image 6 : 1/4 -->
+                    <div class="col s12 m12 l3">
+                        <img src="images/featured-7.jpg" alt="" class="materialboxed"
+                            data-caption="Moscou — Les dômes du rêve" height="500">
+                    </div>
+
+                    <!-- Image 7 : 1/4 -->
+                    <div class="col s12 m6 l3">
+                        <img src="images/featured-8.jpg" alt="" class="materialboxed"
+                            data-caption="Pise — L'inclinaison du regard" height="500">
+                    </div>
+
+                    <!-- Image 8 : 1/2 -->
+                    <div class="col s12 m6 l6">
+                        <img src="images/featured-6.jpg" alt="" class="materialboxed"
+                            data-caption="Galerie — Le marbre du silence" height="500">
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- /Row Container ended -->
+        </section>
+        <!-- /Section - Featured Images -->
+
+        <!-- ======================================================================================= -->
+
+        <!-- Section - Contact Us & FAQs -->
+        <section>
+            <!-- Section Header -->
+            <div class="center-align">
+                <h2>Contactez-nous</h2>
+                <p>Une question, un rêve, une envie ?
+                    Contactez notre agence — chaque message est une porte ouverte vers votre prochain voyage.
+                </p>
+            </div>
+            <!-- /Section Header : fin -->
+            <!-- Row Container -->
+            <div class="row">
+                <!-- First Column -->
+                <div class="col s12 m6">
+                    <h5>Envoyez un message</h5>
+                    <p class="grey-text text-darken-1">Complétez le formulaire ci-dessous : chaque mot nous rapproche
+                        d’un départ, d’un projet, d’un sourire.</p>
+                    <form action="" class="form row">
+                        <div class="input-field col s12">
+                            <input type="text" id="name" class="validate">
+                            <label for="name">Nom et prénom</label>
+                        </div>
+                        <div class="input-field col s12 m6">
+                            <input type="email" id="email" class="validate">
+                            <label for="email">E-mail</label>
+                        </div>
+                        <div class="input-field col s12 m6">
+                            <input type="tel" id="tel" class="validate">
+                            <label for="tel">N° téléphone</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <textarea id="textarea" class="materialize-textarea"></textarea>
+                            <label for="textarea">Message</label>
+                        </div>
+                        <button class="waves-effect waves-light btn-large indigo" type="submit">
+                            Envoyez le message
+                        </button>
+                    </form>
+                </div>
+                <!-- /First Column : fin -->
+                <!-- Second Column -->
+                <div class="col s12 m6">
+                    <h5>Questions fréquemment posées</h5>
+                    <p class="grey-text text-darken-1">
+                        Avant de partir, découvrez nos réponses aux questions les plus posées — clarté et sérénité
+                        assurées.
+                    </p>
+                    <ul class="collapsible expandable z-depth-0">
+                        <li class="active">
+                            <div class="collapsible-header">
+                                <i class="material-icons indigo-text"> looks_one </i>
+                                Quels documents sont nécessaires pour réserver un voyage avec nous ?
+                            </div>
+                            <div class="collapsible-body">
+                                Une pièce d’identité suffit. Passeport ou carte selon destination — nous vous guidons
+                                pour chaque étape, sans stress.
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header">
+                                <i class="material-icons indigo-text"> looks_two </i>
+                                Peut-on modifier ou annuler une réservation déjà confirmée ?
+                            </div>
+                            <div class="collapsible-body">
+                                Oui, selon les conditions du prestataire. Nous vous assistons rapidement pour toute
+                                modification ou annulation, sans frais cachés
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="collapsible-header">
+                                <i class="material-icons indigo-text"> looks_3 </i>
+                                Comment contacter l’agence en dehors des horaires d’ouverture ?
+                            </div>
+                            <div class="collapsible-body">
+                                Un formulaire est disponible en ligne. Nous répondons dès que possible, même en dehors
+                                des heures classiques d’accueil.
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <!-- /Second Column : fin -->
+
+            </div>
+            <!-- /Row Container : fin -->
+
+        </section>
+        <!-- /Section - Contact Us & FAQs : fin -->
+
+    </main>
+    <!-- /Main ended-->
+
+
+    <!-- Espace avant le footer de remerciements -->
+    <div style="height: 150px;"></div>
+
+
+    <footer class="footer_merci">
+        Remerciements à CodeWithJC, le concepteur de ce tutoriel à consulter sur YouTube
+        <a href="https://www.youtube.com/watch?v=8JXk_ua7IRc&t=2081s" target="_blank">ici</a>. <br> Remerciements à
+        Copilote pour tous les commentaires rédigés pour ce tutoriel — Chris Blues —
+    </footer>
+
+
+
+    <!-- Materialize JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Nice Waves JS -->
+    <script src="https://unpkg.com/nice-waves@latest"></script>
+    <!-- Main JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>

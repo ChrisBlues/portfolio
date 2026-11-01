@@ -1,0 +1,685 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Grocery</title>
+
+    <!-- Bootstrap JS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- For icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <!-- Custom css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div class="top-header">
+            <div class="container">
+                <div class="top-content">
+                    <div class="top-flex">
+                        <li>
+                            <a href=""><i class="fa-solid fa-envelope"></i> infocoding@gmail.com</a>
+                            <a href=""><i class="fa-solid fa-phone"></i> 12345 67890</a>
+                        </li>
+                    </div>
+                    <div class="top-social">
+                        <ul>
+                            <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <header class="header-main">
+            <div class="container">
+                <div class="logo"><img src="images/logo.png" alt="Logo Super-market"></div>
+                <div class="head-search">
+                    <form action="">
+                        <input type="text" placeholder="Rechercher">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </form>
+                </div>
+                <div class="header-icons">
+                    <ul>
+                        <li><a href=""><i class="fa-solid fa-user"></i></a></li>
+                        <li><a href=""><i class="fa-solid fa-heart"></i></a></li>
+                        <li><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <nav class="navbar">
+            <div class="container text-center">
+                <ul>
+                    <li><a href="">Accueil</a></li>
+                    <li><a href="">Boutique</a></li>
+                    <li><a href="">Produits</a></li>
+                    <li><a href="">Arrivées</a></li>
+                    <li><a href="">Blogs</a></li>
+                    <li><a href="">Offres</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Lets's now create a banner -->
+
+        <section class="banner-sec" style="background-image: url(images/header-bg.png);">
+            <div class="container">
+                <div class="header-main-text">
+                    <h5>Offre exclusive : 20 % de réduction</h5>
+                    <h1>Un type d'épicerie différent</h1>
+                    <p>Un lieu où chaque produit raconte une histoire, où simplicité, fraîcheur et attention se rencontrent pour réinventer l’épicerie et offrir une expérience quotidienne plus humaine, plus vraie.</p>
+                    <div class="nav-btn mt-4"><a href="">Achetez maintenant</a></div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Lets's make category -->
+
+        <section class="item-header-sec py-5">
+            <div class="container">
+                <div class="item-slider">
+
+                    <div class="items-header">
+                        <img src="images/icon-food-1.png" alt="Icon food">
+                        <h4>Légumes</h4>
+                    </div>
+                    <div class="items-header">
+                        <img src="images/icon-food-2.png" alt="Icon food">
+                        <h4>Fruits</h4>
+                    </div>
+                    <div class="items-header">
+                        <img src="images/icon-food-3.png" alt="Icon food">
+                        <h4>Pain</h4>
+                    </div>
+                    <div class="items-header">
+                        <img src="images/icon-food-4.png" alt="Icon food">
+                        <h4>Oeufs</h4>
+                    </div>
+                    <div class="items-header">
+                        <img src="images/icon-food-5.png" alt="Icon food">
+                        <h4>Poisson</h4>
+                    </div>
+                    <div class="items-header">
+                        <img src="images/icon-food-6.png" alt="Icon food">
+                        <h4>Viande</h4>
+                    </div>
+                    <div class="items-header">
+                        <img src="images/icon-food-7.png" alt="Icon food">
+                        <h4>Jus de fruits</h4>
+                    </div>
+                    <div class="items-header">
+                        <img src="images/icon-food-8.png" alt="Icon food">
+                        <h4>Fromage</h4>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Let's make product section -->
+
+        <section class="product-sec pb-5">
+            <div class="container">
+
+                <h2 class="title text-center">Produits les plus vendus</h2>
+
+                <div class="product-slider mt-5">
+
+                    <div class="col-md-3">
+                        <div class="product-box">
+                            <div class="pr-icons">
+                                <ul>
+                                    <li><a href=""><i class="fa-solid fa-user"></i></a></li>
+                                    <li><a href=""><i class="fa-solid fa-heart"></i></a></li>
+                                    <li><a href=""><i class="fa-solid fa-eye"></i></a></li>
+                                </ul>
+                            </div>
+
+                            <div class="pr-img">
+                                <img src="images/product-img-7.png" alt="Product">
+                            </div>
+
+                            <div class="pr-text">
+                                <h6>En stock</h6>
+                                <h5>Concombre</h5>
+                                <span class="price">1,59 € la pièce</span>
+                                <div class="cart-btn"><a href="">Ajouter au panier <i
+                                            class="fa-solid fa-cart-shopping"></i></a></div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-3">
+                        <div class="product-box">
+                            <div class="pr-icons">
+                                <ul>
+                                    <li><a href=""><i class="fa-solid fa-user"></i></a></li>
+                                    <li><a href=""><i class="fa-solid fa-heart"></i></a></li>
+                                    <li><a href=""><i class="fa-solid fa-eye"></i></a></li>
+                                </ul>
+                            </div>
+
+                            <div class="pr-img">
+                                <img src="images/product-img-1.png" alt="Product">
+                            </div>
+
+                            <div class="pr-text">
+                                <h6>En stock</h6>
+                                <h5>Pommes de terre</h5>
+                                <span class="price">3,99 € (5kg)</span>
+                                <div class="cart-btn"><a href="">Ajouter au panier <i
+                                            class="fa-solid fa-cart-shopping"></i></a></div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="col-md-3">
+                        <div class="product-box">
+                            <div class="pr-icons">
+                                <ul>
+                                    <li><a href=""><i class="fa-solid fa-user"></i></a></li>
+                                    <li><a href=""><i class="fa-solid fa-heart"></i></a></li>
+                                    <li><a href=""><i class="fa-solid fa-eye"></i></a></li>
+                                </ul>
+                            </div>
+
+                            <div class="pr-img">
+                                <img src="images/product-img-2.png" alt="Product">
+                            </div>
+
+                            <div class="pr-text">
+                                <h6>En stock</h6>
+                                <h5>Epinards</h5>
+                                <span class="price">1,65 € (125 g)</span>
+                                <div class="cart-btn"><a href="">Ajouter au panier <i
+                                            class="fa-solid fa-cart-shopping"></i></a></div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="product-box">
+                            <div class="pr-icons">
+                                <ul>
+                                    <li><a href=""><i class="fa-solid fa-user"></i></a></li>
+                                    <li><a href=""><i class="fa-solid fa-heart"></i></a></li>
+                                    <li><a href=""><i class="fa-solid fa-eye"></i></a></li>
+                                </ul>
+                            </div>
+
+                            <div class="pr-img">
+                                <img src="images/product-img-3.png" alt="Product">
+                            </div>
+
+                            <div class="pr-text">
+                                <h6>En stock</h6>
+                                <h5>Lait</h5>
+                                <span class="price">1,15 € (1 bouteille)</span>
+                                <div class="cart-btn"><a href="">Ajouter au panier <i
+                                            class="fa-solid fa-cart-shopping"></i></a></div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="product-box">
+                            <div class="pr-icons">
+                                <ul>
+                                    <li><a href=""><i class="fa-solid fa-user"></i></a></li>
+                                    <li><a href=""><i class="fa-solid fa-heart"></i></a></li>
+                                    <li><a href=""><i class="fa-solid fa-eye"></i></a></li>
+                                </ul>
+                            </div>
+
+                            <div class="pr-img">
+                                <img src="images/product-img-4.png" alt="Product">
+                            </div>
+
+                            <div class="pr-text">
+                                <h6>En stock</h6>
+                                <h5>Chou vert</h5>
+                                <span class="price">2,69 € (1 pièce)</span>
+                                <div class="cart-btn"><a href="">Ajouter au panier <i
+                                            class="fa-solid fa-cart-shopping"></i></a></div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="product-box">
+                            <div class="pr-icons">
+                                <ul>
+                                    <li><a href=""><i class="fa-solid fa-user"></i></a></li>
+                                    <li><a href=""><i class="fa-solid fa-heart"></i></a></li>
+                                    <li><a href=""><i class="fa-solid fa-eye"></i></a></li>
+                                </ul>
+                            </div>
+
+                            <div class="pr-img">
+                                <img src="images/product-img-5.png" alt="Product">
+                            </div>
+
+                            <div class="pr-text">
+                                <h6>En stock</h6>
+                                <h5>Taro</h5>
+                                <span class="price">9,15 € (le kilo)</span>
+                                <div class="cart-btn"><a href="">Ajouter au panier <i
+                                            class="fa-solid fa-cart-shopping"></i></a></div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="product-box">
+                            <div class="pr-icons">
+                                <ul>
+                                    <li><a href=""><i class="fa-solid fa-user"></i></a></li>
+                                    <li><a href=""><i class="fa-solid fa-heart"></i></a></li>
+                                    <li><a href=""><i class="fa-solid fa-eye"></i></a></li>
+                                </ul>
+                            </div>
+
+                            <div class="pr-img">
+                                <img src="images/product-img-6.png" alt="Product">
+                            </div>
+
+                            <div class="pr-text">
+                                <h6>En stock</h6>
+                                <h5>Bananes</h5>
+                                <span class="price">1,79 € (5 pièces)</span>
+                                <div class="cart-btn"><a href="">Ajouter au panier <i
+                                            class="fa-solid fa-cart-shopping"></i></a></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Let's make another section -->
+
+        <section class="product-item-sec">
+            <div class="container">
+
+                <h2 class="title text-center">Nouvelles offres</h2>
+
+                <div class="row mt-5 align-item-center">
+                    <div class="col-lg-4">
+                        <div class="product-timer">
+                            <img src="images/back-img-2.png" alt="">
+
+                            <div class="product-time">
+                                <div class="pr-time-text">
+                                    <h4 class="text-white">Offres de la semaine</h4>
+                                </div>
+
+                                <div class="timer-flex">
+                                    <ul>
+                                        <li>
+                                            25
+                                            <span>JOURS</span>
+                                        </li>
+                                        <li>
+                                            16
+                                            <span>HRS</span>
+                                        </li>
+                                        <li>
+                                            20
+                                            <span>MIN</span>
+                                        </li>
+                                        <li>
+                                            12
+                                            <span>SEC</span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <p class="text-white mt-2">Aubergines, kiwis, avocats : des offres fraîches pour sublimer chaque journée.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <!-- first add row -->
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="product-box">
+
+                                    <div class="pr-icons">
+                                        <ul>
+                                            <li><a href=""><i class="fa-solid fa-user"></i></a></li>
+                                            <li><a href=""><i class="fa-solid fa-heart"></i></a></li>
+                                            <li><a href=""><i class="fa-solid fa-eye"></i></a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="pr-img">
+                                        <img src="images/meat-1.jpg" alt="">
+                                    </div>
+
+                                    <div class="pr-text">
+                                        <h6>En stock</h6>
+                                        <h5>Aubergine</h5>
+                                        <span class="price">2,09 € (1 pièce)</span>
+                                        <div class="cart-btn"><a href="">Ajouter au panier <i
+                                                    class="fa-solid fa-cart-shopping"></i></a></div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="product-box">
+
+                                    <div class="pr-icons">
+                                        <ul>
+                                            <li><a href=""><i class="fa-solid fa-user"></i></a></li>
+                                            <li><a href=""><i class="fa-solid fa-heart"></i></a></li>
+                                            <li><a href=""><i class="fa-solid fa-eye"></i></a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="pr-img">
+                                        <img src="images/meat-2.jpg" alt="">
+                                    </div>
+
+                                    <div class="pr-text">
+                                        <h6>En stock</h6>
+                                        <h5>Kiwi</h5>
+                                        <span class="price">3,99 € (4 pièces)</span>
+                                        <div class="cart-btn"><a href="">Ajouter au panier <i
+                                                    class="fa-solid fa-cart-shopping"></i></a></div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="product-box">
+
+                                    <div class="pr-icons">
+                                        <ul>
+                                            <li><a href=""><i class="fa-solid fa-user"></i></a></li>
+                                            <li><a href=""><i class="fa-solid fa-heart"></i></a></li>
+                                            <li><a href=""><i class="fa-solid fa-eye"></i></a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="pr-img">
+                                        <img src="images/meat-5.png" alt="">
+                                    </div>
+
+                                    <div class="pr-text">
+                                        <h6>En stock</h6>
+                                        <h5>Avocat</h5>
+                                        <span class="price">4,15 € (2 pièces)</span>
+                                        <div class="cart-btn"><a href="">Ajouter au panier <i
+                                                    class="fa-solid fa-cart-shopping"></i></a></div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Let's make week-ends section -->
+
+        <section class="weekend-sec py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="weekend-main" style="background: url(images/weekend-3-back.jpg);">
+                            <div class="weekend-text">
+                                <h5>Week-end discount 40%</h5>
+                                <h3>Mix Bhuja and peas</h3>
+                                <div class="nav-btn mt-4"><a href="">Achetez maintenant</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="weekend-main" style="background: url(images/weekend-2-back.jpg);">
+                            <div class="weekend-text">
+                                <h5>Week-end discount 40%</h5>
+                                <h3>Peanuts Ruffs</h3>
+                                <div class="nav-btn mt-4"><a href="">Achetez maintenant</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================================= -->
+
+        <!-- Let's make another section -->
+        <section class="featured-sec py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <div class="featured-flex">
+                            <i class="fa-solid fa-box"></i>
+                            <p>Produits frais du jour</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="featured-flex">
+                            <i class="fa-solid fa-truck"></i>
+                            <p>Livraison gratuite</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="featured-flex">
+                            <i class="fa-solid fa-percent"></i>
+                            <p>Meilleurs prix du marché</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="featured-flex">
+                            <i class="fa-solid fa-box"></i>
+                            <p>Sécurité assurée</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Let's make a bg section -->
+
+        <section class="bg-sec">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6"></div>
+                    <div class="col-lg-6">
+                        <div class="bg-text">
+                            <h3>Mangez sainement, paraissez jeune, portez-vous bien !</h3>
+                            <p>Manger sainement, c’est choisir chaque jour des gestes simples qui nourrissent le corps et apaisent l’esprit. Des produits frais, des saveurs vraies et une attention sincère pour cultiver énergie, éclat et bien‑être durable.</p>
+                            <p>Des produits frais, des choix équilibrés et une attention quotidienne pour nourrir le corps, préserver l’énergie et révéler une vitalité naturelle qui accompagne chaque moment.</p>
+                            <div class="nav-btn mt-4"><a href="">Achetez maintenant</a></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!-- Let's make blog section  -->
+        <section class="blog-sec py-5">
+            <div class="container">
+
+                <h2 class="title text-center">News & articles</h2>
+
+                <div class="row mt-5">
+                    <div class="col-md-4">
+                        <div class="blog-box">
+                            <div class="blog-img"><img src="images/blog-1.jpg" alt="Blog"></div>
+                            <div class="blog-text">
+                                <h3>Réduire sa graisse abdominale <br> grâce à une alimentation saine</h3>
+                                <p>Adopter des aliments naturels et équilibrés aide à alléger le corps, soutenir la digestion et favoriser une silhouette plus harmonieuse chaque jour.</p>
+                                <div class="blog-arrow">
+                                    <a href="">Lire plus <i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="blog-box">
+                            <div class="blog-img"><img src="images/blog-2.jpg" alt="Blog"></div>
+                            <div class="blog-text">
+                                <h3>Retrouver énergie et légèreté <br>grâce à des choix alimentaires équilibrés</h3>
+                                <p>Des repas simples, frais et variés revitalisent le corps, stimulent l’esprit et installent une sensation durable de légèreté et de bien‑être.</p>
+                                <div class="blog-arrow">
+                                    <a href="">Lire plus <i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="blog-box">
+                            <div class="blog-img"><img src="images/blog-3.jpg" alt="Blog"></div>
+                            <div class="blog-text">
+                                <h3>Sculpter son bien‑être au quotidien <br>en privilégiant des aliments naturels</h3>
+                                <p>Choisir des produits authentiques nourrit profondément l’organisme, renforce la vitalité et crée un équilibre intérieur.</p>
+                                <div class="blog-arrow">
+                                    <a href="">Lire plus <i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Let's make footer  -->
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3">
+                        <div class="footer-img">
+                            <img src="images/footer.png" alt="Footer">
+                            <p class="mt-2">Liens utiles, services clients et contacts réunis ici pour accompagner chaque besoin avec simplicité.</p>
+
+                            <div class="footer-social">
+                                <ul>
+                                    <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                                    <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                                    <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="footer-links ps-5">
+                            <h4>Liens utiles</h4>
+
+                            <ul>
+                                <li><a href=""><i class="fa-solid fa-angle-right"></i>Accueil</a></li>
+                                <li><a href=""><i class="fa-solid fa-angle-right"></i>À propos</a></li>
+                                <li><a href=""><i class="fa-solid fa-angle-right"></i>Services</a></li>
+                                <li><a href=""><i class="fa-solid fa-angle-right"></i>Boutique</a></li>
+                                <li><a href=""><i class="fa-solid fa-angle-right"></i>Produits</a></li>
+                                <li><a href=""><i class="fa-solid fa-angle-right"></i>Categories</a></li>
+                                <li><a href=""><i class="fa-solid fa-angle-right"></i>Offres</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="footer-links">
+                            <h4>Clientèle</h4>
+
+                            <ul>
+                                <li><a href=""><i class="fa-solid fa-angle-right"></i>Expéditions</a></li>
+                                <li><a href=""><i class="fa-solid fa-angle-right"></i>Confidentialité</a></li>
+                                <li><a href=""><i class="fa-solid fa-angle-right"></i>Commande</a></li>
+                                <li><a href=""><i class="fa-solid fa-angle-right"></i>Retour</a></li>
+                                <li><a href=""><i class="fa-solid fa-angle-right"></i>Politiques</a></li>
+                                <li><a href=""><i class="fa-solid fa-angle-right"></i>Ordres</a></li>
+                                <li><a href=""><i class="fa-solid fa-angle-right"></i>Offres</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <div class="footer-cont">
+                            <h4>Contactez-nous</h4>
+
+                            <div class="footer-flex">
+                                <ul>
+                                    <li><i class="fa-solid fa-envelope"></i><a href="">codingwing@gmail.com</a></li>
+                                    <li><i class="fa-solid fa-phone"></i><a href="">123 456 7890</a></li>
+                                    <li><i class="fa-solid fa-location-dot"></i><a href="">123, Lorem Ipsum</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="copyrights">
+                <p class="m-0 text-center">Copyrights | Coding Wing | 2025 All rights reserved</p>
+            </div>
+
+        </footer>
+
+        <!-- Footer de remerciements à Coding Wing et Copilote pour ses commentaires -->
+        <div id="thank-you-footer">
+            <span class="plume">🪶</span>
+            Remerciements à Coding Wing, le concepteur de ce tutoriel à consulter sur YouTube
+            <a href="https://www.youtube.com/watch?v=FiI04ZE46c8" target="_blank">ici</a>. <br> Remerciements à
+            Copilote pour tous les commentaires. — Chris Blues —
+        </div>
+
+
+    </main>
+
+
+
+    <!-- for slider -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom js -->
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morpho</title>
+    <!-- ===================== SWIPER CSS ================ -->
+    <link rel="stylesheet" href="./swiper-bundle.min.css">
+
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- ***************************** HEADER ***************************** -->
+
+    <header class="header">
+        <nav>
+            <div class="nav__header">
+                <div class="nav__logo">
+                    <a href="#"><img src="./assets/logo.png" alt="Logo Morpho">orpho</a>
+                </div>
+                <div class="nav__menu__btn" id="menu-btn">
+                    <span><i class="ri-menu-line"></i></span>
+                </div>
+            </div>
+            <ul class="nav__links" id="nav-links">
+                <li class="link"><a href="#home">Accueil</a></li>
+                <li class="link"><a href="#about">Historique</a></li>
+                <li class="link"><a href="#class">Ateliers</a></li>
+                <li class="link"><a href="#trainer">Coachs</a></li>
+                <li class="link"><a href="#price">Tarifs</a></li>
+                <li class="link"><button class="btn">Contact</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ***************************** MAIN ***************************** -->
+    <main>
+        <!-- ------------------------ Section Home ------------------------ -->
+
+        <div class="section__container home__container" id="home">
+            <div class="home__content">
+                <div class="home__morpho">
+                    <img src="./assets/MorphoTr.png" alt="Logo Morpho">
+                </div>
+                <!-- <h4>Ton corps, ton défi !</h4>
+                <h1 class="section__home">Morpho</h1> -->
+                <p>
+                    Libérez votre potentiel et lancez-vous dans un voyage vers une version plus forte, plus en forme et
+                    plus confiante. Inscrivez-vous dès maintenant à « Morpho... Ton corps, ton défi ! » et constatez
+                    l'incroyable
+                    transformation dont votre corps est capable !
+                </p>
+                <div class="home__btn">
+                    <button class="btn">Rejoignez-nous dès aujourd'hui</button>
+                </div>
+
+
+            </div>
+            <div class="home__image">
+                <img src="./assets/young-fitness-man.jpg" alt="Young fitness man">
+            </div>
+
+        </div>
+
+        <!-- ------------------------ Section About ------------------------ -->
+        <section class="section__container about__container" id="about">
+            <div class="about__image">
+                <img class="about__bg" src="./assets/dot-bg.png" alt="bg">
+                <img src="./assets/about.png" alt="about">
+            </div>
+            <div class="about__content">
+                <h2 class="section__home">Notre historique</h2>
+                <p class="section__description">Animé par notre équipe d'instructeurs experts et motivants, « le cours
+                    que
+                    vous obtiendrez ici » est une séance dynamique axée sur les résultats qui combinent un mélange
+                    parfait
+                    de cardio, de musculation et d'exercices fonctionnels.</p>
+                <div class="about__grid">
+
+                    <div class="about__card">
+                        <span><i class="ri-open-arm-line"></i></span>
+                        <div>
+                            <h4>Opération Porte ouverte</h4>
+                            <p>Nous croyons qu’il est important de fournir un accès illimité à tous les individus, quel
+                                que
+                                soit leur niveau de forme physique, leur âge ou leur origine.</p>
+                        </div>
+                    </div>
+
+                    <div class="about__card">
+                        <span><i class="ri-shield-cross-line"></i></span>
+                        <div>
+                            <h4>Entièrement assuré</h4>
+                            <p>Votre tranquillité d’esprit est notre priorité absolue et notre engagement envers votre
+                                sécurité s’étend à tous les aspects de votre parcours de remise en forme.</p>
+                        </div>
+                    </div>
+
+                    <div class="about__card">
+                        <span><i class="ri-p2p-line"></i></i></span>
+                        <div>
+                            <h4>Entraîneur personnel</h4>
+                            <p>Grâce à des programmes d’entraînement personnalisés adaptés à vos besoins, nous
+                                veillerons à ce que vous profitiez au maximum de votre expérience en salle de sport.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section About ended -->
+
+        <!-- ---------------- Section Classes-Ateliers ---------------- -->
+        <div class="section__container class__container" id="class">
+            <h2 class="section__home">Nos ateliers</h2>
+            <p class="section__description">
+                Découvrez une gamme variée de cours stimulants dans notre salle de sport, conçus pour tous les niveaux
+                et centres d'intérêt. Que vous soyez un athlète chevronné ou que vous débutiez votre parcours sportif,
+                nos cours s'adressent à tous.
+            </p>
+
+            <div class="class__grid">
+                <div class="class__card">
+                    <img src="./assets/dot-bg.png" alt="bg" class="class__bg" />
+                    <img src="./assets/class-1.jpg" alt="Musculation" />
+                    <div class="class__content">
+                        <h4>Musculation</h4>
+                        <p>Entraînement de résistance</p>
+                    </div>
+                </div>
+
+                <div class="class__card">
+                    <img src="./assets/dot-bg.png" alt="bg" class="class__bg" />
+                    <img src="./assets/class-2.jpg" alt="Yoga" />
+                    <div class="class__content">
+                        <h4>Flexibilité et mobilité</h4>
+                        <p>Yoga & Pilates</p>
+                    </div>
+                </div>
+
+                <div class="class__card">
+                    <img src="./assets/dot-bg.png" alt="bg" class="class__bg" />
+                    <img src="./assets/class-3.jpg" alt="HIIT" />
+                    <div class="class__content">
+                        <h4>HIIT <span>(High-Intensity Interval Training)</span></h4>
+                        <p>Circuit Training</p>
+                    </div>
+                </div>
+
+                <div class="class__card">
+                    <img src="./assets/dot-bg.png" alt="bg" class="class__bg" />
+                    <img src="./assets/class-4.jpg" alt="Danses" />
+                    <div class="class__content">
+                        <h4>Groupe Fitness</h4>
+                        <p>Zumba ou danses</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Section Classes ended-->
+
+        <!-- ---------------- Section Trainers-Coachs ---------------- -->
+        <section class="section__container trainer__container" id="trainer">
+            <h2 class="section__home">Nos coachs</h2>
+            <p class="section__description">Nos coachs sont bien plus que de simples experts en sport ; ils sont
+                passionnés par l'idée de vous aider à atteindre vos objectifs de santé et de remise en forme. Ils sont
+                équipés pour personnaliser vos programmes d'entraînement afin de répondre à vos besoins spécifiques.</p>
+            <div class="trainer__flex">
+
+                <div class="trainer__card">
+                    <img src="assets/trainer-1.jpg" alt="trainer" />
+                    <!-- </div>
+
+                <div class="trainer__card"> -->
+                    <div class="trainer__content">
+                        <h4>James Rodriguez</h4>
+                        <h5>Force et conditionnement</h5>
+                        <hr />
+                        <p>Fort d'une expérience dans le sport de compétition, il se con&shy;sacre à vous aider à
+                            atteindre vos meilleures performances phy&shy;siques.</p>
+                        <div class="trainer__socials">
+                            <a href="#"><i class="ri-facebook-fill"></i></a>
+                            <a href="#"><i class="ri-google-fill"></i></a>
+                            <a href="#"><i class="ri-instagram-line"></i></a>
+                            <a href="#"><i class="ri-twitter-fill"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trainer__card">
+                    <img src="assets/trainer-2.jpg" alt="trainer" />
+                    <!-- </div>
+
+                <div class="trainer__card"> -->
+                    <div class="trainer__content">
+                        <h4>Mark Harris</h4>
+                        <h5>HIIT et fonctionnel</h5>
+                        <hr />
+                        <p>Ses entraînements énergi&shy;ques et dynamiques sont conçus pour repousser vos limites,
+                            stimuler votre métabolisme et brûler des calories.</p>
+                        <div class="trainer__socials">
+                            <a href="#"><i class="ri-facebook-fill"></i></a>
+                            <a href="#"><i class="ri-google-fill"></i></a>
+                            <a href="#"><i class="ri-instagram-line"></i></a>
+                            <a href="#"><i class="ri-twitter-fill"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trainer__card">
+                    <img src="assets/trainer-3.jpg" alt="trainer" />
+                    <!-- </div>
+
+                <div class="trainer__card"> -->
+                    <div class="trainer__content">
+                        <h4>Emily Davis</h4>
+                        <h5>Yoga et pleine conscience</h5>
+                        <hr />
+                        <p>Ses séances portent sur les pos&shy;tures physiques et égale&shy;ment sur le
+                            dévelop&shy;pe&shy;ment de la
+                            paix in&shy;té&shy;rieure et de la pleine cons&shy;cien&shy;ce.</p>
+                        <div class="trainer__socials">
+                            <a href="#"><i class="ri-facebook-fill"></i></a>
+                            <a href="#"><i class="ri-google-fill"></i></a>
+                            <a href="#"><i class="ri-instagram-line"></i></a>
+                            <a href="#"><i class="ri-twitter-fill"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section Trainers ended-->
+
+        <!-- ---------------- Section Price ---------------- -->
+        <section class="section__container price__container" id="price">
+            <h2 class="section__home">Nos tarifs</h2>
+            <p class="section__description">
+                Notre plan tarifaire comprend différents niveaux d'adhésion, chacun étant adapté à vos préférences et
+                aspirations en matière de fitness.
+            </p>
+            <div class="price__flex">
+                <div class="price__card">
+                    <div class="price__content">
+                        <h4>Plan de base</h4>
+                        <img src="./assets/price-1.png" alt="Price">
+                        <p>Notre forfait de base est le point de dé&shy;part idéal pour les personnes souhaitant
+                            démarrer leur parcours de remise en forme ou maintenir un mode de vie actif.<br>
+                        </p>
+                        <hr />
+                        <h4>Caractéristiques principales</h4>
+                        <p>Plan d'entraînement intelligent</p>
+                        <p>Entraînements à domicile</p>
+                    </div>
+                    <button class="btn">Contactez-nous</button>
+                </div>
+
+                <div class="price__card">
+                    <div class="price__content">
+                        <h4>Plan hebdomadaire</h4>
+                        <img src="./assets/price-2.png" alt="Price">
+                        <p>Notre programme hebdomadaire est conçu pour structurer et varier vos séances d'entraînement,
+                            vous
+                            permet&shy;tant ainsi de rester motivé et sur la bonne voie. </p>
+                        <hr />
+                        <h4>Caractéristiques principales</h4>
+                        <p>PRO Gyms</p>
+                        <p>Plan d'entraînement intelligent</p>
+                        <p>Entraînements à domicile</p>
+                    </div>
+                    <button class="btn">Contactez-nous</button>
+                </div>
+
+                <div class="price__card">
+                    <div class="price__content">
+                        <h4>Forfait mensuel</h4>
+                        <img src="./assets/price-3.png" alt="Price">
+                        <p>Grâce à cet abonnement flexible, vous aurez accès à nos installations de sport ultramodernes,
+                            à nos entraîneurs experts et à une communauté de fitness dynami&shy;que.</p>
+                        <hr />
+                        <h4>Caractéristiques principales</h4>
+                        <p>ELITE Gyms & Classes</p>
+                        <p>PRO Gyms</p>
+                        <p>Plan d'entraînement intelligent</p>
+                        <p>Entraînements à domicile</p>
+                        <p>Entraînement personnel</p>
+                    </div>
+                    <button class="btn">Contactez-nous</button>
+                </div>
+
+            </div>
+        </section>
+        <!-- Section Price ended-->
+
+
+        <!-- ---------------- Clients ---------------- -->
+        <section class="container">
+            <div class="card__container swiper">
+                <div class="card__content">
+                    <div class="swiper-wrapper">
+
+                        <!-- Client 1 -->
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="./assets/client-1.jpg" alt="Client" class="card__img">
+                                <!-- <div class="card__shadow"></div> -->
+                                <div class="card__ratings">★★★★½</div>
+                            </div>
+
+                            <div class="card__data">
+                                <p class="card__description">
+                                    Les coachs ont personnalisé un programme qui conciliait parfaitement mes exigences
+                                    professionnelles et personnelles, et j'ai constaté des progrès remarquables dans mon
+                                    parcours de remise en forme.
+                                </p>
+                                <h3 class="card__name">John Smith</h3>
+                                <h5 class="card__prof">Responsable marketing</h5>
+                            </div>
+                        </article>
+
+                        <!-- Client 2 -->
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="./assets/client-2.jpg" alt="Client" class="card__img">
+                                <!-- <div class="card__shadow"></div> -->
+                                <div class="card__ratings">★★★★½</div>
+                            </div>
+
+                            <div class="card__data">
+                                <p class="card__description">
+                                    L'expertise des entraîneurs et l'engagement de la salle en matière de propreté ont
+                                    fait de cet endroit un havre de paix pour moi, me permettant de maintenir ma santé
+                                    et de me détendre.
+                                </p>
+                                <h3 class="card__name">Emilie Carter</h3>
+                                <h5 class="card__prof">Infirmière en hôpital</h5>
+                            </div>
+                        </article>
+
+                        <!-- Client 3 -->
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="./assets/client-3.jpg" alt="Client" class="card__img">
+                                <!-- <div class="card__shadow"></div> -->
+                                <div class="card__ratings">★★★½☆</div>
+                            </div>
+
+                            <div class="card__data">
+                                <p class="card__description">
+                                    La diversité des cours et le soutien de la communauté m'ont permis de rester
+                                    motivé. J'ai
+                                    perdu du poids, gagné en confiance et trouvé une nouvelle énergie pour inspirer mes
+                                    élèves.
+                                </p>
+                                <h3 class="card__name">Miles Davis</h3>
+                                <h5 class="card__prof">Professeur agrégé</h5>
+                            </div>
+                        </article>
+
+                        <!-- Client 4 -->
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img src="./assets/client-4.jpg" alt="Client" class="card__img">
+                                <!-- <div class="card__shadow"></div> -->
+                                <div class="card__ratings">★★★★★</div>
+                            </div>
+
+                            <div class="card__data">
+                                <p class="card__description">
+                                    L'accès 24h/24 et 7j/7 à cette salle est une véritable bouée de sauvetage. Que ce
+                                    soit pour
+                                    une séance d'entraînement nocturne ou matinale, la commodité est imbattable.
+                                </p>
+                                <h3 class="card__name">David Martinez</h3>
+                                <h5 class="card__prof">Entrepreneur</h5>
+                            </div>
+                        </article>
+
+                        <!-- Fin du listing des clients -->
+
+                    </div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev">
+                    <i class="ri-arrow-left-s-line"></i>
+                </div>
+
+                <div class="swiper-button-next">
+                    <i class="ri-arrow-right-s-line"></i>
+                </div>
+
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
+
+            </div>
+        </section>
+        <!-- Section Clients ended-->
+
+    </main>
+
+    <!-- ---------------- Footer ---------------- -->
+    <footer class="footer">
+        <div class="section__container footer__container">
+            <div class="footer__col">
+                <div class="footer__logo">
+                    <a href="#"><img src="./assets/logo.png" alt="Logo Morpho">orpho</a>
+                </div>
+                <p>Faites le premier pas vers une vie plus saine et plus forte grâce à nos forfaits imbattables.
+                    Ensemble, travaillons dur, atteignons nos objectifs et allons de l'avant !</p>
+                <div class="footer__socials">
+                    <a href="#"><i class="ri-facebook-fill"></i></a>
+                    <a href="#"><i class="ri-instagram-line"></i></a>
+                    <a href="#"><i class="ri-twitter-fill"></i></a>
+                </div>
+            </div>
+
+            <div class="footer__col">
+                <h4>Société</h4>
+                <div class="footer__links">
+                    <a href="#">Entreprise</a>
+                    <a href="#">Franchise</a>
+                    <a href="#">Partenariat</a>
+                    <a href="#">Réseau</a>
+                </div>
+            </div>
+
+            <div class="footer__col">
+                <h4>À propos</h4>
+                <div class="footer__links">
+                    <a href="#">Blogs</a>
+                    <a href="#">Sécurité</a>
+                    <a href="#">Carrières</a>
+                </div>
+            </div>
+
+            <div class="footer__col">
+                <h4>Contact</h4>
+                <div class="footer__links">
+                    <a href="#">Contactez-nous</a>
+                    <a href="#">Confidentialité</a>
+                    <a href="#">Termes & Conditions</a>
+                    <a href="#">Calculateur IMC</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__bar">
+            Copyright © 2023 Web Design Mastery. All rights reserved.
+        </div>
+
+    </footer>
+    <!-- ---------------- Footer ended ---------------- -->
+
+    <!-- ================= SCROLLREVEAL ================= -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- ================= SWIPER JS ================= -->
+    <script src="swiper-bundle.min.js"></script>
+
+    <!-- ================= MAIN JS ================= -->
+    <script src="main.js"></script>
+
+    <!-- =================  CODES SWIPER JS ================= -->
+    <!-- <script>
+        // clients
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            spaceBetween: 20,
+            slidesPerView: 1,
+
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+
+        window.addEventListener('resize', () => {
+            swiper.update();
+        });
+
+    </script> -->
+
+</body>
+
+</html>

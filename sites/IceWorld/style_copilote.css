@@ -1,0 +1,652 @@
+/* =========================================================
+   IMPORTS & VARIABLES
+========================================================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --primary-color: #ed8613;
+    --primary-color-dark: #d47911;
+    --text-dark: #333333;
+    --text-light: #767268;
+    --extra-light: #f1f1f1;
+    --white: #ffffff;
+
+    --max-width: 1200px;
+    --section-padding: 5rem;
+
+    --shadow-soft: 0 0 20px rgba(0, 0, 0, 0.1);
+    --shadow-medium: 0 0 30px rgba(0, 0, 0, 0.1);
+
+    --banner-height-desktop: 500px;
+}
+
+/* =========================================================
+   RESET & GLOBALS
+========================================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+ul {
+    list-style: none;
+}
+
+/* =========================================================
+   GLOBAL COMPONENTS
+========================================================= */
+.section__container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: var(--section-padding) 1rem;
+}
+
+.section__header {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    text-align: center;
+    line-height: 3rem;
+}
+
+.section__description {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-light);
+    line-height: 1.75rem;
+    text-align: justify;
+    hyphens: auto;
+    overflow-wrap: break-word;
+    margin-block: 1rem 3rem;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    border: none;
+    font-size: 1rem;
+    color: var(--white);
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--primary-color-dark);
+    box-shadow: var(--shadow-medium);
+}
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+nav {
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+    isolation: isolate;
+}
+
+.nav__header {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+}
+
+.nav__logo .logo {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.nav__menu__btn {
+    font-size: 1.5rem;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.nav__links {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    transform: translateY(-100%);
+    transition: transform 0.5s;
+    z-index: -1;
+}
+
+.nav__links.open {
+    transform: translateY(100%);
+}
+
+.nav__links a {
+    font-weight: 500;
+    color: var(--white);
+}
+
+.nav__links a:hover {
+    color: var(--text-dark);
+}
+
+.nav__btns {
+    display: none;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+header {
+    padding-top: 5rem;
+    display: grid;
+}
+
+.header__image {
+    position: relative;
+    isolation: isolate;
+}
+
+.header__image::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    aspect-ratio: 1;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.header__image img {
+    max-width: 675px;
+}
+
+.header__content {
+    padding: 2rem 1rem 5rem;
+}
+
+.header__content h1 {
+    margin-bottom: 2rem;
+    font-size: 4.5rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    text-align: center;
+    line-height: 5.5rem;
+}
+
+.header__content h1 span {
+    color: var(--primary-color);
+}
+
+.header__btn {
+    margin-block: 2rem;
+    text-align: center;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.socials a {
+    padding: 5px 9px;
+    font-size: 1.125rem;
+    color: var(--white);
+    background-color: var(--text-dark);
+    border-radius: 50%;
+}
+
+.socials a:hover {
+    background-color: var(--primary-color);
+}
+
+/* =========================================================
+   POPULAR SECTION
+========================================================= */
+.popular__grid {
+    margin-top: 4rem;
+    display: grid;
+    gap: 4rem 1rem;
+}
+
+.popular__card {
+    position: relative;
+    isolation: isolate;
+}
+
+.popular__card::before {
+    content: "";
+    position: absolute;
+    bottom: 5rem;
+    left: 0;
+    width: 100%;
+    height: 60%;
+    background-color: #fde6f2;
+    z-index: -1;
+    transition: 0.5s;
+    box-shadow: var(--shadow-medium);
+}
+
+.popular__card:nth-child(2)::before {
+    background-color: #eedfd9;
+}
+
+.popular__card:nth-child(3)::before {
+    background-color: #faeaed;
+}
+
+.popular__card:hover::before {
+    height: 90%;
+}
+
+.popular__card img {
+    max-width: 250px;
+    margin-inline: auto;
+}
+
+.popular__card__content {
+    padding: 1rem;
+    background-color: var(--white);
+    box-shadow: var(--shadow-medium);
+}
+
+.popular__card__content h4,
+.popular__card__content h3 {
+    text-align: center;
+    font-weight: 700;
+}
+
+.popular__card__content h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    color: var(--text-dark);
+}
+
+.popular__card__content h3 {
+    margin-bottom: 1.25rem;
+    color: var(--primary-color);
+}
+
+/* =========================================================
+   DISCOVER SECTION
+========================================================= */
+.discover__grid {
+    margin-top: 4rem;
+    display: grid;
+    gap: 4rem;
+}
+
+.discover__card {
+    display: grid;
+    gap: 2rem;
+    overflow: hidden;
+}
+
+.discover__card img {
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.discover__card h4,
+.discover__card h3 {
+    text-align: center;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.discover__card h3 {
+    margin-bottom: 2rem;
+    font-size: 1.75rem;
+}
+
+.discover__card h3 span {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-light);
+}
+
+.discover__card__btn {
+    text-align: center;
+}
+
+/* =========================================================
+   BANNER SECTION
+========================================================= */
+.banner {
+    max-width: 1400px;
+    margin: auto;
+    padding-block: var(--section-padding);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.banner__image {
+    min-height: 250px;
+    background-image: url("assets/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.banner__content {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    padding-inline: 1rem;
+}
+
+.banner__flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.banner__card {
+    flex: 1 1 200px;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow-soft);
+    text-align: center;
+}
+
+.banner__card img {
+    max-width: 50px;
+    margin: 0 auto 1rem;
+}
+
+/* =========================================================
+   SUBSCRIBE SECTION
+========================================================= */
+.subscribe__content {
+    padding: var(--section-padding) 1rem;
+    background-color: #fde6f2;
+}
+
+.subscribe__content .section__description {
+    max-width: 600px;
+    margin-inline: auto;
+}
+
+.subscribe__content form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe__content input {
+    width: 100%;
+    max-width: 400px;
+    padding: calc(1rem - 2px);
+    border: 1px solid var(--text-dark);
+    border-radius: 5px;
+    background-color: transparent;
+    font-size: 1rem;
+    color: var(--text-dark);
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+footer {
+    background-color: var(--extra-light);
+}
+
+.footer__container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem 2rem;
+}
+
+.footer__col {
+    text-align: center;
+}
+
+.footer__col .logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.footer__col .logo span {
+    color: var(--primary-color);
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer__links a {
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+.footer__links a:hover {
+    color: var(--primary-color);
+}
+
+.footer__bar {
+    padding: 0 0 6rem;
+    text-align: center;
+    font-size: 1rem;
+    color: var(--text-dark);
+}
+
+/* Remerciements */
+#thank-you-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 15px;
+    background-color: #f8f8f8;
+    color: #333;
+    text-align: center;
+    font-size: 1rem;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 1s ease, transform 1s ease;
+    z-index: 1000;
+}
+
+#thank-you-footer.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#thank-you-footer a {
+    text-decoration: underline;
+}
+
+/* =========================================================
+   MEDIA QUERIES
+========================================================= */
+@media (width > 540px) {
+    .popular__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .discover__card img {
+        height: 300px;
+    }
+
+    .banner__image {
+        min-height: 300px;
+    }
+
+    .subscribe__content form {
+        flex-direction: row;
+    }
+}
+
+@media (width > 768px) {
+    /* NAVIGATION */
+    nav {
+        position: static;
+        padding: 2rem 1rem;
+        max-width: var(--max-width);
+        margin-inline: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav__header {
+        flex: 1;
+        padding: 0;
+        background-color: transparent;
+    }
+
+    .nav__logo .logo {
+        font-size: 1.5rem;
+        color: var(--text-dark);
+    }
+
+    .nav__menu__btn {
+        display: none;
+    }
+
+    .nav__links {
+        position: static;
+        flex-direction: row;
+        width: auto;
+        padding: 0;
+        background-color: transparent;
+        transform: none;
+    }
+
+    .nav__links a {
+        color: var(--text-dark);
+    }
+
+    .nav__btns {
+        display: flex;
+        justify-content: flex-end;
+        gap: 1rem;
+        flex: 1;
+    }
+
+    /* HEADER */
+    header {
+        padding-top: 0;
+        grid-template-columns:
+            1fr calc(var(--max-width) / 2) calc(var(--max-width) / 2) 1fr;
+        align-items: center;
+    }
+
+    .header__image {
+        grid-column: 3 / 5;
+    }
+
+    .header__content {
+        grid-area: 1 / 2 / 2 / 3;
+        padding-block: 5rem;
+    }
+
+    /* POPULAR */
+    .popular__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* DISCOVER */
+    .discover__card {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+
+    .discover__card img {
+        height: 350px;
+    }
+
+    .discover__card:nth-child(2) .discover__card__content {
+        order: -1;
+    }
+
+    /* BANNER */
+    .banner {
+        flex-direction: row;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .banner__image {
+        flex: 1;
+        min-height: var(--banner-height-desktop);
+        order: 2;
+    }
+
+    .banner__content {
+        flex: 1;
+        text-align: left;
+        padding-inline: 2rem;
+        order: 1;
+    }
+
+    .banner__content .section__header {
+        text-align: left;
+    }
+
+    /* FOOTER */
+    .footer__container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .footer__col:nth-child(1),
+    .footer__col:nth-child(3) {
+        flex: 1;
+        text-align: left;
+    }
+
+    .footer__links {
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+
+    .footer__col .socials {
+        justify-content: flex-end;
+    }
+}
+
+@media (width > 1024px) {
+    .popular__grid {
+        gap: 2rem;
+    }
+
+    .discover__card {
+        gap: 4rem;
+    }
+}

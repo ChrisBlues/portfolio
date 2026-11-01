@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 .brand-logo {
+    font-family: "Ubuntu", sans-serif;
+}
+
+.mt-2 {
+    margin-top: 0.5rem;
+}
+
+.hero h1 {
+    padding: 0;
+    margin: 0;
+}
+
+nav .brand-logo {
+    position: relative;
+}
+
+.valign-wrapper {
+    flex-wrap: wrap;
+}
+
+.header-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    z-index: 1;
+}
+
+.hero img,
+.about img,
+.features-images img,
+.carousel img {
+    object-fit: cover;
+}
+
+.hero img {
+    height: 400px;
+    width: 200px;
+}
+
+.hero img:nth-child(odd) {
+    margin-top: 5rem;
+}
+
+.carousel {
+    z-index: 1;
+    height: 40rem;
+    margin-top: -15rem;
+}
+
+.waves{
+    height: 15rem;
+    margin-top: -10rem;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 56%,0% 81%);
+    z-index: -1;
+}
+
+.row > .col{
+    margin-bottom: 1rem;
+}
+
+.additional-info{
+    margin-bottom: 0.75rem;
+}
+
+.price-block{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.price-block p{
+    font-weight: bold;
+}
+
+.container{
+    width: 100%;
+}
+
+.featured-images img{
+    width: 100%;
+}
+
+.subtitle{
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 3rem;
+}
+
+.intro-text {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2rem;
+  color: #555;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: auto;
+  margin-bottom: 32px;
+}
+
+
+.caption {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  color: #555;
+  margin-top: 8px;
+  text-align: center;
+  font-style: italic;
+}
+
+.form .input-field input[type="text"]:focus + label,
+.form .input-field input[type="email"]:focus + label,
+.form .input-field input[type="tel"]:focus + label,
+.form .input-field textarea:focus + label{
+    color: #3f51b5;
+}
+
+.form .input-field input[type="text"]:focus,
+.form .input-field input[type="email"]:focus,
+.form .input-field input[type="tel"]:focus,
+.form .input-field textarea:focus{
+    border-bottom:1px solid #3f51b5;
+    box-shadow: 0 1px 0 0 #000;
+}
+
+.footer_merci{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+  color: var(--doré);
+  text-align: center;
+  padding: 1em;
+  font-style: italic;
+  font-size: 1.5rem;
+  font-family: 'Cormorant Garamond', serif;
+  border-top: 1px solid var(--brume);
+  box-shadow: 0 -2px 10px rgba(212, 175, 55, 0.3);
+  z-index: 100;
+}
+
+
+

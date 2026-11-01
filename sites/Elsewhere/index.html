@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elsewhere</title>
+
+    <!-- Linking Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome Cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Navbar start -->
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" id="logo"><span>E</span>lsewhere</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar"> <span><i
+                        class="fa-solid fa-bars"></i></span></button>
+
+            <div class="collapse navbar-collapse" id="mynavbar">
+
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#book">Book</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#packages">Packages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                </ul>
+
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search">
+                    <button class="btn btn-primary" type="submit">Search</button>
+                </form>
+
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Home Section Start -->
+    <div class="home">
+        <div class="content">
+            <h5>Welcome To World</h5>
+            <h1>Visit <span class="changecontent"></span></h1>
+            <h2 id="change-text" class="fade-text">France</h2>
+            <p>Eleven destinations and more, <br> whispered through the winds of <span>E</span>lsewhere.</p>
+            <a href="#book">Book Place</a>
+        </div>
+    </div>
+    <!-- Home Section End -->
+
+    <!-- Section Book Start -->
+    <section class="book" id="book">
+        <div class="container">
+
+            <div class="main-text">
+                <h1><span>B</span>ook</h1>
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-6 py-3 py-md-0">
+                    <div class="card">
+                        <img src="./images/book-img.png" alt="Monuments célèbres du monde entier">
+                    </div>
+                </div>
+
+                <div class="col-md-6 py-3 py-md-0">
+                    <form action="#">
+                        <input type="text" class="form-control" placeholder="Where To" required><br>
+                        <input type="text" class="form-control" placeholder="How Many" required><br>
+                        <input type="date" class="form-control" placeholder="Arrivals" required><br>
+                        <input type="date" class="form-control" placeholder="Leaving" required><br>
+                        <textarea class="form-control" rows="5" name="text"
+                            placeholder="Enter Your Name & Details"></textarea>
+                        <input type="submit" value="Book Now" class="submit" required>
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Section Book End -->
+
+    <!-- Section Packages Start -->
+    <section class="packages" id="packages">
+        <div class="container">
+
+            <div class="main-txt">
+                <h1><span>P</span>ackages</h1>
+            </div>
+
+            <div class="row" style="margin-top: 30px;">
+
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <img src="./images/uk.png" alt="Tower Bridge">
+                        <div class="card-body">
+                            <h3>United Kingdom</h3>
+                            <p>Stone arches rise above the Thames, where history and modernity meet in quiet, dignified
+                                motion</p>
+                            <div class="star">
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <h6>Price : <strong>$771</strong> (1 week - Comfortable)</h6>
+                            <a href="#book">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <img src="./images/france.png" alt="Paris">
+                        <div class="card-body">
+                            <h3>France</h3>
+                            <p>Paris whispers in rooftops and iron lace, a skyline stitched with memory, elegance, and
+                                longing.</p>
+                            <div class="star">
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <h6>Price : <strong>$341</strong> (1 night/2 days)</h6>
+                            <a href="#book">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <img src="./images/pakistan.png" alt="Pakistan">
+                        <div class="card-body">
+                            <h3>Pakistan</h3>
+                            <p>A solitary boat drifts through emerald silence, mountains watching like ancient sentinels
+                                of dreams.</p>
+                            <div class="star">
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <h6>Price : <strong>$764</strong> (1 week)</h6>
+                            <a href="#book">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row" style="margin-top: 30px;">
+
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <img src="./images/italy.png" alt="Venise">
+                        <div class="card-body">
+                            <h3>Italy</h3>
+                            <p>Venice glides in golden hush, gondolas threading through water alleys carved by centuries
+                                of love.</p>
+                            <div class="star">
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <h6>Price : <strong>$992</strong> (3 nights/4 days)</h6>
+                            <a href="#book">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <img src="./images/india.png" alt="Taj Mahal en Inde">
+                        <div class="card-body">
+                            <h3>India</h3>
+                            <p>Marble breathes beneath sunrise haze, the Taj reflecting devotion, symmetry, and timeless
+                                yearning.</p>
+                            <div class="star">
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <h6>Price : <strong>$3265</strong> (2 weeks)</h6>
+                            <a href="#book">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <img src="./images/us.png" alt="Statue de la Liberté à New York">
+                        <div class="card-body">
+                            <h3>United States</h3>
+                            <p>Liberty lifts her torch skyward, framed by towers — a skyline pulsing with ambition,
+                                hope, and echoes.</p>
+                            <div class="star">
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star checked"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <h6>Price : <strong>$2050</strong> (11 nights/12 days)</h6>
+                            <a href="#book">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section Packages End -->
+
+    <!-- ============================================= Section Services Start =============================================-->
+    <section class="services" id="services">
+        <div class="container">
+
+            <div class="main-txt">
+                <h1><span>S</span>ervices</h1>
+            </div>
+
+            <!-- --------------------------------------- Services : 1re ligne -------------------------------------------- -->
+            <div class="row" style="margin-top: 30px;">
+
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <i class="fa fa-hotel"></i>
+                        <h3>Affordable Hotel</h3>
+                        <img src="svg/toque.svg" alt="Icône toque" class="fioriture-icon" />
+                        <p class="caption">Rest softly in comfort and simplicity — where each night welcomes you without
+                            burden
+                            or excess.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <i class="fas fa-utensils"></i>
+                        <h3>Food & Drinks</h3>
+                        <img src="svg/food.svg" alt="Icône hamburger" class="fioriture-icon" />
+                        <p class="caption">Taste the journey — flavors and moments shared, where every bite becomes part
+                            of memory.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <i class="fas fa-bullhorn"></i>
+                        <h3>Safety Guide</h3>
+                        <img src="svg/main.svg" alt="Icône main" class="fioriture-icon" />
+                        <p class="caption">A voice of care in unfamiliar places — guiding gently, protecting quietly,
+                            never far
+                            from reach.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" style="margin-top: 30px;">
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <i class="fa fa-globe-asia"></i>
+                        <h3>Around the world</h3>
+                        <img src="svg/carte.svg" alt="Icône carte" class="fioriture-icon" />
+                        <p class="caption">From rooftops to rivers, deserts to dreams — the world unfolds in stories
+                            waiting to be lived.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <i class="fas fa-plane"></i>
+                        <h3>Fastest Travel</h3>
+                        <img src="svg/valise.svg" alt="Icône valise" class="fioriture-icon" />
+                        <p class="caption" style="font-size: 15px;">Wings above borders, speed without haste — arriving
+                            swiftly, yet leaving time for wonder to breathe.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <i class="fas fa-hiking"></i>
+                        <h3>Adventures</h3>
+                        <img src="svg/tente.svg" alt="Icône tente" class="fioriture-icon" />
+                        <p class="caption">Paths untamed, steps uncertain — adventure begins where maps end and courage
+                            quietly takes the lead.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Section Services End -->
+
+    <!-- ========================= Section Gallery Start =============================-->
+    <section class="gallery" id="gallery">
+
+        <div class="main-text">
+            <h1><span>G</span>allery</h1>
+        </div>
+
+        <div class="row" style="margin-top: 30px;">
+
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                    <a href="#" class="pop d-block ">
+                        <img src="images/g1.png" class="img-fluid" data-bs-toggle="modal" data-bs-target="#imageModal"
+                            alt="Elsewhere photo">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                    <a href="#" class="pop d-block ">
+                        <img src="images/g2.png" class="img-fluid" data-bs-toggle="modal" data-bs-target="#imageModal"
+                            alt="Elsewhere photo">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                    <a href="#" class="pop d-block ">
+                        <img src="images/g3.png" class="img-fluid" data-bs-toggle="modal" data-bs-target="#imageModal"
+                            alt="Elsewhere photo">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row" style="margin-top: 30px;">
+
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                    <a href="#" class="pop d-block ">
+                        <img src="images/g4.png" class="img-fluid" data-bs-toggle="modal" data-bs-target="#imageModal"
+                            alt="Elsewhere photo">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                    <a href="#" class="pop d-block ">
+                        <img src="images/g5.png" class="img-fluid" data-bs-toggle="modal" data-bs-target="#imageModal"
+                            alt="Elsewhere photo">
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                    <a href="#" class="pop d-block position-relative">
+                        <img src="images/g6.png" class="img-fluid" data-bs-toggle="modal" data-bs-target="#imageModal"
+                            alt="Elsewhere photo">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- Section Gallery End -->
+
+    <!-- ============================================= Section About Start =============================================-->
+    <section class="about" id="about">
+        <div class="container">
+
+            <div class="main-text">
+                <h1>About <span>Us</span></h1>
+            </div>
+
+            <div class="row" style="margin-top: 50px;">
+
+                <div class="col-md-6 py-3 py-md-0">
+                    <div class="card">
+                        <img src="./images/about-img.png" alt="">
+                    </div>
+                </div>
+
+                <div class="col-md-6 py-3 py-md-0">
+                    <h2>How Travel Agency Work</h2>
+                    <p>*We listen, we guide, we curate. Elsewhere crafts journeys with care — blending comfort,
+                        wonder,
+                        and quiet rhythm. From first click to final step, each experience is tailored with
+                        empathy and
+                        elegance. You travel, we harmonize — letting destinations unfold like poems, in the rhythm of
+                        footsteps, silent departures within imagined landscapes.</p>
+                    <p class="traduction">*Nous écoutons, nous guidons, nous composons. Elsewhere façonne chaque voyage
+                        avec soin — mêlant confort, émerveillement et rythme discret. Du premier clic au dernier pas,
+                        chaque expérience est pensée avec empathie et élégance. Vous voyagez, nous harmonisons —
+                        laissant les destinations se dérouler comme des poèmes, au rythme des pas, des départs
+                        silencieux au sein de paysages imaginés.</p>
+                    <button id="about-btn">Read More...</button>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- About End -->
+
+    <!-- ============================================= Footer Start =============================================-->
+    <footer id="footer">
+        <h1><span>E</span>lsewhere</h1>
+        <p>Follow Elsewhere on social media — for quiet journeys, imagined departures, and poetic destinations.</p>
+        <div class="social-links">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-pinterest"></i>
+        </div>
+        <div class="credit">
+            <p>Designed By <a href="#">SA Coding</a></p>
+        </div>
+        <div class="copyright">
+            <p>&copy;Copyright SA Coding. All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- Footer End -->
+
+    <!-- ============================================= Footer de remerciements Start =============================================-->
+    <!-- Footer de remerciements à SA Coding et Copilote pour ses commentaires en anglais -->
+    <div id="thank-you-footer">
+        <span class="plume">🪶</span>
+        Remerciements à SA Coding, le concepteur de ce tutoriel à consulter sur YouTube
+        <a href="https://www.youtube.com/watch?v=tFJs2w8mg3c&t=499s" target="_blank">ici</a>. <br> Remerciements
+        à Copilote pour tous les commentaires rédigés en anglais. — Chris Blues —
+    </div>
+
+    <!-- Modale Bootstrap -->
+    <div class="modal fade" id="imagemodal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-transparent border-0">
+                <div class="modal-body text-center position-relative">
+                    <img src="" class="modal-image img-fluid" alt="Image agrandie" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================= Link Bootstrap & script.js =============================================-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>

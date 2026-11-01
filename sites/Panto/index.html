@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panto</title>
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/gilroy-bold">
+    <!-- Font Awesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <!-- AOS Animation Library CSS-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <!-- Main Stylesheet : Contains all the custom CSS rules for the website  -->
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+
+<body>
+    <!-- Header / Navbar -->
+    <header data-aos="fade-down" data-aos-duration="1000">
+        <nav class="container">
+            <a href="#" class="logo">Panto</a>
+            <ul class="nav-links">
+                <li><a href="#furniture">Ameublement</a></li>
+                <li><a href="#shop">Boutique</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="#" class="cart-icon"><i class="fa-solid fa-bag-shopping"></i></a>
+                <div class="mobile-menu-btn"><i class="fa-solid fa-bars"></i></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero section -->
+    <section id="hero">
+        <div class="container hero-content" data-aos="fade-up" data-aos-duration="1200">
+            <h1>Rendez votre intérieur plus minimaliste & moderne.</h1>
+            <p>
+                Transformez vos pièces en un espace beaucoup plus minimaliste et moderne, facilement et rapidement,
+                grâce à Panto.
+            </p>
+            <div class="search-bar">
+                <input type="text" placeholder="Rechercher un ameublement">
+                <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choosing Us -->
+    <section id="why-us" class="container">
+        <h2 data-aos="fade-right">Pourquoi nous choisir&nbsp;?</h2>
+        <div class="features-grid">
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                <h3>Installations de luxe</h3>
+                <p>Louer un espace de travail chez nous vous offre l'avantage d'un service confortable et
+                    d'installations complètes.</p>
+                <a href="#" class="read-more">Plus d'infos <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                <h3>Prix ​​abordables</h3>
+                <p>Bénéficiez d'un espace de travail de la plus haute qualité à un prix abordable et profitez des
+                    équipements exclusifs disponibles ici.</p>
+                <a href="#" class="read-more">Plus d'infos <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                <h3>De nombreux choix</h3>
+                <p>Nous proposons un large choix d'espaces de travail uniques afin que vous puissiez choisir celui qui
+                    vous convient le mieux.</p>
+                <a href="#" class="read-more">Plus d'infos <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Best Selling Product -->
+    <section id="best-selling">
+        <h2 data-aos="fade-up">Produits les plus vendus</h2>
+        <div class="tabs" data-aos="fade-up" data-aos-delay="100">
+            <button class="tab-btn active" data-tab="chair">Sièges</button>
+            <button class="tab-btn" data-tab="beds">Lits</button>
+            <button class="tab-btn" data-tab="sofa">Sofa</button>
+            <button class="tab-btn" data-tab="lamp">Lampes</button>
+        </div>
+        <div class="products-grid" id="products-container">
+            <!-- Product Items will be populated here or static for now -->
+            <div class="product-card" data-aos="zoom-in" data-aos-delay="100">
+                <div class="product-img-wrapper">
+                    <img src="assets/Images/sakarias-armchair.png" alt="Sakarias Armchair">
+                </div>
+                <div class="product-info">
+                    <span class="category">Sièges</span>
+                    <h3>Sakarias Armchair</h3>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="price-row">
+                        <span class="price">$392</span>
+                        <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-aos="zoom-in" data-aos-delay="200">
+                <div class="product-img-wrapper">
+                    <img src="assets/Images/balstar-chair.png" alt="Balstar Chair">
+                </div>
+                <div class="product-info">
+                    <span class="category">Sièges</span>
+                    <h3>Baltsar Chair</h3>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="price-row">
+                        <span class="price">$299</span>
+                        <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-aos="zoom-in" data-aos-delay="300">
+                <div class="product-img-wrapper">
+                    <img src="assets/Images/anjay-chair.png" alt="Anjay Chair">
+                </div>
+                <div class="product-info">
+                    <span class="category">Sièges</span>
+                    <h3>Anjay Chair</h3>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="price-row">
+                        <span class="price">$519</span>
+                        <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card" data-aos="zoom-in" data-aos-delay="400">
+                <div class="product-img-wrapper">
+                    <img src="assets/Images/nyantuy-chair.png" alt="Nyantuy Chair">
+                </div>
+                <div class="product-info">
+                    <span class="category">Sièges</span>
+                    <h3>Nyantuy Chair</h3>
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="price-row">
+                        <span class="price">$921</span>
+                        <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="view-all-container" data-aos="fade-up">
+            <a href="#" class="view-all-btn">Afficher tout <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+    <!-- Experiences -->
+    <section id="experiences" class="container">
+        <div class="exp-image" data-aos="fade-right">
+            <img src="assets/Images/exp-1.jpg" alt="Experience">
+            <!-- Floating card overlay could go here -->
+        </div>
+        <div class="exp-content" data-aos="fade-left">
+            <span class="subtitle">EXPERIENCES</span>
+            <h2>Nous vous offrons la meilleure expérience.</h2>
+            <p>Vous n'avez pas à vous soucier du résultat, car tous ces intérieurs sont réalisés par des professionnels
+                reconnus dans leurs domaines respectifs, avec un style élégant et raffiné et des matériaux de première
+                qualité.</p>
+            <a href="#" class="read-more">Plus d'infos <i class="fa-solid fa-arrow-right"></i></a>
+
+        </div>
+    </section>
+
+    <!-- Materials -->
+    <section id="materials" class="container">
+        <div class="mat-content" data-aos="fade-right">
+            <span class="subtitle">MATERIEL</span>
+            <h2>Matériaux très sérieux pour la fabrication de meubles</h2>
+            <p>Panto prend très au sérieux la conception de meubles adaptés à notre environnement, en utilisant un
+                capital très coûteux et célèbre, mais à un prix relativement bas.</p>
+            <a href="#" class="read-more">Plus d'infos <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+        <div class="mat-images" data-aos="fade-left">
+            <div class="mat-col-1">
+                <img src="assets/Images/mat-1.jpg" alt="Material 1">
+                <img src="assets/Images/mat-2.jpg" alt="Material 2">
+            </div>
+            <div class="mat-col-2">
+                <img src="assets/Images/mat-3.jpg" alt="Material 3">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="container">
+        <span class="subtitle-center">TEMOIGNAGES</span>
+        <h2 class="center-heading" data-aos="fade-up">Avis de nos clients</h2>
+        <div class="testimonials-slider">
+            <!-- Review 1 -->
+            <div class="review-card">
+                <div class="review-bg" style="background-image: url(assets/Images/testimonial-1.jpg);"></div>
+                <div class="review-content">
+                    <div class="reviewer-avatar">
+                        <img src="assets/Images/avater-1.png" alt="Bang Upin">
+                    </div>
+                    <h4>Bang Upin</h4>
+                    <span class="reviewer-title">Vendeur ambulant</span>
+                    <p>"Merci beaucoup, maintenant mon salon est plus luxueux et a l'air plus cher."</p>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="review-card">
+                <div class="review-bg" style="background-image: url(assets/Images/testimonial-2.jpg);"></div>
+                <div class="review-content">
+                    <div class="reviewer-avatar">
+                        <img src="assets/Images/avater-3.png" alt="Ibuk Sukijan">
+                    </div>
+                    <h4>Ibuk Sukijan</h4>
+                    <span class="reviewer-title">Ménagère</span>
+                    <p>"Merci Panto, je vis maintenant dans un appartement grâce à ces objets qui ont l'air luxueux."
+                    </p>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Review 3 -->
+            <div class="review-card">
+                <div class="review-bg" style="background-image: url(assets/Images/testimonial-3.jpg);"></div>
+                <div class="review-content">
+                    <div class="reviewer-avatar">
+                        <img src="assets/Images/avater-2.png" alt="Bang Upin">
+                    </div>
+                    <h4>Mpok Ina</h4>
+                    <span class="reviewer-title">Employée du secteur privé</span>
+                    <p>"Très abordable pour mon budget, ce qui ne représente pas une grosse somme d'argent."</p>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content" data-aos="fade-up">
+            <div class="footer-brand">
+                <a href="#" class="logo">Panto</a>
+                <p>Louer un espace de travail chez nous présente l'avantage de vous offrir un service confortable et des
+                    installations complètes.</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-col">
+                    <h4>Services</h4>
+                    <a href="#">Email Marketing</a>
+                    <a href="#">Campagnes</a>
+                    <a href="#">Image de marque</a>
+                </div>
+                <div class="link-col">
+                    <h4>Ameublement</h4>
+                    <a href="#">Lits</a>
+                    <a href="#">Sièges</a>
+                    <a href="#">Tous choix</a>
+                </div>
+                <div class="link-col">
+                    <h4>Suivez-nous</h4>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i> Facebook</a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>Copyright <a href="https://khaleed.dev" style="color:#f6876f">Khaleed.dev </a>&copy 2025</p>
+            <div class="legal-links">
+                <a href="#">Termes & Conditions</a>
+                <a href="#">Confidentialité</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Footer de remerciements à SA Coding et Copilote pour ses commentaires en anglais -->
+    <div id="thank-you-footer">
+        <span class="plume">🪶</span>
+        Remerciements à Khaleed Dev, le concepteur de ce tutoriel à consulter sur YouTube
+        <a href="https://www.youtube.com/watch?v=JVRdO_ze8Cs" target="_blank">ici</a>. — Chris Blues —
+    </div>
+
+
+
+    <!-- AOS Animation Library JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="assets/script.js"></script>
+</body>
+
+</html>

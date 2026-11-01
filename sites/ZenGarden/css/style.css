@@ -1,0 +1,1036 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --accent: #d8b400;
+  /* jaune doré */
+  /* ou */
+  /* --accent: #4a7f4f */
+  --light-black: #8a8a8a;
+
+  /* Espacements globaux */
+  --space-xs: 5px;
+  --space-sm: 10px;
+  --space-md: 20px;
+  --space-lg: 30px;
+  --space-xl: 50px;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  /* empêche les scrolls horizontaux */
+  overflow-y: auto;
+  /* autorise le scroll vertical */
+  font-family: "Segoe UI", sans-serif;
+  background: #0d0d0d;
+  /* fond neutre derrière le héro */
+  color: #f2f2f2;
+}
+
+p {
+  text-align: justify;
+  hyphens: auto;
+  word-break: normal;
+  overflow-wrap: anywhere;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  /* très important pour mobile */
+  margin-top: 100px;
+}
+
+section {
+  scroll-margin-top: 120px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+
+  padding: 16px 0;
+}
+
+.header-inner {
+  width: 80%;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-inline: 24px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+
+.header .logo {
+  font-family: "Great Vibes", cursive;
+  font-size: 4rem;
+  color: white;
+  margin-right: 120px; /* décale clairement les liens */
+}
+
+.header .navbar {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.header .navbar a {
+  color: white;
+  padding: 0 20px;
+}
+
+.header #menu-btn {
+  font-size: 1.5rem;
+}
+
+nav {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.nav-wrapper {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.navbar.open {
+  display: flex;
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.navbar a {
+  color: white !important; /* ou #f2f2f2, ou var(--accent) */
+  font-size: 1.35rem;
+  font-weight: 400;
+  text-decoration: none;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(0,0,0,0.15);
+}
+
+.navbar a:last-child {
+  border-bottom: none;
+}
+/* --- BOUTONS HAMBURGER / CROIX --- */
+
+#menu-btn,
+#close-btn {
+  font-size: 1.8rem;
+  color: var(--accent);
+  cursor: pointer;
+  z-index: 1000;
+}
+
+#close-btn {
+  display: none;
+}
+
+#menu-btn.open {
+  display: none;
+}
+
+#close-btn.open {
+  display: block;
+}
+
+/* --- MENU MOBILE SIMPLE ET GARANTI --- */
+
+@media (max-width: 1023px) {
+
+  .header-inner {
+    position: relative;
+  }
+
+  .navbar {
+    display: none;
+    flex-direction: column;
+    gap: 18px;
+
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 260px;
+
+    padding: 20px;
+
+    background-color: #e8f0e5 !important; /* FOND GARANTI */
+    border-radius: 12px;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    z-index: 999;
+
+    height: auto; /* la boîte s’adapte à son contenu */
+  }
+
+  .navbar.open {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .navbar a {
+    color: #333 !important;
+    font-size: 1.35rem;
+    font-weight: 400;
+    text-decoration: none;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0,0,0,0.15);
+  }
+
+  .navbar a:last-child {
+    border-bottom: none;
+  }
+}
+
+.intro-transition {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url('../images/cockscomb.jpg') center center / cover no-repeat;
+  background-attachment: fixed;
+  /* parallaxe */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.mosaic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.tile {
+  position: absolute;
+  width: 22%;
+  opacity: 0;
+  transform: scale(0.92);
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  animation: fadeIn 1.8s ease forwards;
+}
+
+.t1 {
+  top: 15%;
+  left: 10%;
+  animation-delay: 0.5s;
+}
+
+.t2 {
+  top: 45%;
+  right: 12%;
+  animation-delay: 1.2s;
+}
+
+.t3 {
+  top: 15%;
+  left: 70%;
+  animation-delay: 1.8s;
+}
+
+.t4 {
+  top: 65%;
+  left: 30%;
+  animation-delay: 2.4s;
+}
+
+.t5 {
+  top: 20%;
+  left: 40%;
+  /* transform: translateX(-50%); */
+  animation-delay: 3s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.zen-title {
+  color: white;
+  font-size: 4rem;
+  letter-spacing: 6px;
+  margin: 0;
+  z-index: 4;
+  opacity: 0;
+  animation: fadeInTitle 2s ease forwards;
+  animation-delay: 4s;
+  /* après les photos */
+}
+
+.zen-title .zen-outline {
+  color: transparent;
+  -webkit-text-stroke: 2px #ffffff;
+  /* contour blanc */
+}
+
+@keyframes fadeInTitle {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.zen-slogan {
+  font-size: 2.2rem;
+  padding: 20px;
+  /* backdrop-filter: blur(4px); */
+  z-index: 3;
+  opacity: 0;
+  animation: fadeInSlogan 1.8s ease forwards;
+  animation-delay: 4.4s;
+  /* après le titre */
+}
+
+@keyframes fadeInSlogan {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.intro-transition::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.4));
+  pointer-events: none;
+}
+
+.intro {
+  padding: 100px 20px;
+}
+
+/* --------------------------------------------- */
+/* SECTION 2 — Jardin Zen                        */
+/* --------------------------------------------- */
+.section.jardin-zen {
+  padding: var(--space-xl) 0;
+  background: var(--gray);
+}
+
+.section.jardin-zen .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg);
+  align-items: start;
+}
+
+h1.titre {
+  grid-column: 1 / -1;
+  font-family: 'Great Vibes', cursive;
+  font-size: clamp(2.5rem, 7vw, 6rem);
+  font-weight: 400;
+  text-align: center;
+  color: var(--light-black);
+  line-height: 1.1;
+  margin: 2rem auto;
+  letter-spacing: clamp(1px, 0.4vw, 4px);
+}
+
+h1.titre .accent {
+  color: var(--accent);
+  font-size: 1.15em;
+}
+
+h2.subtitle {
+  font-family: 'Poppins', sans-serif;
+  /* ou ta fonte sans-serif actuelle */
+  font-size: clamp(0.9rem, 1.5vw, 1.2rem);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-weight: 600;
+  color: var(--accent);
+  /* jaune ou vert */
+  margin-bottom: 1rem;
+}
+
+
+.section.jardin-zen .container {
+  display: block;
+  /* on enlève la grille ici */
+}
+
+/* On applique la grille UNIQUEMENT sur left + right */
+.section.jardin-zen .left,
+.section.jardin-zen .right {
+  grid-column: span 1;
+}
+
+.section.jardin-zen .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg);
+  align-items: start;
+}
+
+/* ================================
+   COLONNE GAUCHE — IMAGES
+   ================================ */
+.section.jardin-zen .left {
+  display: flex;
+  flex-direction: column;
+  /* Les images se superposent verticalement */
+  gap: var(--space-sm);
+  /* Respiration zen entre les images */
+  height: 100%;
+}
+
+.section.jardin-zen .content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg);
+  align-items: stretch;
+}
+
+
+/* Les 3 images se partagent la hauteur */
+.section.jardin-zen .left img {
+  width: 65%;
+  object-fit: cover;
+  /* remplit la hauteur sans déformation */
+  border-radius: 8px;
+  margin-bottom: var(--space-sm);
+  margin: 0 auto;
+  opacity: 0.95;
+  transition: transform 0.4s ease, opacity 0.4s;
+}
+
+.section.jardin-zen .left img:hover {
+  transform: scale(1.03);
+  opacity: 1;
+}
+
+/* COLONNE DROITE — TEXTE */
+
+/* Barre jaune + bloc éditorial */
+.section.jardin-zen .caracteristiques {
+  list-style: none;
+  padding-left: 20px;
+  border-left: 3px solid var(--accent);
+  margin-bottom: var(--space-md);
+}
+
+.right h3 {
+  /*"Les caractéristqiques fondamentales*/
+  color: var(--accent);
+  font-size: 30px;
+}
+
+/* Chapitre (équivalent d’un h3 visuel) */
+.section.jardin-zen .chapitre {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: var(--space-sm);
+  margin-bottom: var(--space-xs);
+  color: var(--white);
+}
+
+/* Description (texte justifié + césures) */
+.section.jardin-zen .describe {
+  text-align: justify;
+  hyphens: auto;
+  overflow-wrap: anywhere;
+  word-break: normal;
+  line-height: 1.6;
+  color: var(--light-black);
+  margin-bottom: var(--space-sm);
+  margin-bottom: 50px;
+}
+
+/* Conclusion */
+.section.jardin-zen .conclusion {
+  font-size: var(--fs-md);
+  margin-top: var(--space-md);
+  line-height: 160%;
+}
+
+/* --------------------------------------------- */
+/* SECTION 3 — Types de jardins                  */
+/* --------------------------------------------- */
+
+.section.jardins-types .gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-lg);
+  margin-top: var(--space-lg);
+}
+
+.section.jardins-types .card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.section.jardins-types .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.section.jardins-types .card:hover img {
+  transform: scale(1.08);
+}
+
+.section.jardins-types .overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  color: white;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+  transition: opacity 0.4s ease;
+}
+
+.section.jardins-types .card:hover .overlay {
+  opacity: 1;
+}
+
+.section.jardins-types .overlay h3 {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* --------------------------------------------- */
+/* SECTION 4 — Métiers du jardinage               */
+/* --------------------------------------------- */
+
+.masonry_section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: start;
+  padding: 1rem;
+}
+
+
+figure.cell {
+  margin: 0;
+  height: 400px;
+}
+
+.masonry-item {
+  position: relative;
+  height: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hover-card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.hover-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.hover-title {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-family: 'Georgia', serif;
+  font-size: 1.2em;
+  padding: 6px 12px;
+  border-radius: 4px;
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
+}
+
+.metier-name {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.metier-describe {
+  font-style: italic;
+  font-size: 0.6em;
+  color: #eee;
+  line-height: 1.3;
+}
+
+.masonry-item:hover img {
+  transform: scale(1.03);
+}
+
+.masonry-item:hover .hover-title {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* --- Lightbox2 structure indispensable --- */
+
+.lb-nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.lb-prev,
+.lb-next {
+  display: block;
+  height: 100%;
+  cursor: pointer;
+}
+
+.lb-prev {
+  width: 34%;
+  float: left;
+  background: url(../images/prev.png) left 48% no-repeat;
+}
+
+.lb-next {
+  width: 64%;
+  float: right;
+  background: url(../images/next.png) right 48% no-repeat;
+} */
+
+/* Caption */
+.lb-caption {
+  text-align: center;
+  line-height: 1.5;
+  font-size: 14px;
+  color: #fff;
+  padding: 10px;
+}
+
+.lb-caption strong {
+  color: #ffd700 !important;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* --------------------------------------------- */
+/* SECTION 5 — Bibliographie                     */
+/* --------------------------------------------- */
+
+.biblio-slider {
+  display: flex;
+  gap: 30px;
+  overflow-x: auto;              /* défilement horizontal */
+  scroll-snap-type: x mandatory;
+  padding: 20px 0;
+  list-style: none;
+  position: static;              /* évite stacking context */
+  z-index: auto;
+}
+
+.biblio-slider li {
+  scroll-snap-align: start;
+}
+
+.biblio-card {
+  position: relative;
+  background: #111;
+  padding: 20px;
+  border-radius: 12px;
+  width: 180px;
+  flex-shrink: 0;
+  text-align: center;
+  transition: transform .3s ease;
+  z-index: 1;                    /* ne recouvre pas Materialize */
+}
+
+.biblio-card:hover {
+  transform: translateY(-6px);
+  z-index: 2;                    /* hover OK */
+}
+
+.biblio-card img {
+  width: 150px;
+  height: 215px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.biblio-card img.materialboxed {
+  position: relative;
+  z-index: 10;
+  pointer-events: auto !important;
+}
+
+/* --- TITRES / PRIX / ÉTOILES --- */
+
+.card-title {
+  margin: 12px 0 6px;
+  font-size: 1rem;
+  color: #fff;
+  min-height: 34px;
+  line-height: 1.2;
+  display: block;
+}
+
+.card-price {
+  color: #e0e0e0;
+  font-size: .9rem;
+}
+
+.rating-wrapper ion-icon {
+  color: #f5c518;
+  font-size: 1rem;
+}
+
+/* --- CORRECTION DU CONFLIT MATERIALIZE / SLIDER --- */
+/* On laisse Materialize en absolute, pas en fixed → plus de tressautement */
+
+.materialbox-overlay {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999 !important;
+}
+
+.materialboxed.active {
+  position: absolute !important;
+  z-index: 100000 !important;
+}
+
+/* --- NEUTRALISATION LIGHTBOX UNIQUEMENT POUR BIBLIOGRAPHIE --- */
+
+#bibliographie .lb-loader,
+#bibliographie .lb-image,
+#bibliographie .lb-overlay {
+  display: none !important;
+}
+
+/* Empêche le slider de recalculer sa mise en page pendant le zoom Materialize */
+.biblio-slider {
+  contain: layout style;   /* stabilise le flux */
+  will-change: scroll-position; /* évite les reflows */
+}
+
+/* Empêche les cartes de disparaître/reapparaître brutalement */
+.biblio-card {
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+
+/* --------------------------------------------- */
+/* SECTION 6 — Parc Barbieux                     */
+/* --------------------------------------------- */
+
+
+.barbieux-photo {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  margin: 32px 0 48px;
+
+  /* Ombre fantomatique renforcée */
+  box-shadow: 0 28px 60px rgba(170, 170, 170, 0.45);
+}
+
+.barbieux-content {
+  text-align: center;
+  color: #fff;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.barbieux-title {
+  font-size: 2rem;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+.barbieux-subtitle {
+  font-size: 1.2rem;
+  opacity: 0.8;
+  margin-bottom: 16px;
+}
+
+.barbieux-description {
+  color: #fff;
+  font-size: 1.5rem;
+  /* légèrement plus grande */
+  font-weight: 300;
+  /* plus élégante, plus aérienne */
+  line-height: 1.7;
+  /* respiration */
+  opacity: 0.9;
+  /* douceur */
+  max-width: 800px;
+  /* largeur idéale pour une phrase longue */
+  margin: 0 auto 48px;
+  /* centrée + espace avant la photo */
+  text-align: center;
+  /* présence */
+}
+
+/* --------------------------------------------- */
+/* FOOTER                     */
+/* --------------------------------------------- */
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 24px 0;
+}
+
+footer p {
+  text-align: center;
+  margin: 0;
+}
+
+
+
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+  .intro-transition {
+    height: auto; /* laisse respirer */
+    padding: 120px 20px 80px;
+    background-attachment: scroll; /* iOS compatible */
+  }
+
+  .mosaic {
+    display: none; /* trop dense en mobile */
+  }
+
+  .zen-title {
+    font-size: clamp(2.2rem, 8vw, 3rem);
+    letter-spacing: 3px;
+    text-align: center;
+  }
+
+  .zen-slogan {
+    font-size: clamp(1.2rem, 5vw, 1.6rem);
+    text-align: center;
+    padding: 10px 0;
+  }
+
+   .section.jardin-zen {
+    padding: var(--space-lg) 0;
+  }
+
+  .section.jardin-zen .container {
+    display: block; /* on empile tout */
+  }
+
+  .section.jardin-zen .grid {
+    display: block; /* left puis right */
+  }
+
+  .section.jardin-zen .left img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 16px;
+    border-radius: 6px;
+  }
+
+  h1.titre {
+    font-size: clamp(2rem, 8vw, 3rem);
+    margin: 1.5rem 0;
+    padding-inline: 10px;
+  }
+
+  h2.subtitle {
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .description,
+  .chapitre,
+  .describe,
+  .conclusion {
+    font-size: clamp(0.95rem, 4vw, 1.1rem);
+    line-height: 1.55;
+    padding-inline: 10px;
+  }
+
+  .caracteristiques {
+    padding-inline: 10px;
+  }
+
+  .right {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+
+  .intro-transition {
+    height: 90vh;
+    background-attachment: scroll; /* évite les sauts */
+  }
+
+  .tile {
+    width: 28%; /* un peu plus grandes */
+  }
+
+  .zen-title {
+    font-size: clamp(3rem, 6vw, 3.6rem);
+  }
+
+  .zen-slogan {
+    font-size: clamp(1.6rem, 4vw, 2rem);
+  }
+
+
+  h2.subtitle {
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+
+  h1.titre {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Phrase introductive isolée, pleine largeur */
+  .section.jardin-zen .description {
+    margin-bottom: 30px;
+    font-size: clamp(1rem, 2.5vw, 1.3rem);
+    line-height: 1.55;
+    padding-inline: 10px;
+  }
+
+  /* Grille : images à gauche, texte à droite */
+  .section.jardin-zen .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-md);
+    align-items: start;
+  }
+
+  .section.jardin-zen .left img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 14px;
+    border-radius: 6px;
+  }
+
+  .section.jardin-zen .right .h3 {
+    margin-bottom: 1rem;
+  }
+}
+
+
+
+@media (max-width: 900px) {
+  .section.jardin-zen .container {
+    grid-template-columns: 1fr;
+  }
+
+  .section.jardin-zen .titre {
+    font-size: clamp(1.8rem, 6vw, 2.5rem);
+  }
+}
+
+/* --- VERSION DESKTOP (neutralisation du menu mobile) --- */
+@media (min-width: 1024px) {
+
+  /* Navbar desktop */
+  .navbar {
+    display: flex !important;
+    flex-direction: row;
+    gap: 40px;
+    position: static !important;
+    background: none !important;
+    backdrop-filter: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  /* Liens desktop */
+  .navbar a {
+    color: white !important;        /* lisibilité parfaite */
+    font-size: 1.3rem !important;   /* élégant */
+    font-weight: 500;               /* un peu plus affirmé */
+    letter-spacing: 0.5px;          /* finesse */
+    padding: 0 4px;                 /* respiration */
+    border-bottom: none !important;
+  }
+
+  /* Boutons mobile cachés */
+  #menu-btn,
+  #close-btn {
+    display: none !important;
+  }
+}
+
+
+
+
+

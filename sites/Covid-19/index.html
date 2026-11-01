@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19</title>
+
+    <!-- 
+    - Favicon
+     -->
+    <link rel="shortcut icon" href="./assets/images/favicon.svg" type="image/svg+xml">
+
+    <!-- 
+    - Custom CSS link
+     -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- 
+    - Google fonts link
+     -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- 
+    - Preload images
+     -->
+    <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+
+</head>
+
+<body id="top">
+
+    <!-- 
+    - #HEADER
+    -->
+    <header class="header" data-header>
+        <div class="container">
+
+            <a href="#" class="logo">
+                <img src="./assets/images/logo.svg" width="199" height="50" alt="Covid-19 home">
+            </a>
+
+            <nav class="navbar" data-navbar>
+                <ul class="navbar-list">
+
+                    <li class="navbar-item">
+                        <a href="#home" class="navbar-link" data-nav-link>Accueil</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#about" class="navbar-link" data-nav-link>À propos</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#prevention" class="navbar-link" data-nav-link>Prévention</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#shop" class="navbar-link" data-nav-link>Boutique</a>
+                    </li>
+
+                    <li class="navbar-item">
+                        <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
+                    </li>
+
+                </ul>
+            </nav>
+
+            <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+                <ion-icon name="menu-outline" aria-hidden="true" class="menu"></ion-icon>
+                <ion-icon name="close-outline" aria-hidden="true" class="close"></ion-icon>
+            </button>
+
+            <a href="#" class="btn btn-primary">Êtes-vous souffrant ?</a>
+        </div>
+    </header>
+
+
+    <main>
+        <article>
+
+    <!-- 
+    - #HERO
+    -->
+
+            <section class="section hero has-bg-image" id="home"
+                style="background-image: url('./assets/images/hero-bg.jpg')" aria-label="home">
+                <div class="container">
+
+                    <div class="hero-content">
+                        <h1 class="h1 hero-title">Suivi du COVID-19</h1>
+                        <p class="hero-text">
+                            Cas confirmés de coronavirus à Tatal</p>
+
+                        <data class="counter" value="960708">960708</data>
+
+                        <ul class="hero-list">
+                            <li class="hero-list-item yellow">
+                                Cas actifs <span class="span">799571</span>
+                            </li>
+
+                            <li class="hero-list-item green">
+                                Cas résolus <span class="span">302826</span>
+                            </li>
+
+                            <li class="hero-list-item red">
+                                Décès <span class="span">52558</span>
+                            </li>
+
+                        </ul>
+
+                        <a href="#" class="btn btn-primary">Rencontrez le médecin</a>
+
+                    </div>
+
+                    <figure class="hero-banner">
+                        <img src="./assets/images/hero-banner.png" width="570" height="562" alt="corona virus"
+                            class="w-100">
+                    </figure>
+                </div>
+
+            </section>
+
+    <!-- 
+    - #ABOUT
+    -->
+            <section class="section about" id="about" aria-labelledby="about-label-1">
+                <div class="container">
+                    <figure class="about-banner">
+                        <img src="./assets/images/about-banner-1.png" width="540" height="540" loading="lazy"
+                            alt="about banner" class="w-100">
+                    </figure>
+
+                    <div class="about-content">
+                        <p class="about-subtitle" id="about-label-1">Comment le virus s'est propagé</p>
+                        <h2 class="h2 section-title">Comment le coronavirus se propage-t-il ?</h2>
+                        <p class="section-text text">
+                            Le coronavirus se propage principalement lorsqu’une personne infectée transmet le virus à son entourage par contact direct, gouttelettes respiratoires ou surfaces contaminées. Comprendre ces modes de transmission permet d’adopter les bons gestes et de réduire efficacement les risques quotidiens
+                        </p>
+
+                        <ul class="about-list">
+                            <li class="about-item">
+                                <figure class="item-img img-holder" style="--width: 80px; --height: 80px;">
+                                    <img src="./assets/images/about-1-1.jpg" width="80" height="80" loading="lazy"
+                                        alt="Human Contact">
+                                </figure>
+
+                                <div class="item-content">
+                                    <h3 class="h4 item-title">Contact humain</h3>
+
+                                    <p class="item-text text">
+                                        Le virus se transmet lors de contacts rapprochés, notamment par poignées de main, embrassades ou interactions prolongées.
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li class="about-item">
+                                <figure class="item-img img-holder" style="--width: 80px; --height: 80px;">
+                                    <img src="./assets/images/about-1-2.jpg" width="80" height="80" loading="lazy"
+                                        alt="Air Transmission">
+                                </figure>
+
+                                <div class="item-content">
+                                    <h3 class="h4 item-title">Transmission par air</h3>
+
+                                    <p class="item-text text">
+                                        Les gouttelettes respiratoires expulsées en parlant, toussant ou éternuant peuvent infecter les personnes proches rapidement.
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li class="about-item">
+                                <figure class="item-img img-holder" style="--width: 80px; --height: 80px;">
+                                    <img src="./assets/images/about-1-3.jpg" width="80" height="80" loading="lazy"
+                                        alt="Contaminated Objects">
+                                </figure>
+
+                                <div class="item-content">
+                                    <h3 class="h4 item-title">Objets contaminés</h3>
+
+                                    <p class="item-text text">
+                                        Le virus peut survivre sur certaines surfaces, permettant une transmission indirecte lorsqu’on touche ensuite son visage.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+
+
+    <!-- 
+    - #SERVICE
+    -->
+            <section class="section service has-bg-image" style="background-image: url('./assets/images/service-bg.jpg')" aria-labelledby="service-label-1">
+                <div class="container">
+                    <h2 class="h2 section-title" id="service-label-1">Symptômes du coronavirus</h2>
+                    <p class="section-text text">
+                        Les symptômes du coronavirus varient selon les personnes, mais certains signes reviennent fréquemment et doivent être surveillés avec attention.
+                    </p>
+
+                    <ul class="service-list">
+                        <li>
+                            <div class="service-card">
+                                <figure class="card-banner img-holder" style="--width: 110; --height: 110;">
+                                    <img src="./assets/images/service-1-1.jpg" width="110" height="110" loading="lazy" alt="service image">
+                                </figure>
+
+                                <div class="card-content">
+                                    <h3 class="h4 card-title">Toux et éternuements</h3>
+
+                                    <p class="card-text text">
+                                        Des irritations respiratoires provoquent toux fréquentes et éternuements, favorisant la dispersion de gouttelettes infectieuses autour de soi
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="service-card">
+                                <figure class="card-banner img-holder" style="--width: 110; --height: 110;">
+                                    <img src="./assets/images/service-1-2.jpg" width="110" height="110" loading="lazy" alt="service image">
+                                </figure>
+
+                                <div class="card-content">
+                                    <h3 class="h4 card-title">Forte fièvre</h3>
+
+                                    <p class="card-text text">
+                                        Une température élevée indique que l’organisme lutte activement contre l’infection et nécessite une surveillance attentive.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="service-card">
+                                <figure class="card-banner img-holder" style="--width: 110; --height: 110;">
+                                    <img src="./assets/images/service-1-3.jpg" width="110" height="110" loading="lazy" alt="service image">
+                                </figure>
+
+                                <div class="card-content">
+                                    <h3 class="h4 card-title">Maux de tête intenses</h3>
+
+                                    <p class="card-text text">
+                                        Des douleurs persistantes peuvent apparaître, souvent accompagnées de fatigue générale et d’une sensation de pression inhabituelle.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="service-card">
+                                <figure class="card-banner img-holder" style="--width: 110; --height: 110;">
+                                    <img src="./assets/images/service-1-4.jpg" width="110" height="110" loading="lazy" alt="service image">
+                                </figure>
+
+                                <div class="card-content">
+                                    <h3 class="h4 card-title">Essoufflement</h3>
+
+                                    <p class="card-text text">
+                                        Des difficultés respiratoires peuvent survenir, surtout lors d’efforts, et doivent être prises très au sérieux.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="service-card">
+                                <figure class="card-banner img-holder" style="--width: 110; --height: 110;">
+                                    <img src="./assets/images/service-1-5.jpg" width="110" height="110" loading="lazy" alt="service image">
+                                </figure>
+
+                                <div class="card-content">
+                                    <h3 class="h4 card-title">Confusion</h3>
+
+                                    <p class="card-text text">
+                                        Certains patients ressentent une désorientation soudaine, signe possible d’une atteinte plus sérieuse nécessitant une évaluation médicale.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="service-card">
+                                <figure class="card-banner img-holder" style="--width: 110; --height: 110;">
+                                    <img src="./assets/images/service-1-6.jpg" width="110" height="110" loading="lazy" alt="service image">
+                                </figure>
+
+                                <div class="card-content">
+                                    <h3 class="h4 card-title">Mal de gorge</h3>
+
+                                    <p class="card-text text">
+                                        Une irritation de la gorge apparaît souvent en début d’infection, accompagnée parfois de douleurs en avalant.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+
+
+    <!-- 
+    - #ABOUT 2 50:08
+    -->
+            <section class="section about" id="about" aria-labelledby="about-label-2">
+                <div class="container">
+                    <figure class="about-banner order-1">
+                        <img src="./assets/images/about-banner-2.png" width="540" height="540" loading="lazy" alt="about banner" class="w-100">
+                    </figure>
+
+                    <div class="about-content">
+                        <p class="about-subtitle" id="about-label-2">À propos du (2020-nCoV)</p>
+                        <h2 class="h2 section-title">Prévention du coronavirus</h2>
+                        <p class="section-text text">
+                            Pour réduire efficacement les risques d’infection, il est essentiel d’adopter des gestes simples au quotidien. Une bonne hygiène, une protection adaptée et quelques précautions supplémentaires permettent de limiter la propagation du coronavirus et de protéger votre entourage.
+                        </p>
+
+                        <ul class="about-list">
+                            <li class="about-item">
+                                <figure class="item-img img-holder">
+                                    <img src="./assets/images/about-2-1.jpg" width="80" height="80" loading="lazy"
+                                        alt="Wash Your Hands For 20sec">
+                                </figure>
+
+                                <div class="item-content">
+                                    <h3 class="h4 item-title">Lavez-vous les mains pendant 20 secondes</h3>
+
+                                    <p class="item-text text">
+                                        Un lavage soigneux élimine efficacement les germes et réduit considérablement les risques de transmission quotidienne.
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li class="about-item">
+                                <figure class="item-img img-holder">
+                                    <img src="./assets/images/about-2-2.jpg" width="80" height="80" loading="lazy"
+                                        alt="Cover Nose and Mouth When Sneezing">
+                                </figure>
+
+                                <div class="item-content">
+                                    <h3 class="h4 item-title">Couvrez votre nez et votre bouche lorsque vous éternuez.</h3>
+
+                                    <p class="item-text text">
+                                        Protéger votre visage limite la dispersion de gouttelettes infectieuses et préserve la sécurité des personnes prochess.
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li class="about-item">
+                                <figure class="item-img img-holder">
+                                    <img src="./assets/images/about-2-3.jpg" width="80" height="80" loading="lazy"
+                                        alt="Wear A Mask If Available">
+                                </figure>
+
+                                <div class="item-content">
+                                    <h3 class="h4 item-title">Portez un masque si disponible.</h3>
+
+                                    <p class="item-text text">
+                                        Le masque réduit la propagation des particules respiratoires et protège efficacement votre entourage dans les espaces partagés.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>  
+            
+            
+    <!-- 
+    - #DOCTOR 52:21
+    -->
+            <section class="section doctor" style="background-image: url('./assets/images/service-bg.jpg')" aria-labelledby="doctor-label">
+                <div class="container">
+                    <h2 class="h2 section-title" id="doctor-label">Rencontrez nos meilleurs médecins</h2>
+                    <p class="section-text text">
+                        Découvrez les spécialistes qui accompagnent nos patients avec expertise, écoute et précision pour assurer une prise en charge fiable et rassurante.
+                    </p>
+
+                    <ul class="grid-list">
+                        <li>
+                            <div class="doctor-card">
+                                <figure class="card-banner img-holder" style="--width: 350px; --height: 360px;">
+                                    <img src="./assets/images/doctor-1.jpg" width="350" height="360" loading="lazy" alt="Dorothy M. Nickell profile" class="img-cover">
+                                </figure>
+
+                                <div class="card-content">
+                                    <h3 class="h4 card-title">Dorothy M. Nickell</h3>
+                                    <p class="card-subtitle">Spécialiste ORL</p>
+                                    <p class="card-text text">
+                                        Experte des voies respiratoires, elle évalue symptômes, complications et assure un suivi attentif pour prévenir les infections liées au coronavirus
+                                    </p>
+
+                                    <ul class="card-list">
+                                        <li class="card-item">
+                                            <div class="icon-box">
+                                                <ion-icon name="call" aria-hidden="true"></ion-icon>
+                                                </div>
+                                                <span class="span">+502 1234 567 890</span>
+                                                </li>
+                                            <li class="card-item">
+                                            <div class="icon-box">
+                                                <ion-icon name="mail" aria-hidden="true"></ion-icon>
+                                                </div>
+                                                <span class="span">d.m.nickell@gmail.com</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="doctor-card">
+                                <figure class="card-banner img-holder" style="--width: 350px; --height: 360px;">
+                                    <img src="./assets/images/doctor-2.jpg" width="350" height="360" loading="lazy" alt="Billie R. Courtney profile" class="img-cover">
+                                </figure>
+
+                                <div class="card-content">
+                                    <h3 class="h4 card-title">Billie R. Courtney</h3>
+                                    <p class="card-subtitle">Cardiologiste</p>
+                                    <p class="card-text text">
+                                        Spécialiste du cœur, il surveille les impacts cardiovasculaires possibles du virus et accompagne chaque patient avec rigueur et bienveillance.
+                                    </p>
+
+                                    <ul class="card-list">
+                                        <li class="card-item">
+                                            <div class="icon-box">
+                                                <ion-icon name="call" aria-hidden="true"></ion-icon>
+                                                </div>
+                                                <span class="span">+502 1234 567 890</span>
+                                                </li>
+                                            <li class="card-item">
+                                            <div class="icon-box">
+                                                <ion-icon name="mail" aria-hidden="true"></ion-icon>
+                                                </div>
+                                                <span class="span">b.r.courtney@gmail.com</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="doctor-card">
+                                <figure class="card-banner img-holder" style="--width: 350px; --height: 360px;">
+                                    <img src="./assets/images/doctor-3.jpg" width="350" height="360" loading="lazy" alt="Courtney A. Smith profile" class="img-cover">
+                                </figure>
+
+                                <div class="card-content">
+                                    <h3 class="h4 card-title">Courtney A. Smith</h3>
+                                    <p class="card-subtitle">Thérapie de réadaptation</p>
+                                    <p class="card-text text">
+                                        Elle aide les patients à retrouver souffle, mobilité et endurance après infection, grâce à des exercices adaptés et un suivi personnalisé.
+                                    </p>
+
+                                    <ul class="card-list">
+                                        <li class="card-item">
+                                            <div class="icon-box">
+                                                <ion-icon name="call" aria-hidden="true"></ion-icon>
+                                                </div>
+                                                <span class="span">+502 1234 567 890</span>
+                                                </li>
+                                            <li class="card-item">
+                                            <div class="icon-box">
+                                                <ion-icon name="mail" aria-hidden="true"></ion-icon>
+                                                </div>
+                                                <span class="span">c.a.smith@gmail.com</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </section>
+
+
+    <!-- 
+    - #SAFETY 1:01:07
+    -->
+            <section class="section safety" aria-labelledby="safety-label">
+                <div class="container">
+                    <h2 class="h2 section-title" id="safety-label">Comment se laver les mains</h2>
+                    <p class="section-text text">
+                        Un lavage des mains réalisé correctement réduit fortement les risques d’infection. Suivez chaque étape illustrée pour assurer une hygiène optimale.
+                    </p>
+
+                    <ol class="safety-list">
+
+                        <li class="safety-item">
+                            <figure class="item-banner img-holder">
+                                <img src="./assets/images/safety-1.jpg" width="170" height="170" loading="lazy" alt="Wet Hands" class="img">
+                            </figure>
+
+                            <span class="number">1</span>
+
+                            <h3 class="h4 item-title">Mouillez-vous les mains</h3>
+                        </li>
+
+                        <li class="safety-item">
+                            <figure class="item-banner img-holder">
+                                <img src="./assets/images/safety-2.jpg" width="170" height="170" loading="lazy" alt="Apply Soap" class="img">
+                            </figure>
+
+                            <span class="number">2</span>
+
+                            <h3 class="h4 item-title">Appliquez du savon</h3>
+                        </li>
+
+                        <li class="safety-item">
+                            <figure class="item-banner img-holder">
+                                <img src="./assets/images/safety-3.jpg" width="170" height="170" loading="lazy" alt="Rub Hands Palm to palm" class="img">
+                            </figure>
+
+                            <span class="number">3</span>
+
+                            <h3 class="h4 item-title">Frottez-vous les mains paume contre paume</h3>
+                        </li>
+
+                        <li class="safety-item">
+                            <figure class="item-banner img-holder">
+                                <img src="./assets/images/safety-4.jpg" width="170" height="170" loading="lazy" alt="Lather The Back of Both Hands" class="img">
+                            </figure>
+
+                            <span class="number">4</span>
+
+                            <h3 class="h4 item-title">Savonnez le dos de vos deux mains</h3>
+                        </li>
+
+                        <li class="safety-item">
+                            <figure class="item-banner img-holder">
+                                <img src="./assets/images/safety-5.jpg" width="170" height="170" loading="lazy" alt="Scrub Between Your Fingers" class="img">
+                            </figure>
+
+                            <span class="number">5</span>
+
+                            <h3 class="h4 item-title">Frottez entre vos doigts</h3>
+                        </li>
+
+                        <li class="safety-item">
+                            <figure class="item-banner img-holder">
+                                <img src="./assets/images/safety-6.jpg" width="170" height="170" loading="lazy" alt="Rub The Back of Fingers on The Opposing Palm" class="img">
+                            </figure>
+
+                            <span class="number">6</span>
+
+                            <h3 class="h4 item-title">Frottez le dos de vos doigts sur la paume opposée</h3>
+                        </li>
+
+                        <li class="safety-item">
+                            <figure class="item-banner img-holder">
+                                <img src="./assets/images/safety-7.jpg" width="170" height="170" loading="lazy" alt="Clean Thumbs" class="img">
+                            </figure>
+
+                            <span class="number">7</span>
+
+                            <h3 class="h4 item-title">Lavez-vous les pouces</h3>
+                        </li>
+
+                        <li class="safety-item">
+                            <figure class="item-banner img-holder">
+                                <img src="./assets/images/safety-8.jpg" width="170" height="170" loading="lazy" alt="Wash Fingernails And Fingertips" class="img">
+                            </figure>
+
+                            <span class="number">8</span>
+
+                            <h3 class="h4 item-title">Lavez-vous les ongles et le bout des doigts</h3>
+                        </li>
+
+                        <li class="safety-item">
+                            <figure class="item-banner img-holder">
+                                <img src="./assets/images/safety-9.jpg" width="170" height="170" loading="lazy" alt="Rinse Hands" class="img">
+                            </figure>
+
+                            <span class="number">9</span>
+
+                            <h3 class="h4 item-title">Rincez-vous les mains</h3>
+                        </li>
+
+                        <li class="safety-item">
+                            <figure class="item-banner img-holder">
+                                <img src="./assets/images/safety-10.jpg" width="170" height="170" loading="lazy" alt="Dry with a Single Use Towel" class="img">
+                            </figure>
+
+                            <span class="number">10</span>
+
+                            <h3 class="h4 item-title">Séchez avec une serviette à usage unique</h3>
+                        </li>
+
+                        <li class="safety-item">
+                            <figure class="item-banner img-holder">
+                                <img src="./assets/images/safety-11.jpg" width="170" height="170" loading="lazy" alt="Use The Towel to Rurn off The Foucet" class="img">
+                            </figure>
+
+                            <span class="number">11</span>
+
+                            <h3 class="h4 item-title">Utilisez la serviette pour essuyer le jet</h3>
+                        </li>
+
+                        <li class="safety-item">
+                            <figure class="item-banner img-holder">
+                                <img src="./assets/images/safety-12.jpg" width="170" height="170" loading="lazy" alt="Your Hands Are Clean" class="img">
+                            </figure>
+
+                            <span class="number">12</span>
+
+                            <h3 class="h4 item-title">Vos mains sont propres</h3>
+                        </li>
+                    </ol>
+                </div>
+            </section>
+
+
+    <!-- 
+    - #BLOG 1:09:25
+    -->
+            <section class="section blog" id="blog" aria-labelledby="blog-label">
+                <div class="container">
+
+                    <h2 class="h2 section-title" id="blog-label">Nos blogs les plus populaires</h2>
+
+                    <p class="section-text text">
+                        Découvrez les témoignages authentiques de personnes ayant traversé la maladie et partagé leur expérience pour informer, rassurer et soutenir chacun.
+                    </p>
+
+                    <ul class="grid-list">
+                        <li>
+                            <div class="blog-card">
+                                <figure class="card-banner img-holder">
+                                    <img src="./assets/images/blog-1.jpg" width="370" height="280" loading="lazy" alt="Conulting Reporting Qouncil Arei Not Could More..." class="img-cover">
+                                </figure>
+
+                                <div class="card-content">
+
+                                    <h3 class="h4">
+                                        <a href="#" class="card-title">
+                                            Mon parcours difficile vers une guérison complète
+                                        </a>
+                                    </h3>
+
+                                    <div class="card-meta">
+                                        <div class="wrapper">
+                                            <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+                                            <time class="meta-text" datetime="2022-07-12">July 12, 2022</time>
+                                        </div>
+
+                                        <div class="wrapper">
+                                            <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+                                            <p class="meta-text">Léa M.</p>
+                                        </div>
+
+                                    </div>
+
+                                    <p class="card-text text">
+                                        Après plusieurs semaines éprouvantes, j’ai retrouvé progressivement mes forces grâce aux soins adaptés.
+                                    </p>
+
+                                </div>
+
+                                <div class="card-footer">
+                                    <a href="#" class="btn-link">En savoir plus</a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="blog-card">
+                                <figure class="card-banner img-holder">
+                                    <img src="./assets/images/blog-2.jpg" width="370" height="280" loading="lazy" alt="Financial Reporting Qouncil What Could More..." class="img-cover">
+                                </figure>
+
+                                <div class="card-content">
+
+                                    <h3 class="h4">
+                                        <a href="#" class="card-title">
+                                            Comment j’ai surmonté les complications respiratoires
+                                        </a>
+                                    </h3>
+
+                                    <div class="card-meta">
+                                        <div class="wrapper">
+                                            <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+                                            <time class="meta-text" datetime="2022-07-12">July 12, 2022</time>
+                                        </div>
+
+                                        <div class="wrapper">
+                                            <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+                                            <p class="meta-text">Sofia L.</p>
+                                        </div>
+
+                                    </div>
+
+                                    <p class="card-text text">
+                                        Une prise en charge rapide m’a permis d’éviter l’aggravation et de récupérer plus serei&shy;ne&shy;ment.
+                                    </p>
+
+                                </div>
+
+                                <div class="card-footer">
+                                    <a href="#" class="btn-link">En savoir plus</a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="blog-card">
+                                <figure class="card-banner img-holder">
+                                    <img src="./assets/images/blog-3.jpg" width="370" height="280" loading="lazy" alt="Consulting Reporting Qounc Arei Could More..." class="img-cover">
+                                </figure>
+
+                                <div class="card-content">
+
+                                    <h3 class="h4">
+                                        <a href="#" class="card-title">
+                                            Un combat quotidien transformé en victoire personnelle
+                                        </a>
+                                    </h3>
+
+                                    <div class="card-meta">
+                                        <div class="wrapper">
+                                            <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+                                            <time class="meta-text" datetime="2022-07-12">July 12, 2022</time>
+                                        </div>
+
+                                        <div class="wrapper">
+                                            <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+                                            <p class="meta-text">Thomas R.</p>
+                                        </div>
+
+                                    </div>
+
+                                    <p class="card-text text">
+                                        Avec patience, soutien médical et déter&shy;mination, j’ai retrouvé énergie, stabilité et confiance après cette infection éprouvante.
+                                    </p>
+
+                                </div>
+
+                                <div class="card-footer">
+                                    <a href="#" class="btn-link">En savoir plus</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+        </article>
+    </main>
+
+    <!-- 
+    - #FOOTER 1:17:27
+    -->
+    <footer class="footer has-bg-image" style="background-image: url('./assets/images/footer-bg.jpg')">
+        <div class="container">
+            <div class="footer-top section">
+                <div class="footer-brand">
+                    <h3 class="h4 footer-list-title">À propos du Covid-19</h3>
+
+                    <p class="footer-text text">
+                        Accédez facilement aux informations essentielles, contacts sociaux et conditions d’utilisation.
+                    </p>
+
+                    <ul class="contact-list">
+                        <li class="contact-item">
+                            <p class="contact-title">Headquarters :</p>
+
+                            <address class="address text">
+                                795 Folsom Ave, Suite 600 San Francisco, CA 94107
+                            </address>
+                        </li>
+
+                        <li class="contact-item">
+                            <p class="contact-title">Phone :</p>
+
+                            <a href="tel:+524623435643" class="text">(+52) 4623 435643</a>
+                        </li>
+
+                        <li class="contact-item">
+                            <p class="contact-title">Email :</p>
+
+                            <a href="mailto:info@covid-19.com" class="text">info@covid-19.com</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <ul class="footer-list">
+                    <li>
+                        <h3 class="h4 footer-list-title">Navigation</h3>
+                    </li>
+
+                    <li class="footer-list-item">
+                        <ion-icon name="caret-forward" aria-hidden="true"></ion-icon>
+
+                        <a href="#" class="footer-link">Annonceurs</a>
+                    </li>
+
+                    <li class="footer-list-item">
+                        <ion-icon name="caret-forward" aria-hidden="true"></ion-icon>
+
+                        <a href="#" class="footer-link">Développeurs</a>
+                    </li>
+
+                    <li class="footer-list-item">
+                        <ion-icon name="caret-forward" aria-hidden="true"></ion-icon>
+
+                        <a href="#" class="footer-link">Ressources</a>
+                    </li>
+
+                    <li class="footer-list-item">
+                        <ion-icon name="caret-forward" aria-hidden="true"></ion-icon>
+
+                        <a href="#" class="footer-link">Entreprise</a>
+                    </li>
+
+                    <li class="footer-list-item">
+                        <ion-icon name="caret-forward" aria-hidden="true"></ion-icon>
+
+                        <a href="#" class="footer-link">Connexion</a>
+                    </li>
+
+                </ul>
+
+                <ul class="footer-list social-list">
+                    <li>
+                        <h3 class="h4 footer-list-title">Contacts sociaux</h3>
+                    </li>
+
+                    <li class="footer-list-item">
+                        <ion-icon name="logo-facebook" aria-hidden="true"></ion-icon>
+
+                        <a href="#" class="footer-link">Facebook</a>
+                    </li>
+
+                    <li class="footer-list-item">
+                        <ion-icon name="logo-twitter" aria-hidden="true"></ion-icon>
+
+                        <a href="#" class="footer-link">Twitter</a>
+                    </li>
+
+                    <li class="footer-list-item">
+                        <ion-icon name="logo-instagram" aria-hidden="true"></ion-icon>
+
+                        <a href="#" class="footer-link">Instagram</a>
+                    </li>
+
+                    <li class="footer-list-item">
+                        <ion-icon name="logo-youtube" aria-hidden="true"></ion-icon>
+
+                        <a href="#" class="footer-link">YouTube</a>
+                    </li>
+
+                    <li class="footer-list-item">
+                        <ion-icon name="logo-xing" aria-hidden="true"></ion-icon>
+
+                        <a href="#" class="footer-link">Xing</a>
+                    </li>
+
+                </ul>
+
+                <ul class="footer-list">
+                    <li>
+                        <h3 class="h4 footer-list-title">Conditions d'utilisaion</h3>
+                    </li>
+
+                    <li class="footer-list-item">
+                        <ion-icon name="caret-forward" aria-hidden="true"></ion-icon>
+
+                        <a href="#" class="footer-link">Contrat avec l'annonceur</a>
+                    </li>
+
+                    <li class="footer-list-item">
+                        <ion-icon name="caret-forward" aria-hidden="true"></ion-icon>
+
+                        <a href="#" class="footer-link">Politique d'utilisation acceptable</a>
+                    </li>
+
+                    <li class="footer-list-item">
+                        <ion-icon name="caret-forward" aria-hidden="true"></ion-icon>
+
+                        <a href="#" class="footer-link">Politique de confidentialité</a>
+                    </li>
+
+                    <li class="footer-list-item">
+                        <ion-icon name="caret-forward" aria-hidden="true"></ion-icon>
+
+                        <a href="#" class="footer-link">Confidentialité technologique</a>
+                    </li>
+
+                    <li class="footer-list-item">
+                        <ion-icon name="caret-forward" aria-hidden="true"></ion-icon>
+
+                        <a href="#" class="footer-link">Contrat de développeur</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright">
+                    &copy; 2020 All Rights Reserved. Developed by codewithsadee
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+    <!-- 
+    - #BACK TO TOP 1:25:41
+    -->
+    <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+        <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
+    </a>
+
+    <!-- Footer de remerciements au concepteur et Copilote pour ses commentaires -->
+    <div id="thank-you-footer">
+       🪶 Remerciements à Codewithsadee, le concepteur de ce tutoriel, et à Copilote pour tous les commentaires. — Chris Blues —
+    </div>
+
+
+
+
+    <!-- 
+    - Custom JS link
+     -->
+    <script src="./assets/js/script.js"></script>
+
+    <!-- 
+    - Ioncon
+     -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+
+</html>

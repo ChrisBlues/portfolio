@@ -670,6 +670,10 @@
             background: linear-gradient(135deg, #4e342e, #8d6e63);
         }
 
+        .theme-vif .funel {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ff8e53 100%);
+        }
+
 
         
 

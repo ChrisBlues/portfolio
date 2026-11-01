@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tazza</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- Lightbox Pupup -->
+    <link rel="stylesheet" href="css/lightbox.css">
+
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome 5 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+    <!-- Navbar Section Start -->
+    <header id="full_nav">
+        <div class="header">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg">
+                    <a class="navbar-brand" href="index.html">
+                        <img decoding="async" src="./images/logo.png" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                        aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        <i class="fas fa-stream navbar-toggler-icon"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="main-nav">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Accueil</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">À propos</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="product.html">Produits</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="gallery.html">Galerie</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+
+                        <div class="header_right">
+                            <div class="text-lg-end">
+                                <span>Appelez-nous !</span>
+                                <span class="phone_no">+1 23 45 67 89</span>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Navbar Section Exit -->
+
+    <!-- banner Section start -->
+    <section class="banner_section">
+        <div class="container">
+            <h1 class="grand-titre">A la ferme des <br>Saisons Vives</h1>
+            <div id="banner-carousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="carousel-caption">
+                            <div class="banner-content">
+                                <h1>100<span>%</span> biologique</h1>
+                                <h3>Aliments frais et naturels</h3>
+                                <p>La terre nous parle doucement, à travers les saisons, les gestes patients, les
+                                    silences fertiles et les récoltes partagées. *</p>
+                                <a href="product.html" class="btn main-btn">Tous produits</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-caption">
+                            <div class="banner-content">
+                                <h1>100<span>%</span> naturel</h1>
+                                <h3>Produits issus de la ferme</h3>
+                                <p>Chaque tomate, chaque feuille de basilic raconte une histoire de lumière, de pluie,
+                                    de soin, de lenteur, et de respect du vivant. *</p>
+                                <a href="product.html" class="btn main-btn">Fruits & légumes</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- banner section exit -->
+    <!-- =============================================================================== -->
+    <!-- Index.html : Features Section start - Assistance, camionnette, céréales, demi-citron -->
+    <section class="feature_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-lg-3 mb-5">
+                    <div class="card features-box">
+                        <div class="text-center">
+                            <div class="features-icon-border">
+                                <div class="features-icon">
+                                    <img decoding="async" src="./images/feature-icon/ui-chat.svg">
+                                </div>
+                            </div>
+                            <div class="features-text">
+                                <h3>Assistance <br>24h/24 et 7j/7</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 mb-5">
+                    <div class="card features-box">
+                        <div class="text-center">
+                            <div class="features-icon-border">
+                                <div class="features-icon">
+                                    <img decoding="async" src="./images/feature-icon/truck-loaded.svg">
+                                </div>
+                            </div>
+                            <div class="features-text">
+                                <h3>Livraison gratuite</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 mb-5">
+                    <div class="card features-box">
+                        <div class="text-center">
+                            <div class="features-icon-border">
+                                <div class="features-icon">
+                                    <img decoding="async" src="./images/feature-icon/wheat.svg">
+                                </div>
+                            </div>
+                            <div class="features-text">
+                                <h3>Frais & sain</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 mb-5">
+                    <div class="card features-box">
+                        <div class="text-center">
+                            <div class="features-icon-border">
+                                <div class="features-icon">
+                                    <img decoding="async" src="./images/feature-icon/lemon.svg">
+                                </div>
+                            </div>
+                            <div class="features-text">
+                                <h3>De notre ferme</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Features Section Exit -->
+    <!-- =============================================================================== -->
+    <!-- Index.html : Services depuis 1841 Section start -->
+    <section class="landing_about_section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-5 col-lg-6 col-sm-8">
+                    <div class="about-content">
+                        <h2>Nous fournissons des services depuis 1841 avec fierté.</h2>
+                        <div class="about-details">
+                            <p class="fw-bold">
+                                <span style="font-weight:bold">Depuis 1841, chaque saison nous enseigne la patience,
+                                    la lumière, le soin et le respect du vivant. <span title="Rédigé par Copilote" class="auteur">*</span></span>
+                            <p> Notre ferme cultive des fruits et légumes biologiques, en harmonie avec les rythmes
+                                naturels et les gestes ancestraux. Ici, la terre n’est pas exploitée : elle est écoutée.
+                                Chaque récolte est une conversation silencieuse entre le sol, le ciel et les mains qui
+                                sèment. Nous croyons à la lenteur, à la fraîcheur, à la beauté des choses simples. Ce
+                                projet est une invitation à découvrir une agriculture qui nourrit autant le corps que
+                                l’âme.</p>
+                            <a href="#" class="btn main-btn">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Index.html : Services depuis 1841 Section exit -->
+    <!-- =============================================================================== -->
+    <!-- Index.html : Fruits en vedette - Melon, orange, pomme, pitaya Section start -->
+    <section class="landing_product_section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center pb-5">
+                    <h2 class="section-title">Nos fruits en vedette</h2>
+                    <p class="section-subtitle">
+                        Voici nos quatre fruits emblématiques cultivés <br>avec soin, fraîcheur et respect du vivant. <span title="Rédigé par Copilote" class="auteur">*</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="row mx-0">
+                <div class="col-lg-3 col-sm-6 mb-5">
+                    <div class="card product-card ">
+                        <div class="product-img">
+                            <img decoding="async" src="./images/products/product-1.jpg" class="img-fluid" />
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h3>Melon Cantaloup</h3>
+                            <span $70 KG></span>
+                        </div>
+                        <div class="vedette-detail">
+                            <a href="product.html" class="btn main-btn">Voir détails</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-5">
+                    <div class="card product-card">
+                        <div class="product-img">
+                            <img decoding="async" src="./images/products/product-2.jpg" class="img-fluid" />
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h3>Poire</h3>
+                            <span $70 KG></span>
+                        </div>
+                        <div class="vedette-detail">
+                            <a href="product.html" class="btn main-btn">Voir détails</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-5">
+                    <div class="card product-card">
+                        <div class="product-img">
+                            <img decoding="async" src="./images/products/product-3.jpg" class="img-fluid" />
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h3>Pomme</h3>
+                            <span $70 KG></span>
+                        </div>
+                        <div class="vedette-detail">
+                            <a href="product.html" class="btn main-btn">Voir détails</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-5">
+                    <div class="card product-card">
+                        <div class="product-img">
+                            <img decoding="async" src="./images/products/product-4.jpg" class="img-fluid" />
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h3>Raisin</h3>
+                            <span $70 KG></span>
+                        </div>
+                        <div class="vedette-detail">
+                            <a href="product.html" class="btn main-btn">Voir détails</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Index.html : Product Best Sellers - Melon, orange, pomme, pitaya Section EXIT -->
+    <!-- =============================================================================== -->
+    <!-- Index.html Nos clients satisfaits Section start -->
+    <section class="testimonial_section">
+        <div class="container">
+            <div class="row pb-5">
+                <div class="col-12 text-center">
+                    <h2 class="section-title">Nos clients satisfaits</h2>
+                    <p class="section-subtitle">Les clients louent la qualité, la fraîcheur, l’accueil humain et
+                        l’engagement éthique qui font vivre cette ferme bio exemplaire. <span title="Rédigé par Copilote" class="auteur">*</span></p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-xl-8 col-md-10">
+                    <div id="testimonial-slider" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button data-bs-target="#testimonial-slider" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button data-bs-target="#testimonial-slider" data-bs-slide-to="1" class="active"
+                                aria-current="true" aria-label="Slide 2"></button>
+                            <button data-bs-target="#testimonial-slider" data-bs-slide-to="2" class="active"
+                                aria-current="true" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="d-sm-flex row">
+                                    <div class="profile-box col-sm-5">
+                                        <img decoding="async" src="./images/testimonial/testimonial-1.png"
+                                            class="img-fluid">
+                                    </div>
+                                    <div class="card col-sm-7">
+                                        <div class="desc-box">
+                                            <p class="fst-italic">Le service client est non seulement rapide, mais le
+                                                design est également professionnel. Je rechercherai mes produits dans
+                                                cette ferme à l'avenir.</p>
+                                            <div class="my-4">
+                                                <h4>Jecob Oramson</h4>
+                                                <p class="m-0 text-white text-end">Livre d'or</p>
+                                            </div>
+                                            <img decoding="async" src="./images/testimonial/qoutes.svg"
+                                                class="float-end">
+
+                                        </div>
+                                    </div>>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-sm-flex row">
+                                    <div class="profile-box col-sm-5">
+                                        <img decoding="async" src="./images/testimonial/testimonial-2.jpg"
+                                            class="img-fluid">
+                                    </div>
+                                    <div class="card col-sm-7">
+                                        <div class="desc-box">
+                                            <p class="fst-italic">Depuis que je m’approvisionne ici, je redécouvre le goût vrai des légumes. Fraîcheur, respect, et accueil chaleureux
+                                                garantis. <span title="Rédigé par Copilote" class="auteur">*</span></p>
+                                            <div class="my-4">
+                                                <h4>Élise Morel</h4>
+                                                <p class="m-0 text-white text-end">Courrier du lecteur</p>
+                                            </div>
+                                            <img decoding="async" src="./images/testimonial/qoutes.svg"
+                                                class="float-end">
+                                        </div>
+                                    </div>>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="d-sm-flex row">
+                                    <div class="profile-box col-sm-5">
+                                        <img decoding="async" src="./images/testimonial/testimonial-3.jpg"
+                                            class="img-fluid">
+                                    </div>
+                                    <div class="card col-sm-7">
+                                        <div class="desc-box">
+                                            <p class="fst-italic">Une ferme bio exemplaire : produits savoureux, démarche éthique, lien humain précieux. Je recommande les paniers hebdomadaires sans hésiter. <span title="Rédigé par Copilote" class="auteur">*</span></p>
+                                            <div class="my-4">
+                                                <h4>Théo Lambert</h4>
+                                                <p class="m-0 text-white text-end">Chronique du bien-être</p>
+                                            </div>
+                                            <img decoding="async" src="./images/testimonial/qoutes.svg"
+                                                class="float-end">
+                                        </div>
+                                    </div>>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- Index.html Nos clients satisfaits Section EXIT -->
+    <!-- =============================================================================== -->
+    <!-- Index.html : légumes section start -->
+    <section class="legumes-bio py-5 bg-light text-center">
+        <div class="container">
+            <h2 class="mb-4">Légumes biologiques <br>qui varient au fil des saisons <span title="Rédigé par Copilote" class="auteur">*</span></h2>
+            <p class="text-center mb-5">
+                Nos légumes biologiques offrent diversité, fraîcheur et vitalité. Chaque récolte célèbre <br>la saison, le goût juste et une agriculture attentive aux équilibres naturels.
+            </p>
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <img src="images/legumes/carottes.jpg" alt="Carotte bio" class="img-fluid mb-3" />
+                    <h4>Carotte</h4>
+                    <p>Croquante, sucrée, riche en bêta-carotène — elle colore l’assiette et renforce la vue.</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="images/legumes/poireaux.jpg" alt="Poireau bio" class="img-fluid mb-3" />
+                    <h4>Poireau</h4>
+                    <p>Fibreux, parfumé, compagnon des soupes — il réchauffe l’hiver et soutient la digestion avec
+                        douceur.</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="images/legumes/betteraves.jpg" alt="Betterave bio" class="img-fluid mb-3" />
+                    <h4>Betterave</h4>
+                    <p>Rouge profond, goût terreux et sucré — elle stimule la circulation et célèbre la vitalité du sol.
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <img src="images/legumes/brocolis.jpg" alt="Brocoli bio" class="img-fluid mb-3" />
+                    <h4>Brocoli</h4>
+                    <p>Vert intense, riche en vitamines — il protège l’immunité et s’invite dans les assiettes avec
+                        élégance.</p>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="404.html" class="btn main-btn">Voir tous nos produits</a>
+            </div>
+        </div>
+    </section>
+    <!-- Gallery section exit -->
+    <!-- =============================================================================== -->
+    <!-- Footer section start -->
+    <section class="footer_wrapper mt-3 mt-md-0">
+        <div class="container px-5 px-lg-0">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6 mb-5 mb-lg-0">
+                    <h5>Ferme des Saisons Vives <span title="Rédigé par Copilote" class="auteur">*</span></h5>
+                    <p class="mb-4 ps-0 company_details">Pour toute graine de curiosité, écrivez-nous, la terre vous
+                        répondra avec joie et lumière.</p>
+                    <div class="contact-info">
+                        <ul class="list-unstyled">
+                            <li><a href="#"><i class="fa fa-home me-3"></i> Chemin des Légumes Joyeux, <br>43210
+                                    Saisons-Vives-sur-Terre</a></li>
+                            <li><a href="#"><i class="fa fa-phone me-3"></i> +1 23 45 67 89</a></li>
+                            <li><a href="#"><i class="fa fa-envelope me-3"></i>legumesenfete@saisonsvives.org</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-5 mb-lg-0">
+                    <h5>Assistance clientèle</h5>
+                    <ul class="link-widget p-0">
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="404.html">Confidentialité</a></li>
+                        <li><a href="404.html">Termes & Conditions</a></li>
+                        <li><a href="404.html">Retours de produits</a></li>
+                        <li><a href="404.html">Vente en gros</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-5 mb-lg-0">
+                    <h5>Accès rapides</h5>
+                    <ul class="link-widget p-0">
+                        <li><a href="product.html">Produits</a></li>
+                        <li><a href="404.html">Termes & Conditions</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="404.html">Accessoires</a></li>
+                        <li><a href="404.html">Conditions d'utilisation</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-5 mb-lg-0">
+                    <h5>Newsletter</h5>
+                    <div class="form-group mb-4">
+                        <input type="email" class="form-control bg-transparent" placeholder="Tapez votre e-mail.">
+                        <button type="submit" class="btn main-btn">Abonnement</button>
+                    </div>
+                    <h5>Restez connecté</h5>
+                    <ul class="social-network d-flex align-items-center p-0">
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid copyright-section">
+            <p>Copyright <a href="#">&copy; CODE4EDUCATION.</a>All Rights Reserved</p>
+        </div>
+    </section>
+    <!-- Footer section exit -->
+    <!-- =============================================================================== -->
+    <!-- Remerciements à Code4Education et Copilote -->
+    <div id="thank-you-footer">
+        <span class="plume">🪶</span>
+        Remerciements à Code4Education, le concepteur de ce tutoriel à consulter sur YouTube
+        <a href="https://www.youtube.com/watch?v=QSfUAuQqfVM&t=1109s" target="_blank">ici</a>. <br> Remerciements à
+        Copilote pour tous les commentaires (marqués d'un astérisque *). — Chris Blues —
+    </div>
+    <!-- =============================================================================== -->
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Lightbox Pupup -->
+    <script src="js/lightbox.js"></script>
+
+    <!-- Bootstrap 5 CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+    <!-- fontawesome JS -->
+    <script src="https://kit.fontawesome.com/28843e70c9.js" crossorigin="anonymous"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

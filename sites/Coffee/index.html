@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee</title>
+    <!-- Linking Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- Linking Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <!-- Linking Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <!-- Linking style.css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header / Navbar -->
+    <header>
+        <nav class="navbar section-content">
+            <a href="#" class="nav-logo">
+                <div class="nav-logo-group">
+                    <h2 class="logo-text">Coffee</h2>
+                    <div class="separator"></div>
+                    <button onclick="openModal()" class="attribution-btn text-white">Attributions des couleurs des textes</button>
+                </div>
+            </a>
+
+
+            <ul class="nav-menu">
+                <button id="menu-close-button" class="fas fa-times"></button>
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu" class="nav-link">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials" class="nav-link">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#gallery" class="nav-link">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <button id="menu-open-button" class="fas fa-bars"></button>
+        </nav>
+    </header>
+
+    <!-- ======================= main ======================= -->
+    <main>
+
+        <!-- Hero section -->
+        <section class="hero-section" id="home">
+            <div class="section-content">
+                <div class="hero-details">
+                    <h2 class="title">Best Coffee</h2>
+                    <h3 class="subtitle">Make your day great with our special coffee !</h3>
+                    <p class="traduction1">*Rendez votre journée agréable avec notre café spécial !</p>
+                    <p class="description">Welcome to our coffee paradise, where every bean tells a story and every cup
+                        sparks joy.</p>
+                    <p class="traduction2">*Bienvenue dans notre paradis du café, où chaque grain raconte une histoire
+                        <br>
+                        et chaque tasse suscite la joie.</p>
+                    <div class="buttons">
+                        <a href="#" class="button order-now">Order Now</a>
+                        <a href="#" class="button contact-us">Contact Us</a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <img src="images/coffee-hero-section.png" alt="Hero" class="hero-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- About section -->
+        <section class="about-section" id="about">
+            <div class="section-content">
+                <div class="about-image-wrapper">
+                    <img src="images/about-image.jpg" alt="About" class="about-image">
+                </div>
+                <div class="about-details">
+                    <h2 class="section-title">About Us</h2>
+                    <p class="text">At Coffee House in Berndorf, Germany, we pride ourselves on being a go-to
+                        destination for coffee lovers and conversation seekers alike. We're dedicated to providing an
+                        exceptional coffee experience in a cozy and inviting atmosphere, where guests can relax, unwind,
+                        and enjoy their time in comfort.
+                    </p>
+                    <p class="traduction">*Au Coffee House de Berndorf, en Allemagne, nous sommes fiers d'être une
+                        destination incontournable pour les amateurs de café et les amateurs de conversation. Nous nous
+                        engageons à offrir une expérience café exceptionnelle dans une atmosphère chaleureuse et
+                        accueillante, où nos clients peuvent se détendre et profiter pleinement de leur temps.</p>
+                    <div class="social-link-list">
+                        <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section class="menu-section" id="menu">
+            <h2 class="section-title">Our menu</h2>
+            <p class="menu-subtitle-en">Certain images reveal themselves in transparency, like suspended aromas. They do
+                not seek to impose, but to invite.</p>
+            <p class="menu-subtitle-fr">*Certaines images se dévoilent en transparence, comme des parfums suspendus.
+                Elles ne cherchent pas à s’imposer, mais à inviter.</p>
+
+
+            <div class="section-content">
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <img src="images/hot-beverages.png" alt="Hot Beverages" class="menu-image pop">
+                        <div class="menu-details">
+                            <h3 class="name">Hot Beverages</h3>
+                            <p class="text">Wide range of Steaming hot coffee to make you fresh and light.</p>
+                            <p class="traduction_name">*Boissons chaudes</p>
+                            <p class="traduction_text">Large gamme de café chaud fumant <br>pour vous rendre frais et
+                                léger.</p>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <img src="images/cold-beverages.png" alt="Cold Beverages" class="menu-image pop">
+                        <div class="menu-details">
+                            <h3 class="name">Cold Beverages</h3>
+                            <p class="text">Creamy and frothy cold coffee to make cool.</p>
+                            <p class="traduction_name">*Boissons froides</p>
+                            <p class="traduction_text">Café froid crémeux et mousseux pour être cool.</p>
+
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <img src="images/refreshment.png" alt="Refreshment" class="menu-image pop">
+                        <div class="menu-details">
+                            <h3 class="name">Refreshment</h3>
+                            <p class="text">Fruit and icy refreshing drink to make feel refresh.</p>
+                            <p class="traduction_name">*Rafraîchissement</p>
+                            <p class="traduction_text">Boisson rafraîchissante aux fruits et <br>glacée pour se sentir
+                                rafraîchi.</p>
+
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <img src="images/special-combo.png" alt="Special Contact" class=" menu-image pop">
+                        <div class="menu-details">
+                            <h3 class="name">Special Combos</h3>
+                            <p class="text">Your favorite eating and drinking combations.</p>
+                            <p class="traduction_name">*Combos spéciaux</p>
+                            <p class="traduction_text">Vos combinaisons préférées de <br>nourriture et de boisson.</p>
+
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <img src="images/desserts.png" alt="Desserts" class="menu-image pop">
+                        <div class="menu-details">
+                            <h3 class="name">Dessert</h3>
+                            <p class="text">Satiate your palate and take you on a culinary treat.</p>
+                            <p class="traduction_name">*Dessert</p>
+                            <p class="traduction_text">Rassasiez votre palais et offrez-vous <br>un délice culinaire.
+                            </p>
+
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <img src="images/burger-frenchfries.png" alt="Burger & Frenchfries" class="menu-image pop">
+                        <div class="menu-details">
+                            <h3 class="name">Burger & French Fries</h3>
+                            <p class="text">Quick bites to satisfy your small size hunger.</p>
+                            <p class="traduction_name">*Burger et frites</p>
+                            <p class="traduction_text">Des bouchées rapides pour <br>satisfaire votre petite faim.</p>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section" id="testimonials">
+            <h2 class="section-title">Testimonials</h2>
+            <p class="testimonials-subtitle-1">Shared whispers / Murmures partagés</p>
+            <p class="testimonials-subtitle-2">Confidences over coffee / Confidences autour d'un café</p>
+
+            <div class="section-content">
+                <div class="slider-container swiper">
+                    <div class="slider-wrapper">
+                        <ul class="testimonials-list swiper-wrapper">
+                            <li class="testimonial swiper-slide">
+                                <img src="images/user-1.jpg" alt="User" class="user-image">
+                                <h3 class="name">Sarah Johnson</h3>
+                                <i class="feedback">"Loved the French roast. Perfectly balanced and rich."</i>
+                                <i class="traduction">*J'ai adoré la torréfaction française. Parfaitement équilibrée et
+                                    riche.</i>
+                            </li>
+                            <li class="testimonial swiper-slide">
+                                <img src="images/user-2.jpg" alt="User" class="user-image">
+                                <h3 class="name">James Wilson</h3>
+                                <i class="feedback">"Great espresso blend ! Smooth and bold bold flavor. Fast shipping
+                                    too !"</i>
+                                <i class="traduction">*Excellent mélange expresso ! Saveur douce et intense. Livraison
+                                    rapide aussi !</i>
+                            </li>
+                            <li class="testimonial swiper-slide">
+                                <img src="images/user-3.jpg" alt="User" class="user-image">
+                                <h3 class="name">Michael Brown</h3>
+                                <i class="feedback">"Fantastic moca flavor. Fresh and aromatic. Quick
+                                    shipping&nbsp;!"</i>
+                                <i class="traduction">*Saveur moca fantastique. Frais et aromatique. Livraison
+                                    rapide !</i>
+
+                            </li>
+                            <li class="testimonial swiper-slide">
+                                <img src="images/user-4.jpg" alt="User" class="user-image">
+                                <h3 class="name">Emily Harris</h3>
+                                <i class="feedback">"Excellent quality ! Fresh beans and quick delivery. Highly
+                                    recommend."</i>
+                                <i class="traduction">*Excellente qualité ! Grains frais et livraison rapide. Je
+                                    recommande vivement. !</i>
+
+                            </li>
+                            <li class="testimonial swiper-slide">
+                                <img src="images/user-5.jpg" alt="User" class="user-image">
+                                <h3 class="name">Anthony Thompson</h3>
+                                <i class="feedback">"Best decaf I've tried ! Smooth and flavorful. Arrived
+                                    promptly."</i>
+                                <i class="traduction">*Le meilleur décaféiné que j'aie jamais goûté ! Doux et savoureux.
+                                    Arrivé rapidement. !</i>
+
+                            </li>
+                        </ul>
+
+                        <!-- Pagination -->
+                        <div class="swiper-pagination"></div>
+
+                        <!-- Arrows navigation -->
+                        <div class="swiper-slide-button swiper-button-prev"></div>
+                        <div class="swiper-slide-button swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery section -->
+        <section class="gallery-section" id="gallery">
+            <h2 class="section-title">Gallery</h2>
+            <p class="gallery-subtitle-en">This gallery does not seek brilliance — it gathers quiet moments, textures of
+                taste, and the soft echo of presence.</p>
+            <p class="gallery-subtitle-fr">*Cette galerie ne cherche pas l’éclat — elle recueille des instants discrets,
+                des textures de goût, et l’écho doux d’une présence.</p>
+
+            <div class="section-content">
+                <ul class="gallery-list">
+                    <li class="gallery-item">
+                        <img src="images/gallery-1.jpg" alt="Steaming coffee with beans"
+                            class="gallery-image img-fluid">
+                        <div class="caption">
+                            <p class="caption-en">“Steam rises like a morning thought.”</p>
+                            <p class="caption-fr"><em>“La vapeur s’élève comme <br> une pensée matinale.”</em></p>
+                            <p class="emotion">Emotion: <br> Warm, contemplative, subtle <br><em>Chaleureux,
+                                    contemplatif, subtil</em></p>
+                        </div>
+                    </li>
+
+                    <li class="gallery-item">
+                        <img src="images/gallery-2.jpg" alt="Gallery" class="gallery-image img-fluid">
+                        <div class="caption">
+                            <p class="caption-en">“A hearty start, where salt meets sun — breakfast with a touch of
+                                boldness.”</p>
+                            <p class="caption-fr"><em>“Un départ généreux, où le sel rencontre le soleil — un petit
+                                    déjeuner avec une pointe d’audace.”</em></p>
+                            <p class="emotion">Emotion: <br> Robust, savory, vibrant <br><em> Robuste, savoureux,
+                                    vibrant </em></p>
+                        </div>
+                    </li>
+
+                    <li class="gallery-item">
+                        <img src="images/gallery-3.jpg" alt="Gallery" class="gallery-image img-fluid">
+                        <div class="caption">
+                            <p class="caption-en">“Colors in a glass, freshness in every sip — fruit speaks in summer
+                                tones.”</p>
+                            <p class="caption-fr"><em>“Des couleurs dans un verre, de la fraîcheur à chaque gorgée — les
+                                    fruits parlent en tonalités estivales.”</em></p>
+                            <p class="emotion">Emotion: <br> Fresh, joyful, luminous <br><em> Frais, joyeux, lumineux
+                                </em></p>
+                        </div>
+                    </li>
+
+                    <li class="gallery-item">
+                        <img src="images/gallery-4.jpg" alt="Gallery" class="gallery-image img-fluid">
+                        <div class="caption">
+                            <p class="caption-en">“A breakfast made with care — heart-shaped bread, leafy tenderness,
+                                and a sip of affection.”</p>
+                            <p class="caption-fr"><em>“Un petit déjeuner préparé avec soin — pain en forme de cœur,
+                                    tendresse feuillue, et une gorgée d’affection.”</em></p>
+                            <p class="emotion">Emotion: <br> Tender, loving, serene <br><em> Tendre, affectueux,
+                                    serein</em></p>
+                        </div>
+                    </li>
+
+                    <li class="gallery-item">
+                        <img src="images/gallery-5.jpg" alt="Gallery" class="gallery-image img-fluid">
+                        <div class="caption">
+                            <p class="caption-en">“Folded warmth, golden and grounded — a meal that comforts without
+                                words.”</p>
+                            <p class="caption-fr"><em>“Chaleur pliée, dorée et enracinée — un repas qui réconforte sans
+                                    paroles.”</em></p>
+                            <p class="emotion">Emotion: <br> Comforting, rustic, mellow <br><em> Réconfortant, rustique,
+                                    doux </em></p>
+                        </div>
+                    </li>
+
+                    <li class="gallery-item">
+                        <img src="images/gallery-6.jpg" alt="Gallery" class="gallery-image img-fluid">
+                        <div class="caption">
+                            <p class="caption-en">“Honey drips like morning light — flaky sweetness and a sip of slow
+                                time.”</p>
+                            <p class="caption-fr"><em>“Le miel coule comme la lumière du matin — douceur feuilletée et
+                                    gorgée de lenteur.”</em></p>
+                            <p class="emotion">Emotion: <br> Delicate, indulgent, peaceful <br><em> Délicat, gourmand,
+                                    paisible </em></p>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+
+        <!-- Contact section -->
+        <section class="contact-section" id="contact">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="section-content">
+                <ul class="contact-info-list">
+                    <li class="contact-info">
+                        <i class="fa-solid fa-location-crosshairs"></i>
+                        <p>123 Campsite Avenue, Wilderness, CA 98765</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-regular  fa-envelope"></i>
+                        <p>info@coffeeshopwebsite.com</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>(123) 456-78909</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-regular  fa-clock"></i>
+                        <p>Monday - Friday : 9:00 AM - 5:00 PM</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-regular  fa-clock"></i>
+                        <p>Saturday : 10:00 AM - 3:00 PM</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-regular  fa-clock"></i>
+                        <p>Sunday : Closed</p>
+                    </li>
+                    <li class="contact-info">
+                        <i class="fa-solid fa-globe"></i>
+                        <p>wwww.codingnepalweb.com</p>
+                    </li>
+                </ul>
+
+                <form action="#" class="contact-form">
+                    <input type="text" placeholder="Your name" class="form-input" required>
+                    <input type="email" placeholder="Your email" class="form-input" required>
+                    <textarea placeholder="Your message" class="form-input" required></textarea>
+                    <button class="submit-button">Submit</button>
+
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer section -->
+        <footer class="footer-section">
+            <div class="section-content">
+                <p class="copyright-text">© 2024 Coffee Shop</p>
+                <div class="social-link-list">
+                    <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+                <p class="policy-text">
+                    <a href="#" class="policy-link">Privacy policy</a><span class="separator"> | </span>
+                    <a href="#" class="policy-link">Refund policy</a>
+                </p>
+            </div>
+        </footer>
+
+        <div class="footer_merci">
+            Remerciements à CodingNepal, le concepteur de ce tutoriel à consulter sur YouTube
+            <a href="https://www.youtube.com/watch?v=MYFgtnKMDp4" target="_blank">ici</a><br>
+            Remerciements à Copilote pour ses expressions pleines de poésie - Chris Blues -
+        </div>
+
+    </main>
+
+    <!-- Modal Bootstrap pour le bouton "Attributions des couleurs" -->
+    <div id="modal2" class="modal2 hidden">
+        <div class="modal2-overlay" onclick="closeModal()"></div>
+        <div class="modal2-content">
+            <h3>Attributions des couleurs</h3>
+            <ul>
+                <li><span class="color-coding1"></span><span class="color-coding2"></span> CodingNepal – Textes en noir ou en blanc</li>
+                <li><span class="color-chris"></span> Chris Blues – Traductions en français</li>
+                <li><span class="color-ai"></span> Copilote – Notes poétiques</li>
+            </ul>
+            <button onclick="closeModal()">Fermer</button>
+        </div>
+    </div>
+
+    <!-- Modal Bootstrap pour agrandir l'image -->
+    <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content bg-transparent border-0">
+                <div class="modal-body text-center">
+                    <img src="" class="modal-image img-fluid rounded" style="max-height: 90vh;" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======================= main ended ======================= -->
+
+    <!-- Linking Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Linking Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Linking script.js -->
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

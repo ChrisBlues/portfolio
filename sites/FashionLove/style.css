@@ -1,0 +1,70 @@
+body {
+    background: white;
+}
+
+header {
+    background: url(./img/main.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 1000px;
+}
+
+.section {
+    padding-bottom: 4vw;
+    padding-top: 4vw;
+}
+
+.tabs .indicator {
+    background-color: #000;
+}
+
+.tabs .tab a:hover,
+.tabs .tab a:focus.active {
+    background-color: transparent;
+}
+
+.slogan{
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+p{
+    text-align: justify;
+}
+
+/* Remerciements au concepteur et à Copilote */
+#thank-you-footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f8f8f8;
+    color: #333;
+    text-align: center;
+    padding: 15px;
+    font-size: 1rem;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 1s ease, transform 1s ease;
+    z-index: 1000;
+}
+
+#thank-you-footer.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#thank-you-footer a {
+    text-decoration: underline;
+}
+
+/* .page-footer {
+    padding-bottom: 3rem;
+} */
+
+
+@media screen and (max-width:650px) {
+    header {
+        min-height: 500px;
+    }
+}

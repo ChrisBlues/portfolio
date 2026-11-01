@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Travel Toor</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav__header">
+            <div class="nav__logo">
+                <a href="#">Travel<span>Toor</span></a>
+            </div>
+            <div class="nav__menu__btn" id="menu-btn">
+                <i class="ri-menu-3-line"></i>
+            </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+            <li><a href="#home">Accueil</a></li>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#packages">Bouquets</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav__btns">
+            <button class="btn">Enregistrer</button>
+        </div>
+    </nav>
+
+    <header class="section__container header__container" id="home">
+        <div class="header__content">
+            <h1><span>Créons</span> un voyage mémorable</h1>
+            <p class="section__description">
+                Embarquez pour une aventure inoubliable avec nous ! Découvrez des destinations à couper le souffle,
+                créez des souvenirs impérissables et faites de chaque voyage une expérience remarquable.
+            </p>
+            <form action="/">
+                <div class="input__group">
+                    <label for="location">Localité</label>
+                    <input type="text" name="location" placeholder="Lakshadweep">
+                </div>
+                <div class="input__group">
+                    <label for="date">Date</label>
+                    <input type="text" name="date" placeholder="Vendredi 26 mars">
+                </div>
+                <div class="input__group">
+                    <label for="price">Coût</label>
+                    <input type="text" name="price" placeholder="Rs. 42,000" />
+                </div>
+                <button class="btn"><i class="ri-search-line"></i></button>
+            </form>
+        </div>
+        <div class="header__image">
+            <img src="assets/header-1.jpg" alt="header">
+            <img src="assets/header-2.jpg" alt="header">
+            <img src="assets/header-3.jpg" alt="header">
+            <img src="assets/bg.png" alt="bg">
+        </div>
+    </header>
+
+    <section class="section__container choose__container" id="about">
+        <div class="choose__image">
+            <img src="assets/choose.jpg" alt="choose">
+        </div>
+        <div class="choose__content">
+            <p class="section__subheader">Pourquoi nous choisir ?</p>
+            <h2 class="section__header">Planifiez votre voyage <span>avec nous</span></h2>
+            <ul class="choose__list">
+                <li>
+                    <span><i class="ri-verified-badge-fill"></i></span>
+                    <div>
+                        <h4>Garantie du meilleur prix</h4>
+                        <p>
+                            Nous vous garantissons les tarifs les plus compétitifs pour vos voyages rendant ainsi vos
+                            destinations de rêve accessibles.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <span><i class="ri-calendar-fill"></i></span>
+                    <div>
+                        <h4>Options de réservation</h4>
+                        <p>
+                            Découvrez la simplicité des options de réservation flexibles, adaptées à votre emploi du
+                            temps et à vos préférences. </p>
+                    </div>
+                </li>
+                <li>
+                    <span><i class="ri-road-map-fill"></i></span>
+                    <div>
+                        <h4>Révision de la carte du parcours</h4>
+                        <p>
+                            Partez à l'aventure grâce à nos cartes de parcours personnalisées conçues pour des
+                            expériences de voyage fluides et agréables.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section__container popular__container" id="package">
+        <img src="assets/bg.png" alt="bg" class="popular__bg">
+        <p class="section__subheader">Destinations célèbres</p>
+        <h2 class="section__header">Nos <span>destinations </span> populaires</h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <div class="popular__card">
+                        <img src="assets/popular-1.jpg" alt="popular">
+                        <div class="popular__content">
+                            <div class="popular__rating">
+                                <span><i class="ri-star-fill"></i></span>
+                                4.0(34) 😊
+                            </div>
+                            <h4>Lakshadweep</h4>
+                            <p><span>Rs. 28,000/-</span> par personne</p>
+                            <div class="popular__card__footer">
+                                <div>
+                                    <span><i class="ri-time-line"></i></span> 4 jours
+                                </div>
+                                <div>
+                                    <span><i class="ri-group-3-fill"></i></span> 15+
+                                </div>
+                                <div>
+                                    <span><i class="ri-map-pin-2-fill"></i></span> Inde
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="popular__card">
+                        <img src="assets/popular-2.jpg" alt="popular">
+                        <div class="popular__content">
+                            <div class="popular__rating">
+                                <span><i class="ri-star-fill"></i></span>
+                                4.5(55) 😊
+                            </div>
+                            <h4>Kaziranga</h4>
+                            <p><span>Rs. 15,000/-</span> par personne</p>
+                            <div class="popular__card__footer">
+                                <div>
+                                    <span><i class="ri-time-line"></i></span> 2 jours
+                                </div>
+                                <div>
+                                    <span><i class="ri-group-3-fill"></i></span> 10+
+                                </div>
+                                <div>
+                                    <span><i class="ri-map-pin-2-fill"></i></span> Inde
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="popular__card">
+                        <img src="assets/popular-3.jpg" alt="popular">
+                        <div class="popular__content">
+                            <div class="popular__rating">
+                                <span><i class="ri-star-fill"></i></span>
+                                4.2(45) 😊
+                            </div>
+                            <h4>Temple du Soleil</h4>
+                            <p><span>Rs. 18,000/-</span> par personne</p>
+                            <div class="popular__card__footer">
+                                <div>
+                                    <span><i class="ri-time-line"></i></span> 3 jours
+                                </div>
+                                <div>
+                                    <span><i class="ri-group-3-fill"></i></span> 20+
+                                </div>
+                                <div>
+                                    <span><i class="ri-map-pin-2-fill"></i></span> Inde
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="popular__card">
+                        <img src="assets/popular-4.jpg" alt="popular">
+                        <div class="popular__content">
+                            <div class="popular__rating">
+                                <span><i class="ri-star-fill"></i></span>
+                                4.8(25) 😊
+                            </div>
+                            <h4>Kashmir</h4>
+                            <p><span>Rs. 30,000/-</span> par personne</p>
+                            <div class="popular__card__footer">
+                                <div>
+                                    <span><i class="ri-time-line"></i></span> 5 jours
+                                </div>
+                                <div>
+                                    <span><i class="ri-group-3-fill"></i></span> 10+
+                                </div>
+                                <div>
+                                    <span><i class="ri-map-pin-2-fill"></i></span> Inde
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="popular__card">
+                        <img src="assets/popular-5.jpg" alt="popular">
+                        <div class="popular__content">
+                            <div class="popular__rating">
+                                <span><i class="ri-star-fill"></i></span>
+                                4.0(15) 😊
+                            </div>
+                            <h4>Kanyakumari</h4>
+                            <p><span>Rs. 15,000/-</span> par personne</p>
+                            <div class="popular__card__footer">
+                                <div>
+                                    <span><i class="ri-time-line"></i></span> 3 jours
+                                </div>
+                                <div>
+                                    <span><i class="ri-group-3-fill"></i></span> 20+
+                                </div>
+                                <div>
+                                    <span><i class="ri-map-pin-2-fill"></i></span> Inde
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+        </div>
+    </section>
+
+    <section class="section__container explore__container">
+        <div class="explore__image">
+            <img src="assets/explore.jpg" alt="explore">
+        </div>
+        <div class="explore__content">
+            <p class="section__subheader">Explorez avec nous</p>
+            <h2 class="section__header">
+                Choisissez des destinations de rêve pour <span>explorer le monde</span>
+            </h2>
+            <p class="section__description">Découvrez un monde de merveilles ! Choisissez parmi notre sélection de
+                destinations de rêve et partez à la découverte de paysages à couper le souffle, de cultures vibrantes et
+                d'expériences inoubliables.</p>
+            <div class="explore__btn">
+                <button class="btn">À propos de nous</button>
+            </div>
+            <div class="explore__grid">
+                <div>
+                    <h4>14</h4>
+                    <p>années <br>d'expérience</p>
+                </div>
+                <div>
+                    <h4>67+</h4>
+                    <p>Destinations <br>Célébrations</p>
+                </div>
+                <div>
+                    <h4>320+</h4>
+                    <p>Clients <br>satisfaits</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section__container client__container">
+        <img src="assets/bg.png" alt="bg" class="client__bg">
+        <p class="section__subheader">Ce que nos clients disent</p>
+        <h2 class="section__header"><span>Témoignages </span>de clients</h2>
+        <div class="client__card active">
+            <img src="assets/client-1.jpg" alt="client">
+            <div class="client__content">
+                <h4>Emma Johnson</h4>
+                <h5>Blogueuse de voyage</h5>
+                <p>Cette plateforme de voyage a transformé mes rêves de voyage en réalité ! La réservation s'est faite
+                    sans le moindre problème et leur équipe m'a fourni d'excellents conseils sur les lieux
+                    incontournables. Chaque étape a été facile et j'ai hâte de planifier ma prochaine aventure avec eux.
+                    Je les recommande vivement !</p>
+            </div>
+        </div>
+        <div class="client__card">
+            <img src="assets/client-2.jpg" alt="client">
+            <div class="client__content">
+                <h4>Sophia Lee</h4>
+                <h5>Ingénieur logiciel</h5>
+                <p>Voyager avec ce service a été un vrai plaisir ! La flexibilité des réservations m'a permis de
+                    planifier à mon rythme, et les itinéraires détaillés m'ont assuré de ne rien manquer
+                    d'important. J'ai vraiment senti qu'ils se souciaient de créer une expérience de voyage parfaite
+                    pour moi. Absolument merveilleux !</p>
+            </div>
+        </div>
+        <div class="client__card">
+            <img src="assets/client-3.jpg" alt="client">
+            <div class="client__content">
+                <h4>Michael Roberts</h4>
+                <h5>Photographe</h5>
+                <p>En tant que photographe, trouver des lieux pittoresques est essentiel, et cette plateforme a
+                    dépassé mes attentes. Non seulement la réservation a été facile, mais elle m'a aussi permis de
+                    découvrir des endroits incroyables et insolites. Leur souci du détail a rendu mon voyage
+                    inoubliable et sans tracas !</p>
+            </div>
+        </div>
+        <div class="client__btns">
+            <button class="btn" id="prev">
+                <i class="ri-arrow-left-line"></i>
+            </button>
+            <button class="btn" id="next">
+                <i class="ri-arrow-right-line"></i>
+            </button>
+        </div>
+    </section>
+
+    <section class="section__container subscribe__container" id="contact">
+        <h2 class="section__header">
+            Abonnez-vous pour recevoir les dernières nouvelles <span>à propos de nous</span>
+        </h2>
+        <p class="section__description">
+            Restez informé(e) des dernières offres de voyage, des incontournables de nos destinations et des offres
+            exclusives. Abonnez-vous dès maintenant et ne manquez aucune actualité ni mise à jour concernant nos
+            services !
+        </p>
+        <form action="/">
+            <input type="text" placeholder="Votre email">
+            <button class="btn">Abonnez-vous</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="section__container footer__container">
+            <div class="footer__col">
+                <div class="footer__logo">
+                    <a href="#">TravelToor</a>
+                </div>
+                <p>
+                    Explorez le monde avec nous ! Connectez-vous via nos réseaux sociaux, trouvez des liens rapides vers
+                    des ressources essentielles et bénéficiez d'une assistance 24h/24 et 7j/7 pour simplifier
+                    l'organisation de vos voyages.
+                </p>
+                <ul class="footer__socials">
+                    <li>
+                        <a href="#"><i class="ri-facebook-fill"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="ri-twitter-fill"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="ri-instagram-line"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4>Services</h4>
+                <ul class="footer__links">
+                    <li><a href="#">À propos</a></li>
+                    <li><a href="#">Destinations</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Confidentialité</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4>Instagram</h4>
+                <div class="footer__col__flex">
+                    <img src="assets/instagram-1.jpg" alt="Instagram">
+                    <img src="assets/instagram-2.jpg" alt="Instagram">
+                    <img src="assets/instagram-3.jpg" alt="Instagram">
+                    <img src="assets/instagram-4.jpg" alt="Instagram">
+                    <img src="assets/instagram-5.jpg" alt="Instagram">
+                    <img src="assets/instagram-6.jpg" alt="Instagram">
+                </div>
+            </div>
+            <div class="footer__col">
+                <h4>Contact</h4>
+                <ul class="footer__links">
+                    <li>
+                        <a href="#">
+                            <span><i class="ri-phone-fill"></i></span> +91 0987654321
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span><i class="ri-map-pin-fill"></i></span> New Delhi, India
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span><i class="ri-mail-fill"></i></span> info@carrental
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bar">
+            Copyright © 2024 Web Design Mastery. All rights reserved.
+        </div>
+    </footer>
+
+        <!-- Footer de remerciements au concepteur -->
+    <div id="thank-you-footer">
+        <span class="plume">🪶</span>
+        Remerciements à Web Design Mastery, le concepteur de ce tutoriel à consulter sur YouTube
+        <a href="https://www.youtube.com/watch?v=cCUZPab-rPE&list=PLz_5rPRIvGECVDOGY8fMs3-8uZVlyJ-gr&index=13" target="_blank">ici</a>. — Chris Blues —
+    </div>
+
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

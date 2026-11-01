@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewellery</title>
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <!-- OWN CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive-style.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+    <!-- header design -->
+    <header>
+        <div class="top-header">
+            <div class="container d-flex justify-content-between align-items-center py-3">
+                <span>Livraison gratuite pour les commandes supérieures à 100 € </span>
+                <span><i class="fas fa-phone"></i> : 800-6688-999</span>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navigation-wrap">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <i class="fas fa-stream navbar-toggler-icon"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#new-arrivals">Nouveautés</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#products">Produits</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#deal">Offre du jour</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#blog">Blog</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- section-1 top-banner -->
+    <section id="home">
+        <div id="carouselExampleControls" class="carousel" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./images/bg/bg-1.jpg" class="d-block w-100" alt="img-1">
+                    <div class="carousel-caption text-center">
+                        <h1>Jusqu'à 45% de réduction</h1>
+                        <p>Ces bijoux uniques sont fabriqués à la main sur la magnifique île de Nantucket à partir
+                            d'argent fin et de pierres semi-précieuses.</p>
+                        <a href="#" class="main-btn">Ajouter au panier</a>
+                    </div>
+
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/bg/bg-2.jpg" class="d-block w-100" alt="img-2">
+                    <div class="carousel-caption text-center">
+                        <h1>Jusqu'à 45% de réduction</h1>
+                        <p>Ces bijoux uniques sont fabriqués à la main sur la magnifique île de Nantucket à partir
+                            d'argent fin et de pierres semi-précieuses.</p>
+                        <a href="#" class="main-btn">Ajouter au panier</a>
+                    </div>
+
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/bg/bg-3.jpg" class="d-block w-100" alt="img-3">
+                    <div class="carousel-caption text-center">
+                        <h1>Jusqu'à 45% de réduction</h1>
+                        <p>Ces bijoux uniques sont fabriqués à la main sur la magnifique île de Nantucket à partir
+                            d'argent fin et de pierres semi-précieuses.</p>
+                        <a href="#" class="main-btn">Ajouter au panier</a>
+                    </div>
+
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- section-2 new-arrivals -->
+    <section id="new-arrivals">
+        <div class="new-arrivals wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 mb-2 text-content text-center">
+                        <h2>NOUVEAUTÉS</h2>
+                        <p>Ces bijoux uniques sont fabriqués artisanalement sur la magnifique île de Nantucket à partir
+                            d'argent fin et de pierres semi-précieuses. Découvrez la collection de bijoux en verre de
+                            Fanbong.</p>
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-sm-4 col-12 p-sm-0 card-banner">
+                        <div class="card-banner position-relative text-center">
+                            <a href="#" class="card-thumb">
+                                <img src="images/img/img-1.jpg" alt="img-1" class="img-fluid">
+                            </a>
+                            <div class="banner-info text-center">
+                                <h2>BRACELETS</h2>
+                                <P>Lorem(15) ipsum dolor sit amet consectetur adipisicing elit. Natus, quaerat. Omnis
+                                    dolore a nobis voluptas.</P>
+                                <a href="#" class="main-btn">Ajouter au panier</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-12 p-sm-0 card-banner">
+                        <div class="card-banner position-relative text-center">
+                            <a href="#" class="card-thumb">
+                                <img src="images/img/img-2.jpg" alt="img-2" class="img-fluid">
+                            </a>
+                            <div class="banner-info text-center">
+                                <h2>BAGUES</h2>
+                                <P>Lorem(15) ipsum dolor sit amet consectetur adipisicing elit. Natus, quaerat. Omnis
+                                    dolore a nobis voluptas.</P>
+                                <a href="#" class="main-btn">Ajouter au panier</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-12 p-sm-0 card-banner">
+                        <div class="card-banner position-relative text-center">
+                            <a href="#" class="card-thumb">
+                                <img src="images/img/img-3.jpg" alt="img-3" class="img-fluid">
+                            </a>
+                            <div class="banner-info text-center">
+                                <h2>BOUCLES D'OREILLES</h2>
+                                <P>Lorem(15) ipsum dolor sit amet consectetur adipisicing elit. Natus, quaerat. Omnis
+                                    dolore a nobis voluptas.</P>
+                                <a href="#" class="main-btn">Ajouter au panier</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section-3 products -->
+    <section id="products" class="products">
+        <div class="wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-content text-center">
+                        <h2>MEILLEURES VENTES</h2>
+                        <P>Lorem(25) ipsum dolor sit, amet consectetur adipisicing elit. Aperiam, delectus, tempore
+                            velit odio libero assumenda consectetur eligendi recusandae, eum atque illum amet similique
+                            incidunt cumque?</P>
+                    </div>
+                    <div class="col-12">
+                        <ul class="nav nav-tabs mb-3" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="jwellery-tab" data-bs-toggle="tab"
+                                    data-bs-target="#jwellery" type="button" role="tab" aria-controls="jwellery"
+                                    aria-selected="true">Bracelets</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="ring-tab" data-bs-toggle="tab" data-bs-target="#ring"
+                                    type="button" role="tab" aria-controls="ring" aria-selected="false">Bagues</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="earrings-tab" data-bs-toggle="tab"
+                                    data-bs-target="#earrings" type="button" role="tab" aria-controls="earrings"
+                                    aria-selected="false">Boucles d'oreilles</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <!-- Bracelet -->
+                            <div class="tab-pane fade show active" id="jwellery" role="tabpanel"
+                                aria-labelledby="jwellery-tab">
+                                <div class="row">
+                                    <!-- Product 1 -->
+                                    <div class="col-md-3 col-sm-6 mb-3">
+                                        <div class="item-product">
+                                            <a href="#" class="product-thumb-link">
+                                                <img src="images/product-img/b-1.jpg" class="img-fluid" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="d-flex justify-content-between py-3">
+                                                <a href="#" class="cat-parent">Femmes</a>
+                                                <a href="#" class="whislist">
+                                                    <i class="fas fa-heart"></i>
+                                                </a>
+                                            </div>
+                                            <h4 class="product-title">
+                                                <a href="#">Bracelet Set Croissant de Lune Perle</a>
+                                            </h4>
+                                            <div class="product-price">
+                                                <ins><span class="money text-white">28,66 €</span></ins>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between py-1">
+                                                <div class="rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                </div>
+                                                <div class="basket">
+                                                    <a href="#"><i class="fas fa-shopping-basket"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Product 2 -->
+                                    <div class="col-md-3 col-sm-6 mb-3">
+                                        <div class="item-product">
+                                            <a href="#" class="product-thumb-link">
+                                                <img src="images/product-img/b-2.jpg" class="img-fluid" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="d-flex justify-content-between py-3">
+                                                <a href="#" class="cat-parent">Femmes</a>
+                                                <a href="#" class="whislist">
+                                                    <i class="fas fa-heart"></i>
+                                                </a>
+                                            </div>
+                                            <h4 class="product-title">
+                                                <a href="#">BRACELET ARGENT HAWAÏEN PLUMERIA FLEUR</a>
+                                            </h4>
+                                            <div class="product-price">
+                                                <ins><span class="money text-white">113.80 €</span></ins>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between py-1">
+                                                <div class="rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <div class="basket">
+                                                    <a href="#"><i class="fas fa-shopping-basket"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Product 3 -->
+                                    <div class="col-md-3 col-sm-6 mb-3">
+                                        <div class="item-product">
+                                            <a href="#" class="product-thumb-link">
+                                                <img src="images/product-img/b-3.jpg" class="img-fluid" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="d-flex justify-content-between py-3">
+                                                <a href="#" class="cat-parent">Femmes</a>
+                                                <a href="#" class="whislist">
+                                                    <i class="fas fa-heart"></i>
+                                                </a>
+                                            </div>
+                                            <h4 class="product-title">
+                                                <a href="#">Bracelet Infinity Symbol Love</a>
+                                            </h4>
+                                            <div class="product-price">
+                                                <ins><span class="money text-white">75,99 €</span></ins>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between py-1">
+                                                <div class="rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                </div>
+                                                <div class="basket">
+                                                    <a href="#"><i class="fas fa-shopping-basket"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Product 4 -->
+                                    <div class="col-md-3 col-sm-6 mb-3">
+                                        <div class="item-product">
+                                            <a href="#" class="product-thumb-link">
+                                                <img src="images/product-img/b-4.jpg" class="img-fluid" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="d-flex justify-content-between py-3">
+                                                <a href="#" class="cat-parent">Femmes</a>
+                                                <a href="#" class="whislist">
+                                                    <i class="fas fa-heart"></i>
+                                                </a>
+                                            </div>
+                                            <h4 class="product-title">
+                                                <a href="#">Bracelet Charm Love Heart</a>
+                                            </h4>
+                                            <div class="product-price">
+                                                <ins><span class="money text-white">53,72 €</span></ins>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between py-1">
+                                                <div class="rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                </div>
+                                                <div class="basket">
+                                                    <a href="#"><i class="fas fa-shopping-basket"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Ring -->
+                            <div class="tab-pane fade" id="ring" role="tabpanel" aria-labelledby="ring-tab">
+                                <div class="row">
+                                    <!-- Product 1 -->
+                                    <div class="col-md-3 col-sm-6 mb-3">
+                                        <div class="item-product">
+                                            <a href="#" class="product-thumb-link">
+                                                <img src="images/product-img/r-1.jpg" class="img-fluid" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="d-flex justify-content-between py-3">
+                                                <a href="#" class="cat-parent">Femmes</a>
+                                                <a href="#" class="whislist">
+                                                    <i class="fas fa-heart"></i>
+                                                </a>
+                                            </div>
+                                            <h4 class="product-title">
+                                                <a href="#">Bague Rosalyne Or Blanc Saphir et Diamant</a>
+                                            </h4>
+                                            <div class="product-price">
+                                                <ins><span class="money text-white">189.00 €</span></ins>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between py-1">
+                                                <div class="rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                </div>
+                                                <div class="basket">
+                                                    <a href="#"><i class="fas fa-shopping-basket"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Product 2 -->
+                                    <div class="col-md-3 col-sm-6 mb-3">
+                                        <div class="item-product">
+                                            <a href="#" class="product-thumb-link">
+                                                <img src="images/product-img/r-2.jpg" class="img-fluid" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="d-flex justify-content-between py-3">
+                                                <a href="#" class="cat-parent">Femmes</a>
+                                                <a href="#" class="whislist">
+                                                    <i class="fas fa-heart"></i>
+                                                </a>
+                                            </div>
+                                            <h4 class="product-title">
+                                                <a href="#">Bague Smina Or Jaune Diamant</a>
+                                            </h4>
+                                            <div class="product-price">
+                                                <ins><span class="money text-white">145.00 €</span></ins>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between py-1">
+                                                <div class="rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <div class="basket">
+                                                    <a href="#"><i class="fas fa-shopping-basket"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Product 3 -->
+                                    <div class="col-md-3 col-sm-6 mb-3">
+                                        <div class="item-product">
+                                            <a href="#" class="product-thumb-link">
+                                                <img src="images/product-img/r-3.jpg" class="img-fluid" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="d-flex justify-content-between py-3">
+                                                <a href="#" class="cat-parent">Femmes</a>
+                                                <a href="#" class="whislist">
+                                                    <i class="fas fa-heart"></i>
+                                                </a>
+                                            </div>
+                                            <h4 class="product-title">
+                                                <a href="#">Bague Solitaire Solitea Argent Blanc Oxyde de Zirconium - 39
+                                                    €</a>
+                                            </h4>
+                                            <div class="product-price">
+                                                <ins><span class="money text-white">39.00 €</span></ins>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between py-1">
+                                                <div class="rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                </div>
+                                                <div class="basket">
+                                                    <a href="#"><i class="fas fa-shopping-basket"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Product 4 -->
+                                    <div class="col-md-3 col-sm-6 mb-3">
+                                        <div class="item-product">
+                                            <a href="#" class="product-thumb-link">
+                                                <img src="images/product-img/r-4.jpg" class="img-fluid" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="d-flex justify-content-between py-3">
+                                                <a href="#" class="cat-parent">Femmes</a>
+                                                <a href="#" class="whislist">
+                                                    <i class="fas fa-heart"></i>
+                                                </a>
+                                            </div>
+                                            <h4 class="product-title">
+                                                <a href="#">Bague Harem Or Jaune Oxyde</a>
+                                            </h4>
+                                            <div class="product-price">
+                                                <ins><span class="money text-white">129.00 €</span></ins>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between py-1">
+                                                <div class="rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                                <div class="basket">
+                                                    <a href="#"><i class="fas fa-shopping-basket"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Earrings -->
+                            <div class="tab-pane fade" id="earrings" role="tabpanel" aria-labelledby="earrings-tab">
+                                <div class="row">
+                                    <!-- Product 1 -->
+                                    <div class="col-md-3 col-sm-6 mb-3">
+                                        <div class="item-product">
+                                            <a href="#" class="product-thumb-link">
+                                                <img src="images/product-img/e-1.jpg" class="img-fluid" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="d-flex justify-content-between py-3">
+                                                <a href="#" class="cat-parent">Femmes</a>
+                                                <a href="#" class="whislist">
+                                                    <i class="fas fa-heart"></i>
+                                                </a>
+                                            </div>
+                                            <h4 class="product-title">
+                                                <a href="#">Boucles d'Oreilles Aventurine Plaqué Or</a>
+                                            </h4>
+                                            <div class="product-price">
+                                                <ins><span class="money text-white">79.00 €</span></ins>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between py-1">
+                                                <div class="rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                </div>
+                                                <div class="basket">
+                                                    <a href="#"><i class="fas fa-shopping-basket"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Product 2 -->
+                                    <div class="col-md-3 col-sm-6 mb-3">
+                                        <div class="item-product">
+                                            <a href="#" class="product-thumb-link">
+                                                <img src="images/product-img/e-2.jpg" class="img-fluid" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="d-flex justify-content-between py-3">
+                                                <a href="#" class="cat-parent">Femmes</a>
+                                                <a href="#" class="whislist">
+                                                    <i class="fas fa-heart"></i>
+                                                </a>
+                                            </div>
+                                            <h4 class="product-title">
+                                                <a href="#">Zaveri Pearls Enamelling</a>
+                                            </h4>
+                                            <div class="product-price">
+                                                <ins><span class="money text-white">34,46 €</span></ins>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between py-1">
+                                                <div class="rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                </div>
+                                                <div class="basket">
+                                                    <a href="#"><i class="fas fa-shopping-basket"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Product 3 -->
+                                    <div class="col-md-3 col-sm-6 mb-3">
+                                        <div class="item-product">
+                                            <a href="#" class="product-thumb-link">
+                                                <img src="images/product-img/e-3.jpg" class="img-fluid" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="d-flex justify-content-between py-3">
+                                                <a href="#" class="cat-parent">Femmes</a>
+                                                <a href="#" class="whislist">
+                                                    <i class="fas fa-heart"></i>
+                                                </a>
+                                            </div>
+                                            <h4 class="product-title">
+                                                <a href="#">Boucles d'oreilles créoles écru</a>
+                                            </h4>
+                                            <div class="product-price">
+                                                <ins><span class="money text-white">15,99 €</span></ins>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between py-1">
+                                                <div class="rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                </div>
+                                                <div class="basket">
+                                                    <a href="#"><i class="fas fa-shopping-basket"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Product 4 -->
+                                    <div class="col-md-3 col-sm-6 mb-3">
+                                        <div class="item-product">
+                                            <a href="#" class="product-thumb-link">
+                                                <img src="images/product-img/e-4.jpg" class="img-fluid" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="product-info">
+                                            <div class="d-flex justify-content-between py-3">
+                                                <a href="#" class="cat-parent">Femmes</a>
+                                                <a href="#" class="whislist">
+                                                    <i class="fas fa-heart"></i>
+                                                </a>
+                                            </div>
+                                            <h4 class="product-title">
+                                                <a href="#">6 Pairs of Pearl Earrings</a>
+                                            </h4>
+                                            <div class="product-price">
+                                                <ins><span class="money text-white">20,27 €</span></ins>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between py-1">
+                                                <div class="rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="far fa-star"></i>
+                                                </div>
+                                                <div class="basket">
+                                                    <a href="#"><i class="fas fa-shopping-basket"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section-4 deal -->
+    <section id="deal">
+        <div class="wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="text-center border border-white deal-of-the-day py-5">
+                            <div class="text-content py-5">
+                                <h2>OFFRES DU JOUR</h2>
+                                <h4>JUSQU'À 60 % DE RÉDUCTION</h4>
+                                <p>Lorem(25) ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate, eum nam.
+                                    Quae at laboriosam quam. Maiores eius odio aliquam fugit qui tempora ratione, ea ut?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section-5 blog -->
+    <section id="blog">
+        <div class="blog-section wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 mb-2 text-content text-center">
+                        <h2>DERNIÈRES NOUVELLES DU BLOG</h2>
+                        <p>Ces bijoux uniques sont fabriqués artisanalement sur la magnifique île de Nantucket à partir
+                            d'argent fin et de pierres semi-précieuses. Découvrez la collection de bijoux en verre de
+                            Fanbong.</p>
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-md-4 col-sm-6 mb-4 mb-lg-0">
+                        <div>
+                            <a href="#" class="card-thumb">
+                                <img src="./images/img/b-1.jpg" alt="" class="img-fluid">
+                            </a>
+                            <div class="text-center px-2 mt-2">
+                                <h2>Girls wear tops</h2>
+                                <p>Notre boutique de mode urbaine et streetwear n'a rien à voir avec Old Navy, Banana
+                                    Republic ou un magasin de vêtements Walmart, loin de là. Nous sommes rapidement
+                                    devenus…</p>
+                                <a href="#" class="main-btn">Lire plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 mb-4 mb-lg-0">
+                        <div>
+                            <a href="#" class="card-thumb">
+                                <img src="./images/img/b-2.jpg" alt="" class="img-fluid">
+                            </a>
+                            <div class="text-center px-2 mt-2">
+                                <h2>Girl with a necklace</h2>
+                                <p>Notre boutique de mode urbaine et streetwear n'a rien à voir avec Old Navy, Banana
+                                    Republic ou un magasin de vêtements Walmart, loin de là. Nous sommes rapidement
+                                    devenus…</p>
+                                <a href="#" class="main-btn">Lire plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 mb-4 mb-lg-0">
+                        <div>
+                            <a href="#" class="card-thumb">
+                                <img src="./images/img/b-3.jpg" alt="" class="img-fluid">
+                            </a>
+                            <div class="text-center px-2 mt-2">
+                                <h2>Girls wear rings</h2>
+                                <p>Notre boutique de mode urbaine et streetwear n'a rien à voir avec Old Navy, Banana
+                                    Republic ou un magasin de vêtements Walmart, loin de là. Nous sommes rapidement
+                                    devenus…</p>
+                                <a href="#" class="main-btn">Lire plus</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section-6 footer -->
+    <footer>
+        <div class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-md-start text-center text-lg-start">
+                        <div class="footer-logo text-muted mb-3 mb-md-0">
+                            Copyright 2021. CODE4EDUCATION. All rights reserved.
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center text-lg-end">
+                        <div class="footer-social pt-1">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-dribbble"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Footer de remerciements à SA Coding et Copilote pour ses commentaires en anglais -->
+    <div id="thank-you-footer">
+        <span class="plume">🪶</span>
+        Remerciements à Code4Education, le concepteur de ce magnifique tutoriel à consulter sur YouTube
+        <a href="https://www.youtube.com/watch?v=qB0Ig6gzTpQ&list=PLdPwRNmUlk0nyw7VoYZvtlU1XIRUfEW-U&index=12"
+            target="_blank">ici</a> et <a href="https://www.youtube.com/watch?v=QK3ac-uV4kU" target="_blank">ici</a>.
+        <br> Remerciements à Copilote pour la plupart des commentaires. — Chris Blues —
+    </div>
+
+
+    <!-- JS Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"></script>
+    <script>
+        // Détection du bas de page pour les remerciements au concepteur
+        window.addEventListener('scroll', () => {
+            const scrollPosition = window.scrollY + window.innerHeight;
+            const pageHeight = document.documentElement.scrollHeight;
+            const footer = document.getElementById('thank-you-footer');
+
+            if (scrollPosition >= pageHeight - 50) {
+                footer.classList.add('visible');
+            } else {
+                footer.classList.remove('visible');
+            }
+        });
+    </script>
+    <!-- OWN js -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

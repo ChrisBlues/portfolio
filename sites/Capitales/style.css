@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background: #dd4a56;
+}
+
+.container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.swiper-container {
+    position: relative;
+    height: 100vh;
+}
+
+/* Text Slider */
+
+.text-slider {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    clip-path: polygon(39.5% 0, 0 0, 0 100%, 69.5% 100%);
+    background: rgb(29, 26, 38);
+    font-family: "Quicksand", sans-serif;
+}
+
+.particles {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.text-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.text-slide h1,
+.text-slide p {
+    padding: 6px;
+    width: 40%;
+    color: #cfc9dc;
+    background: rgba(29, 25, 39, 0.8);
+    user-select: none;
+}
+
+.text-slide h1 {
+    font-family: "Expletus Sans", sans-serif;
+    font-size: clamp(2.5rem, 3vw, 4rem);
+    margin: 0 55% 0 10%;
+    background-image: linear-gradient(
+        15deg,
+        #7cb0e0 0%,
+        #6c4fa9 10%,
+        #dd4a56 30%,
+        #ff8f6c 60%
+    );
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.text-slide p {
+    font-size: clamp(1rem, 2vw, 1.4rem);
+    margin: 15px 55% 0 10%;
+    line-height: 1.6;
+}
+
+/* Image Slider */
+
+.image-slider {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 60%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%,50% 100%);
+}
+
+.img-slide img {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 40% 50%;
+    filter: brightness(1);
+}
+
+/* 8'10" */
+.img-slide:nth-child(3) img {
+    object-position: 100% 50%;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(41, 33, 67, 0.2);
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    --swiper-navigation-size: 25px;
+    --swiper-navigation-color: rgba(255, 255, 255, 0.5);
+    font-weight: 800;
+    padding: 20px;
+    border-radius: 50%;
+    background-color: transparent;
+    background-image: radial-gradient(
+        50% 115% at 50% -5%,
+        rgba(255, 255, 255, 0.11) 0%,
+        transparent 100%
+    );
+    box-shadow: inset 0 0 10px 0 rgba(255, 255, 255, 0.14),
+    inset 0 5px 10px 0 rgba(255, 255, 255, 0.11),
+    inset 0 2px 0 rgba(255, 255, 255, 0.4),
+    inset 0 3px 20px 0 rgba(0, 0, 0, 0.25);
+    transition: all 0.2s ease-in;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    transform: scale(1.08);
+    --swiper-navigation-color: rgba(255, 255, 255);
+}
+
+.swiper-button-next {
+    right: auto;      /* on annule la position par défaut */
+    left: 52%;        /* on la place dans la zone visible */
+}
+
+
+
+/* 10'17" */
+@media (max-width: 600px) {
+    .swiper-container {
+        height: 50vh;
+    }
+
+    .text-slider {
+        top: 50%;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        clip-path: polygon(100% 1%, 0 1%, 0 100%, 100% 100%);
+    }
+
+    .text-slide h1,
+    .text-slide p {
+        width: 80%;
+        text-align: center;
+    }
+
+    .text-slide h1 {
+        font-size: 2rem;
+        margin: 8% 55% 0;
+        line-height: 1.1;
+    }
+
+    .text-slide p {
+        font-size: 0.95rem;
+        margin: 3% 15% 0;
+        height: 50%;
+        line-height: 1.4;
+    }
+
+    .image-slider {
+        left: 0;
+        bottom: 50%;
+        width: 100%;
+        clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+    }
+
+    .img-slide img {
+        object-position: 50% 0%;
+    }
+
+    .swiper-button-next, 
+    .swiper-button-prev, 
+    .swiper-button-next:hover, 
+    .swiper-button-prev:hover {
+        transform: translateY(-6px);
+    }
+
+    .swiper-button-next {
+    right: auto;      /* on annule la position par défaut */
+    left: 90%;        /* on la place dans la zone visible */
+}
+
+}
